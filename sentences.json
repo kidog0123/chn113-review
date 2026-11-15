@@ -1,0 +1,662 @@
+﻿[
+    {
+        "bai":  "Bài 3",
+        "vn":  "Bạn là người Mỹ phải không?",
+        "zh":  "你是美国人吗？",
+        "py":  "Nǐ shì Měiguó rén ma?"
+    },
+    {
+        "bai":  "Bài 3",
+        "vn":  "Bạn là giáo viên phải không?",
+        "zh":  "你是老师吗？",
+        "py":  "Nǐ shì lǎoshī ma?"
+    },
+    {
+        "bai":  "Bài 3",
+        "vn":  "Cô Lý là người Trung Quốc, không phải là người Việt Nam.",
+        "zh":  "李老师是中国人，不是越南人。",
+        "py":  "Lǐ lǎoshī shì Zhōngguó rén, bú shì Yuènán rén."
+    },
+    {
+        "bai":  "Bài 3",
+        "vn":  "Tôi tên là ...., là người ..",
+        "zh":  "我叫……，是……人。",
+        "py":  "Wǒ jiào……, shì…… rén."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Đây là bạn học của bạn phải không?",
+        "zh":  "这是你的同学吗？",
+        "py":  "Zhè shì nǐ de tóngxué ma?"
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Cô ấy là bạn Trung Quốc của tôi. Cô ấy tên là Lý Nguyệt.",
+        "zh":  "她是我的中国朋友。她叫李月。",
+        "py":  "Tā shì wǒ de Zhōngguó péngyou. Tā jiào Lǐ Yuè."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Con gái anh ấy năm nay 7 tuổi rồi.",
+        "zh":  "他女儿今年七岁了。",
+        "py":  "Tā nǚ\u0027ér jīnnián qī suì le."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Nhà tôi có ... người.",
+        "zh":  "我家有……口人。",
+        "py":  "Wǒ jiā yǒu…… kǒu rén."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Tôi là học sinh FPT. Tôi học tiếng Hán.",
+        "zh":  "我是FPT的学生。我学习汉语。",
+        "py":  "Wǒ shì FPT de xuésheng. Wǒ xuéxí Hànyǔ."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Bạn bao nhiêu tuổi rồi? Tôi năm nay ... tuổi.",
+        "zh":  "你多大了？我今年……岁了。",
+        "py":  "Nǐ duō dà le? Wǒ jīnnián…… suì le."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Giáo viên tiếng Hán của bạn là ai? – Cô ấy tên là Lý Nguyệt.",
+        "zh":  "你的汉语老师是谁？她叫李月。",
+        "py":  "Nǐ de Hànyǔ lǎoshī shì shéi? Tā jiào Lǐ Yuè."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Thầy Lý năm nay bao nhiêu tuổi rồi? Thầy ấy 47 tuổi rồi.",
+        "zh":  "李老师今年多大了？他四十七岁了。",
+        "py":  "Lǐ lǎoshī jīnnián duō dà le? Tā sìshíqī suì le."
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Nhà bạn có mấy người? Bố mẹ bạn bao nhiêu tuổi rồi?",
+        "zh":  "你家有几口人？你爸爸妈妈多大了？",
+        "py":  "Nǐ jiā yǒu jǐ kǒu rén? Nǐ bàba māma duō dà le?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Giáo viên tiếng Hán của bạn là người nước nào?",
+        "zh":  "你的汉语老师是哪国人？",
+        "py":  "Nǐ de Hànyǔ lǎoshī shì nǎ guó rén?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Đây là con gái của cô Lý phải không? Em ấy mấy tuổi rồi?",
+        "zh":  "这是李老师的女儿吗？她几岁了？",
+        "py":  "Zhè shì Lǐ lǎoshī de nǚ\u0027ér ma? Tā jǐ suì le?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Nhà bạn học Mỹ của bạn có mấy người?",
+        "zh":  "你的美国同学家有几口人？",
+        "py":  "Nǐ de Měiguó tóngxué jiā yǒu jǐ kǒu rén?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Anh ấy có phải là bạn học của bạn không? Anh ấy bao nhiêu tuổi rồi?",
+        "zh":  "他是你的同学吗？他多大了？",
+        "py":  "Tā shì nǐ de tóngxué ma? Tā duō dà le?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Thầy Lý là người Trung Quốc. Thầy ấy có một con gái tên là Lý Nguyệt.",
+        "zh":  "李老师是中国人。他有一个女儿叫李月。",
+        "py":  "Lǐ lǎoshī shì Zhōngguó rén. Tā yǒu yí ge nǚ\u0027ér jiào Lǐ Yuè."
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Đây là giáo viên của Lý Nguyệt. Thầy ấy là người Mỹ.",
+        "zh":  "这是李月的老师。他是美国人。",
+        "py":  "Zhè shì Lǐ Yuè de lǎoshī. Tā shì Měiguó rén."
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Lý Nguyệt là bạn Trung Quốc của tôi. Cô ấy 20 tuổi rồi.",
+        "zh":  "李月是我的中国朋友。她二十岁了。",
+        "py":  "Lǐ Yuè shì wǒ de Zhōngguó péngyou. Tā èrshí suì le."
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Tôi có rất nhiều bạn Việt Nam, không có bạn Mỹ.",
+        "zh":  "我有很多越南朋友，没有美国朋友。",
+        "py":  "Wǒ yǒu hěn duō Yuènán péngyou, méiyǒu Měiguó péngyou."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Bạn có biết nói tiếng Hán không?",
+        "zh":  "你会说汉语吗？",
+        "py":  "Nǐ huì shuō Hànyǔ ma?"
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Tôi biết đọc chữ này, không biết viết.",
+        "zh":  "我会读这个字，不会写。",
+        "py":  "Wǒ huì dú zhège zì, bú huì xiě."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Bạn biết đọc tên tiếng Hán của cô ấy không?",
+        "zh":  "你会读她的汉语名字吗？",
+        "py":  "Nǐ huì dú tā de Hànyǔ míngzi ma?"
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Tên tiếng Hán của bạn đọc thế nào?",
+        "zh":  "你的汉语名字怎么读？",
+        "py":  "Nǐ de Hànyǔ míngzi zěnme dú?"
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Tôi không biết nấu món ăn Trung Quốc.",
+        "zh":  "我不会做中国菜。",
+        "py":  "Wǒ bú huì zuò Zhōngguó cài."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Mẹ tôi nói đồ ăn Mỹ không ngon.",
+        "zh":  "我妈妈说美国菜不好吃。",
+        "py":  "Wǒ māma shuō Měiguó cài bù hǎochī."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Bạn có tên tiếng Hán không? Bạn biết viết tên tiếng Hán của bạn không?",
+        "zh":  "你有汉语名字吗？你会写你的汉语名字吗？",
+        "py":  "Nǐ yǒu Hànyǔ míngzi ma? Nǐ huì xiě nǐ de Hànyǔ míngzi ma?"
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Đồ ăn Việt Nam rất ngon. Mẹ tôi biết nấu, tôi không biết nấu.",
+        "zh":  "越南菜很好吃。我妈妈会做，我不会做。",
+        "py":  "Yuènán cài hěn hǎochī. Wǒ māma huì zuò, wǒ bú huì zuò."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Lý Nguyệt biết nói tiếng Hán, cũng biết viết chữ Hán.",
+        "zh":  "李月会说汉语，也会写汉字。",
+        "py":  "Lǐ Yuè huì shuō Hànyǔ, yě huì xiě Hànzì."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Hôm qua thứ 2, tôi đến trường học viết chữ Hán.",
+        "zh":  "昨天星期一，我去学校学习写汉字。",
+        "py":  "Zuótiān xīngqī yī, wǒ qù xuéxiào xuéxí xiě Hànzì."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Xin hỏi, hôm nay ngày mấy tháng mấy?",
+        "zh":  "请问，今天几月几号？",
+        "py":  "Qǐngwèn, jīntiān jǐ yuè jǐ hào?"
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Thứ bảy bạn có đến trường không?",
+        "zh":  "星期六你去学校吗？",
+        "py":  "Xīngqīliù nǐ qù xuéxiào ma?"
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Hôm nay thứ 5, ngày 16 tháng 11.",
+        "zh":  "今天星期四，十一月十六号。",
+        "py":  "Jīntiān xīngqīsì, shíyī yuè shíliù hào."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Mai tôi đi Trung Quốc ăn đồ ăn Trung Quốc.",
+        "zh":  "明天我去中国吃中国菜。",
+        "py":  "Míngtiān wǒ qù Zhōngguó chī Zhōngguó cài."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Hôm qua chủ nhật, tôi không đến trường.",
+        "zh":  "昨天星期日，我没去学校。",
+        "py":  "Zuótiān xīngqīrì, wǒ méi qù xuéxiào."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Mai thứ 3, tôi đến trường học nấu đồ ăn Trung.",
+        "zh":  "明天星期二，我去学校学做中国菜。",
+        "py":  "Míngtiān xīngqī\u0027èr, wǒ qù xuéxiào xué zuò Zhōngguó cài."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Hôm nay bạn muốn ăn gì? – Tôi ăn cơm.",
+        "zh":  "今天你想吃什么？我吃米饭。",
+        "py":  "Jīntiān nǐ xiǎng chī shénme? Wǒ chī mǐfàn."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Chiều hôm qua bạn đi đâu? – Tôi đến cửa hàng Trung Quốc.",
+        "zh":  "昨天下午你去哪儿？我去中国商店。",
+        "py":  "Zuótiān xiàwǔ nǐ qù nǎr? Wǒ qù Zhōngguó shāngdiàn."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Chiều mai bạn đến trường phải không?",
+        "zh":  "明天下午你去学校吗？",
+        "py":  "Míngtiān xiàwǔ nǐ qù xuéxiào ma?"
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Hôm nay tôi đến cửa hàng mua 1 cái cốc.",
+        "zh":  "今天我去商店买一个杯子。",
+        "py":  "Jīntiān wǒ qù shāngdiàn mǎi yí ge bēizi."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Cái cốc đó bao nhiêu tiền (1 cái)?",
+        "zh":  "那个杯子多少钱一个？",
+        "py":  "Nàge bēizi duōshao qián yí ge?"
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Hôm nay tôi không muốn uống trà. Tôi uống cà phê.",
+        "zh":  "今天我不想喝茶。我想喝咖啡。",
+        "py":  "Jīntiān wǒ bù xiǎng hē chá. Wǒ xiǎng hē kāfēi."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Hôm nay thứ 7, tôi không đến trường.",
+        "zh":  "今天星期六，我不去学校。",
+        "py":  "Jīntiān xīngqīliù, wǒ bú qù xuéxiào."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Tôi muốn đến hiệu sách mua một quyển sách tiếng Trung.",
+        "zh":  "我想去书店买一本汉语书。",
+        "py":  "Wǒ xiǎng qù shūdiàn mǎi yì běn Hànyǔ shū."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Trên ghế có một con mèo nhỏ.",
+        "zh":  "椅子上有一只小猫。",
+        "py":  "Yǐzi shàng yǒu yì zhī xiǎo māo."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Con mèo của tôi ở dưới chiếc ghế kia.",
+        "zh":  "我的猫在那个椅子下面。",
+        "py":  "Wǒ de māo zài nàge yǐzi xiàmiàn."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Buổi chiều, tôi học tiếng Hán ở trường.",
+        "zh":  "下午，我在学校学习汉语。",
+        "py":  "Xiàwǔ, wǒ zài xuéxiào xuéxí Hànyǔ."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Anh ấy làm việc ở bệnh viện, anh ấy là bác sĩ.",
+        "zh":  "他在医院工作，他是医生。",
+        "py":  "Tā zài yīyuàn gōngzuò, tā shì yīshēng."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Con gái cô ấy làm việc ở cửa hàng Bắc Kinh.",
+        "zh":  "她女儿在北京的商店工作。",
+        "py":  "Tā nǚ\u0027ér zài Běijīng de shāngdiàn gōngzuò."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Bạn mua cái ghế này ở đâu thế?",
+        "zh":  "你在哪儿买这个椅子？",
+        "py":  "Nǐ zài nǎr mǎi zhège yǐzi?"
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Trên ghế có một quyển sách và 1 cái cốc.",
+        "zh":  "椅子上有一本书和一个杯子。",
+        "py":  "Yǐzi shàng yǒu yì běn shū hé yí ge bēizi."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Bố tôi là giáo viên. Ông ấy làm việc ở nhà.",
+        "zh":  "我爸爸是老师。他在家工作。",
+        "py":  "Wǒ bàba shì lǎoshī. Tā zài jiā gōngzuò."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Trên bàn không có máy tính.",
+        "zh":  "桌子上没有电脑。",
+        "py":  "Zhuōzi shàng méiyǒu diànnǎo."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Trên bàn có rất nhiều sách tiếng Trung.",
+        "zh":  "桌子上有很多汉语书。",
+        "py":  "Zhuōzi shàng yǒu hěn duō Hànyǔ shū."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Trong ngăn bàn có 1 cái cốc và 1 quyển sách tiếng Trung.",
+        "zh":  "桌子里有一个杯子和一本汉语书。",
+        "py":  "Zhuōzi lǐ yǒu yí ge bēizi hé yì běn Hànyǔ shū."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Người ở phía trước kia tên là gì vậy?",
+        "zh":  "前面那个人叫什么名字？",
+        "py":  "Qiánmiàn nàge rén jiào shénme míngzi?"
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Người ở phía sau kia là bạn cùng học của tôi. Cô ấy tên là Vương Phương.",
+        "zh":  "后面那个人是我的同学。她叫王方。",
+        "py":  "Hòumiàn nàge rén shì wǒ de tóngxué. Tā jiào Wáng Fāng."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Tạ Bằng là bác sỹ. Anh ấy làm việc tại nhà.",
+        "zh":  "谢朋是医生。他在家工作。",
+        "py":  "Xiè Péng shì yīshēng. Tā zài jiā gōngzuò."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Chỗ này không có người, tôi có thể ngồi đây không?",
+        "zh":  "这儿没有人，我能坐这儿吗？",
+        "py":  "Zhèr méiyǒu rén, wǒ néng zuò zhèr ma?"
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Phía trước bệnh viện có một cái cửa hàng.",
+        "zh":  "医院前面有一个商店。",
+        "py":  "Yīyuàn qiánmiàn yǒu yí ge shāngdiàn."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Phía sau trường học là một cái bệnh viện.",
+        "zh":  "学校后面是一个医院。",
+        "py":  "Xuéxiào hòumiàn shì yí ge yīyuàn."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Anh ấy làm việc ở bệnh viện. Bệnh viện ở phía sau trường học.",
+        "zh":  "他在医院工作。医院在学校后面。",
+        "py":  "Tā zài yīyuàn gōngzuò. Yīyuàn zài xuéxiào hòumiàn."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Bố và mẹ 5 giờ 15 chiều nay đi xem phim.",
+        "zh":  "今天下午五点一刻爸爸和妈妈去看电影。",
+        "py":  "Jīntiān xiàwǔ wǔ diǎn yí kè bàba hé māma qù kàn diànyǐng."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Bây giờ là 3h30 chiều.",
+        "zh":  "现在是下午三点半。",
+        "py":  "Xiànzài shì xiàwǔ sān diǎn bàn."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Buổi trưa tôi ăn cơm lúc 11h20.",
+        "zh":  "中午我十一点二十分吃饭。",
+        "py":  "Zhōngwǔ wǒ shíyī diǎn èrshí fēn chī fàn."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "David và tôi 9h15 sáng mai đi xem phim.",
+        "zh":  "明天上午九点一刻大卫和我去看电影。",
+        "py":  "Míngtiān shàngwǔ jiǔ diǎn yí kè Dàwèi hé wǒ qù kàn diànyǐng."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Tạ Bằng nói, anh ấy muốn ở Bắc Kinh 5 ngày.",
+        "zh":  "谢朋说，他想在北京住五天。",
+        "py":  "Xiè Péng shuō, tā xiǎng zài Běijīng zhù wǔ tiān."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Hôm nay mấy giờ cậu đến trường?",
+        "zh":  "今天你几点去学校？",
+        "py":  "Jīntiān nǐ jǐ diǎn qù xuéxiào?"
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Phim này không hay, tôi không muốn xem.",
+        "zh":  "这个电影不好看，我不想看。",
+        "py":  "Zhège diànyǐng bù hǎokàn, wǒ bù xiǎng kàn."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Hôm qua mấy giờ cậu học tiếng Trung?",
+        "zh":  "昨天你几点学习汉语？",
+        "py":  "Zuótiān nǐ jǐ diǎn xuéxí Hànyǔ?"
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Khi nào anh về nhà, trước thứ 6 có thể về không?",
+        "zh":  "你什么时候回家？星期五前能回来吗？",
+        "py":  "Nǐ shénme shíhou huí jiā? Xīngqīwǔ qián néng huílái ma?"
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Anh đi Bắc Kinh mấy ngày? Khi nào anh quay lại?",
+        "zh":  "你去北京几天？什么时候回来？",
+        "py":  "Nǐ qù Běijīng jǐ tiān? Shénme shíhou huílái?"
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Trước khi học tiếng Trung, tôi rất thích xem phim Trung Quốc.",
+        "zh":  "学习汉语前，我很喜欢看中国电影。",
+        "py":  "Xuéxí Hànyǔ qián, wǒ hěn xǐhuan kàn Zhōngguó diànyǐng."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Bạn muốn bao giờ đi Mỹ học tiếng Anh?",
+        "zh":  "你想什么时候去美国学习英语？",
+        "py":  "Nǐ xiǎng shénme shíhou qù Měiguó xuéxí Yīngyǔ?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Hôm qua thời tiết không đẹp lắm, chiều có mưa.",
+        "zh":  "昨天天气不太好，下午下雨了。",
+        "py":  "Zuótiān tiānqì bú tài hǎo, xiàwǔ xià yǔ le."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bạn muốn mua gì cho Vương Phương?",
+        "zh":  "你想给王方买什么？",
+        "py":  "Nǐ xiǎng gěi Wáng Fāng mǎi shénme?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Hôm nay thời tiết rất đẹp, không nóng cũng không lạnh.",
+        "zh":  "今天天气很好，不热也不冷。",
+        "py":  "Jīntiān tiānqì hěn hǎo, bú rè yě bù lěng."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Chủ nhật thời tiết sẽ rất lạnh đấy.",
+        "zh":  "星期日天气会很冷。",
+        "py":  "Xīngqīrì tiānqì huì hěn lěng."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Hôm nay David sẽ không đến đâu.",
+        "zh":  "今天大卫不会来。",
+        "py":  "Jīntiān Dàwèi bú huì lái."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Trời nóng quá, tôi không muốn ăn cơm.",
+        "zh":  "太热了，我不想吃米饭。",
+        "py":  "Tài rè le, wǒ bù xiǎng chī mǐfàn."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bố anh ấy sức khoẻ không tốt lắm. Hiện giờ ông ấy đang ở viện.",
+        "zh":  "他爸爸身体不太好。现在他在医院。",
+        "py":  "Tā bàba shēntǐ bú tài hǎo. Xiànzài tā zài yīyuàn."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bạn ăn nhiều hoa quả, uống nhiều nước nhé.",
+        "zh":  "你多吃些水果，多喝水吧。",
+        "py":  "Nǐ duō chī xiē shuǐguǒ, duō hē shuǐ ba."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Trước khi ngủ, tôi thích xem phim.",
+        "zh":  "睡觉前，我喜欢看电影。",
+        "py":  "Shuìjiào qián, wǒ xǐhuan kàn diànyǐng."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Hôm nay lạnh quá. Sau khi ăn xong, tôi muốn uống một cốc cà phê nóng.",
+        "zh":  "今天太冷了。吃饭后，我想喝一杯热咖啡。",
+        "py":  "Jīntiān tài lěng le. Chī fàn hòu, wǒ xiǎng hē yì bēi rè kāfēi."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Số điện thoại của cô Lý là...",
+        "zh":  "李老师的电话是……",
+        "py":  "Lǐ lǎoshī de diànhuà shì……"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bạn đang làm gì vậy?",
+        "zh":  "你在做什么呢？",
+        "py":  "Nǐ zài zuò shénme ne?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bạn đang gọi điện thoại cho ai thế?",
+        "zh":  "你在给谁打电话呢？",
+        "py":  "Nǐ zài gěi shéi dǎ diànhuà ne?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Mai mấy giờ cậu đến bệnh viện?",
+        "zh":  "明天你几点去医院？",
+        "py":  "Míngtiān nǐ jǐ diǎn qù yīyuàn?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Sau khi về nhà, tôi gọi điện thoại cho Ms Vương.",
+        "zh":  "回家后，我给王小姐打电话。",
+        "py":  "Huí jiā hòu, wǒ gěi Wáng xiǎojiě dǎ diànhuà."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Alo, đây có phải là điện thoại của Lý Nguyệt không?",
+        "zh":  "喂，这是李月的电话吗？",
+        "py":  "Wèi, zhè shì Lǐ Yuè de diànhuà ma?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Anh ấy đang học nấu món ăn Trung Quốc.",
+        "zh":  "他在学做中国菜呢。",
+        "py":  "Tā zài xué zuò Zhōngguó cài ne."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bộ quần áo này đẹp quá, cậu mua nó ở đâu thế?",
+        "zh":  "这件衣服太漂亮了，你在哪儿买的？",
+        "py":  "Zhè jiàn yīfu tài piàoliang le, nǐ zài nǎr mǎi de?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Những quyển sách này là của Vương Phương phải không?",
+        "zh":  "这些书是王方的吗？",
+        "py":  "Zhèxiē shū shì Wáng Fāng de ma?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bạn có nhìn thấy máy tính của tôi ở đâu không ?",
+        "zh":  "你看见我的电脑在哪儿了吗？",
+        "py":  "Nǐ kànjiàn wǒ de diànnǎo zài nǎr le ma?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bạn có nhìn thấy thầy Lý không?",
+        "zh":  "你看见李老师了吗？",
+        "py":  "Nǐ kànjiàn Lǐ lǎoshī le ma?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi hôm nay chưa nhìn thấy thầy giáo Vương đâu cả.",
+        "zh":  "今天我没看见王老师。",
+        "py":  "Jīntiān wǒ méi kànjiàn Wáng lǎoshī."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi thích ăn cơm cùng người nhà.",
+        "zh":  "我喜欢和家人一起吃饭。",
+        "py":  "Wǒ xǐhuan hé jiārén yìqǐ chī fàn."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi và Tạ Bằng cùng đến đây học lái xe.",
+        "zh":  "我和谢朋一起来这儿学开车。",
+        "py":  "Wǒ hé Xiè Péng yìqǐ lái zhèr xué kāi chē."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi không nhìn thấy cái máy tính của tôi đâu, cậu có thấy không?",
+        "zh":  "我没看见我的电脑，你看见了吗？",
+        "py":  "Wǒ méi kànjiàn wǒ de diànnǎo, nǐ kànjiàn le ma?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi muốn đi cửa hàng mua cho bố mẹ tôi một ít đồ.",
+        "zh":  "我想去商店给爸爸妈妈买一些东西。",
+        "py":  "Wǒ xiǎng qù shāngdiàn gěi bàba māma mǎi yìxiē dōngxi."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Cậu mua cho ai những chiếc cốc này ?",
+        "zh":  "你给谁买这些杯子？",
+        "py":  "Nǐ gěi shéi mǎi zhèxiē bēizi?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Mấy giờ bạn đi máy bay đến Bắc Kinh vậy?",
+        "zh":  "你几点坐飞机去北京？",
+        "py":  "Nǐ jǐ diǎn zuò fēijī qù Běijīng?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bố tôi rất thích uống trà Trung Quốc. Mai tôi đi cửa hàng mua cho ông ấy một ít.",
+        "zh":  "我爸爸很喜欢喝中国茶。明天我去商店给他买一些。",
+        "py":  "Wǒ bàba hěn xǐhuan hē Zhōngguó chá. Míngtiān wǒ qù shāngdiàn gěi tā mǎi yìxiē."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bạn và anh ấy quen nhau từ bao giờ thế?",
+        "zh":  "你和他是什么时候认识的？",
+        "py":  "Nǐ hé tā shì shénme shíhou rènshi de?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Sáng nay mình mua bộ quần áo này ở cửa hàng đó.",
+        "zh":  "这件衣服是我今天上午在那个商店买的。",
+        "py":  "Zhè jiàn yīfu shì wǒ jīntiān shàngwǔ zài nàge shāngdiàn mǎi de."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Chiều nay tôi đã gọi điện thoại cho mẹ tôi rồi.",
+        "zh":  "今天下午我给妈妈打电话了。",
+        "py":  "Jīntiān xiàwǔ wǒ gěi māma dǎ diànhuà le."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Anh ấy nói anh ấy đến bệnh viện, 20 phút nữa sẽ quay lại.",
+        "zh":  "他说他去医院，二十分钟后回来。",
+        "py":  "Tā shuō tā qù yīyuàn, èrshí fēnzhōng hòu huílái."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "2 ngày trước tôi đi máy bay tới Bắc Kinh chứ không phải đi taxi.",
+        "zh":  "两天前我是坐飞机去北京的，不是坐出租车。",
+        "py":  "Liǎng tiān qián wǒ shì zuò fēijī qù Běijīng de, bú shì zuò chūzūchē."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Thầy Vương có một con gái tên là Vương Phương, cô ấy rất xinh.",
+        "zh":  "王老师有一个女儿叫王方，她很漂亮。",
+        "py":  "Wáng lǎoshī yǒu yí ge nǚ\u0027ér jiào Wáng Fāng, tā hěn piàoliang."
+    }
+]

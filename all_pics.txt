@@ -1,0 +1,329 @@
+﻿========================================
+    <article class="pic-card" id="card-pic1">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 1: Uống nước dưới trời nắng nóng (35°C)</span>
+        <span class="pic-tag">Chủ đề: Thời tiết & Đồ uống</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic1.jpg" alt="Tranh 1: Uống nước dưới trời nóng">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-1">
+          今天天气很热，现在是三十五度。她在外面。她觉得很热。她想喝水。你看，她正在喝水。她今天没有去学校。
+        </div>
+        <div class="pic-py-box" id="ppy-1">
+          Jīntiān tiānqì hěn rè, xiànzài shì sānshíwǔ dù. Tā zài wàimiàn. Tā juéde hěn rè. Tā xiǎng hē shuǐ. Nǐ kàn, tā zhèngzài hē shuǐ. Tā jīntiān méiyǒu qù xuéxiào.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Hôm nay thời tiết rất nóng, bây giờ là 35 độ. Cô ấy ở bên ngoài. Cô ấy cảm thấy rất nóng. Cô ấy muốn uống nước. Bạn xem, cô ấy đang uống nước. Hôm nay cô ấy không đi học.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">今天 (hôm nay)</span>
+          <span class="vocab-pill">天气 (thời tiết)</span>
+          <span class="vocab-pill">很热 (rất nóng)</span>
+          <span class="vocab-pill">喝水 (uống nước)</span>
+          <span class="vocab-pill">学校 (trường học)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('今天天气很热，现在是三十五度。她在外面。她觉得很热。她想喝水。你看，她正在喝水。她今天没有去学校。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(1)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-1">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card" id="card-pic2">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 2: Mua táo ở siêu thị / cửa hàng</span>
+        <span class="pic-tag">Chủ đề: Mua sắm & Hoa quả</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic2.jpg" alt="Tranh 2: Mua táo ở cửa hàng">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-2">
+          下午她去商店买东西。这儿有很多苹果。苹果很红，也很大。她很喜欢吃苹果。她想买几个苹果给她的妈妈。
+        </div>
+        <div class="pic-py-box" id="ppy-2">
+          Xiàwǔ tā qù shāngdiàn mǎi dōngxi. Zhèr yǒu hěn duō píngguǒ. Píngguǒ hěn hóng, yě hěn dà. Tā hěn xǐhuan chī píngguǒ. Tā xiǎng mǎi jǐ ge píngguǒ gěi tā de māma.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Buổi chiều cô ấy đi cửa hàng mua đồ. Ở đây có rất nhiều táo. Táo rất đỏ, cũng rất to. Cô ấy rất thích ăn táo. Cô ấy muốn mua vài quả táo cho mẹ cô ấy.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">下午 (buổi chiều)</span>
+          <span class="vocab-pill">商店 (cửa hàng)</span>
+          <span class="vocab-pill">买东西 (mua đồ)</span>
+          <span class="vocab-pill">苹果 (táo)</span>
+          <span class="vocab-pill">很红 (rất đỏ)</span>
+          <span class="vocab-pill">很大 (rất to)</span>
+          <span class="vocab-pill">妈妈 (mẹ)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('下午她去商店买东西。这儿有很多苹果。苹果很红，也很大。她很喜欢吃苹果。她想买几个苹果给她的妈妈。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(2)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-2">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card" id="card-pic3">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 3: Nấu ăn trong bếp</span>
+        <span class="pic-tag">Chủ đề: Nấu ăn & Bạn bè</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic3.jpg" alt="Tranh 3: Nấu ăn trong bếp">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-3">
+          她在家里做饭。她很喜欢做菜，她做的中国菜很好吃。前面有很多菜。今天她想请朋友来家里吃饭。
+        </div>
+        <div class="pic-py-box" id="ppy-3">
+          Tā zài jiālǐ zuò fàn. Tā hěn xǐhuan zuò cài, tā zuò de Zhōngguó cài hěn hǎochī. Qiánmiàn yǒu hěn duō cài. Jīntiān tā xiǎng qǐng péngyou lái jiālǐ chī fàn.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Cô ấy đang nấu ăn ở nhà. Cô ấy rất thích nấu ăn, món ăn Trung Quốc cô ấy làm rất ngon. Phía trước có rất nhiều rau củ. Hôm nay cô ấy muốn mời bạn bè đến nhà ăn cơm.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">家里 (trong nhà)</span>
+          <span class="vocab-pill">做饭 (nấu cơm)</span>
+          <span class="vocab-pill">中国菜 (món Trung Quốc)</span>
+          <span class="vocab-pill">好吃 (ngon)</span>
+          <span class="vocab-pill">朋友 (bạn bè)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('她在家里做饭。她很喜欢做菜，她做的中国菜很好吃。前面有很多菜。今天她想请朋友来家里吃饭。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(3)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-3">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card" id="card-pic4">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 4 (Hình 6): Đọc sách trong thư viện</span>
+        <span class="pic-tag">Chủ đề: Học tập & Sách</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic4.jpg" alt="Tranh 4: Đọc sách thư viện">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-4">
+          今天星期一，她在图书馆看书。桌子上有很多书。她看的是一本汉语书。她学习汉语。她是一个好学生。
+        </div>
+        <div class="pic-py-box" id="ppy-4">
+          Jīntiān xīngqī yī, tā zài túshūguǎn kàn shū. Zhuōzi shàng yǒu hěn duō shū. Tā kàn de shì yì běn Hànyǔ shū. Tā xuéxí Hànyǔ. Tā shì yí ge hǎo xuésheng.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Hôm nay là thứ Hai, cô ấy đọc sách ở thư viện. Trên bàn có rất nhiều sách. Cuốn sách cô ấy đọc là một cuốn sách tiếng Trung. Cô ấy học tiếng Trung. Cô ấy là một học sinh giỏi.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">星期一 (thứ Hai)</span>
+          <span class="vocab-pill">看书 (đọc sách)</span>
+          <span class="vocab-pill">桌子上 (trên bàn)</span>
+          <span class="vocab-pill">汉语书 (sách tiếng Trung)</span>
+          <span class="vocab-pill">好学生 (học sinh tốt)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('今天星期一，她在图书馆看书。桌子上有很多书。她看的是一本汉语书。她学习汉语。她是一个好学生。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(4)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-4">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card" id="card-pic5">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 5 (Hình 7): Ngồi taxi buổi sáng lúc 7:00</span>
+        <span class="pic-tag">Chủ đề: Đi lại & Thời gian</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic5.jpg" alt="Tranh 5: Đi taxi buổi sáng 7h">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-5">
+          现在是上午七点。她坐出租车去学校。今天天气很好。她在出租车里面。她很高兴。
+        </div>
+        <div class="pic-py-box" id="ppy-5">
+          Xiànzài shì shàngwǔ qī diǎn. Tā zuò chūzūchē qù xuéxiào. Jīntiān tiānqì hěn hǎo. Tā zài chūzūchē lǐmiàn. Tā hěn gāoxìng.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Bây giờ là 7 giờ sáng. Cô ấy đi xe taxi đến trường. Hôm nay thời tiết rất đẹp. Cô ấy đang ở trong xe taxi. Cô ấy rất vui.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">上午七点 (7 giờ sáng)</span>
+          <span class="vocab-pill">坐出租车 (đi taxi)</span>
+          <span class="vocab-pill">去学校 (đến trường)</span>
+          <span class="vocab-pill">天气很好 (thời tiết đẹp)</span>
+          <span class="vocab-pill">很高兴 (rất vui)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('现在是上午七点。她坐出租车去学校。今天天气很好。她在出租车里面。她很高兴。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(5)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-5">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card" id="card-pic6">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 6 (Hình 10): Lái xe ngày 26 tháng 10 lúc 14:30</span>
+        <span class="pic-tag">Chủ đề: Lái xe, Ngày tháng, Bệnh viện</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic6.jpg" alt="Tranh 6: Lái xe 26/10 14:30">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-6">
+          今天是十月二十六号，下午两点半。他会开车。他现在在开车。他想去医院看一个好朋友。
+        </div>
+        <div class="pic-py-box" id="ppy-6">
+          Jīntiān shì shí yuè èrshíliù hào, xiàwǔ liǎng diǎn bàn. Tā huì kāi chē. Tā xiànzài zài kāi chē. Tā xiǎng qù yīyuàn kàn yí ge hǎo péngyou.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Hôm nay là ngày 26 tháng 10, 2 giờ 30 chiều. Anh ấy biết lái xe. Bây giờ anh ấy đang lái xe. Anh ấy muốn đi bệnh viện thăm một người bạn tốt.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">十月二十六号 (ngày 26/10)</span>
+          <span class="vocab-pill">下午两点半 (2:30 chiều)</span>
+          <span class="vocab-pill">开车 (lái xe)</span>
+          <span class="vocab-pill">医院 (bệnh viện)</span>
+          <span class="vocab-pill">好朋友 (bạn tốt)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('今天是十月二十六号，下午两点半。他会开车。他现在在开车。他想去医院看一个好朋友。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(6)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-6">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card" id="card-pic7">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 7 (Hình 12): Đang ngủ lúc 11:00 đêm</span>
+        <span class="pic-tag">Chủ đề: Đi ngủ & Đồng hồ</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic7.jpg" alt="Tranh 7: Đi ngủ lúc 11h đêm">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-7">
+          现在是晚上十一点了。她在睡觉。明天她要去学校，所以她十一点睡觉。晚安。
+        </div>
+        <div class="pic-py-box" id="ppy-7">
+          Xiànzài shì wǎnshang shíyī diǎn le. Tā zài shuìjiào. Míngtiān tā yào qù xuéxiào, suǒyǐ tā shíyī diǎn shuìjiào. Wǎn ān.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Bây giờ là 11 giờ tối rồi. Cô ấy đang ngủ. Ngày mai cô ấy phải đến trường, vì vậy cô ấy ngủ lúc 11 giờ. Ngủ ngon.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">晚上十一点 (11 giờ tối)</span>
+          <span class="vocab-pill">睡觉 (đi ngủ)</span>
+          <span class="vocab-pill">明天 (ngày mai)</span>
+          <span class="vocab-pill">晚安 (ngủ ngon)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('现在是晚上十一点了。她在睡觉。明天她要去学校，所以她十一点睡觉。晚安。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(7)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-7">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card">
+      <div class="pic-header">
+        <span class="badge-title">📌 Hình 14 & 15: Mua áo hồng giá 10 đồng</span>
+        <span class="pic-tag">Chủ đề: Mua sắm quần áo & Giá cả</span>
+      </div>
+      <div class="pic-img-wrap" style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+        <img src="images/pic14.jpg" alt="Hình 14" style="max-height:260px;">
+        <img src="images/pic15.jpg" alt="Hình 15" style="max-height:260px;">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box">
+          她在商店买衣服。这件衣服太漂亮了。这件衣服十块钱。
+        </div>
+        <div class="pic-py-box">
+          Tā zài shāngdiàn mǎi yīfu. Zhè jiàn yīfu tài piàoliang le. Zhè jiàn yīfu shí kuài qián.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Cô ấy đang mua quần áo ở cửa hàng. Chiếc áo này đẹp quá. Chiếc áo này có giá 10 đồng.
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('她在商店买衣服。这件衣服太漂亮了。这件衣服十块钱。')">🔊 Nghe đọc mẫu</button>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card">
+      <div class="pic-header">
+        <span class="badge-title">📌 Hình 16: Học bài bằng máy tính ở nhà</span>
+        <span class="pic-tag">Chủ đề: Máy tính & Học tập</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic16.jpg" alt="Hình 16" style="max-height:280px;">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box">
+          她在家里用电脑学习汉语。桌子上有一本书和一个杯子。
+        </div>
+        <div class="pic-py-box">
+          Tā zài jiālǐ yòng diànnǎo xuéxí Hànyǔ. Zhuōzi shàng yǒu yì běn shū hé yí ge bēizi.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Cô ấy ở nhà dùng máy tính học tiếng Trung. Trên bàn có một quyển sách và một chiếc cốc.
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('她在家里用电脑学习汉语。桌子上有一本书和一个杯子。')">🔊 Nghe đọc mẫu</button>
+        </div>
+      </div>
+    </article>
+
+========================================
+    <article class="pic-card">
+      <div class="pic-header">
+        <span class="badge-title">📌 Hình 18: Bác sĩ và Thầy giáo</span>
+        <span class="pic-tag">Chủ đề: Nghề nghiệp & Nơi làm việc</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic18.jpg" alt="Hình 18">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box">
+          她是医生，她在医院工作。他是老师，他在学校教书。
+        </div>
+        <div class="pic-py-box">
+          Tā shì yīshēng, tā zài yīyuàn gōngzuò. Tā shì lǎoshī, tā zài xuéxiào jiāoshū.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Cô ấy là bác sĩ, làm việc ở bệnh viện. Anh ấy là giáo viên, giảng dạy ở trường học.
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('她是医生，她在医院工作。他是老师，他在学校工作。')">🔊 Nghe đọc mẫu</button>
+        </div>
+      </div>
+    </article>
+

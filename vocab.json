@@ -1,0 +1,902 @@
+﻿[
+    {
+        "zh":  "我",
+        "py":  "wǒ",
+        "cat":  "Đại từ",
+        "vn":  "tôi, mình"
+    },
+    {
+        "zh":  "你",
+        "py":  "nǐ",
+        "cat":  "Đại từ",
+        "vn":  "bạn, anh, chị"
+    },
+    {
+        "zh":  "他",
+        "py":  "tā",
+        "cat":  "Đại từ",
+        "vn":  "anh ấy, ông ấy"
+    },
+    {
+        "zh":  "她",
+        "py":  "tā",
+        "cat":  "Đại từ",
+        "vn":  "cô ấy, bà ấy"
+    },
+    {
+        "zh":  "我们",
+        "py":  "wǒmen",
+        "cat":  "Đại từ",
+        "vn":  "chúng tôi, chúng ta"
+    },
+    {
+        "zh":  "这 (这儿)",
+        "py":  "zhè (zhèr)",
+        "cat":  "Đại từ",
+        "vn":  "đây, này (ở đây)"
+    },
+    {
+        "zh":  "那 (那儿)",
+        "py":  "nà (nàr)",
+        "cat":  "Đại từ",
+        "vn":  "kia, đó (ở kia, ở đó)"
+    },
+    {
+        "zh":  "哪 (哪儿)",
+        "py":  "nǎ (nǎr)",
+        "cat":  "Đại từ",
+        "vn":  "nào (ở đâu)"
+    },
+    {
+        "zh":  "谁",
+        "py":  "shéi",
+        "cat":  "Đại từ",
+        "vn":  "ai"
+    },
+    {
+        "zh":  "什么",
+        "py":  "shénme",
+        "cat":  "Đại từ",
+        "vn":  "cái gì"
+    },
+    {
+        "zh":  "多少",
+        "py":  "duōshao",
+        "cat":  "Đại từ",
+        "vn":  "bao nhiêu"
+    },
+    {
+        "zh":  "几",
+        "py":  "jǐ",
+        "cat":  "Đại từ",
+        "vn":  "mấy"
+    },
+    {
+        "zh":  "怎么",
+        "py":  "zěnme",
+        "cat":  "Đại từ",
+        "vn":  "làm sao, thế nào"
+    },
+    {
+        "zh":  "怎么样",
+        "py":  "zěnmeyàng",
+        "cat":  "Đại từ",
+        "vn":  "như thế nào, ra sao"
+    },
+    {
+        "zh":  "爸爸",
+        "py":  "bàba",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "bố, ba"
+    },
+    {
+        "zh":  "妈妈",
+        "py":  "māma",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "mẹ, má"
+    },
+    {
+        "zh":  "儿子",
+        "py":  "érzi",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "con trai"
+    },
+    {
+        "zh":  "女儿",
+        "py":  "nǚ\u0027ér",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "con gái"
+    },
+    {
+        "zh":  "老师",
+        "py":  "lǎoshī",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "thầy giáo, cô giáo"
+    },
+    {
+        "zh":  "学生",
+        "py":  "xuésheng",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "học sinh, sinh viên"
+    },
+    {
+        "zh":  "同学",
+        "py":  "tóngxué",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "bạn học"
+    },
+    {
+        "zh":  "朋友",
+        "py":  "péngyou",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "bạn bè"
+    },
+    {
+        "zh":  "医生",
+        "py":  "yīshēng",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "bác sĩ"
+    },
+    {
+        "zh":  "先生",
+        "py":  "xiānsheng",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "ngài, ông, thầy, chồng"
+    },
+    {
+        "zh":  "小姐",
+        "py":  "xiǎojiě",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "cô, tiểu thư"
+    },
+    {
+        "zh":  "今天",
+        "py":  "jīntiān",
+        "cat":  "Thời gian",
+        "vn":  "hôm nay"
+    },
+    {
+        "zh":  "明天",
+        "py":  "míngtiān",
+        "cat":  "Thời gian",
+        "vn":  "ngày mai"
+    },
+    {
+        "zh":  "昨天",
+        "py":  "zuótiān",
+        "cat":  "Thời gian",
+        "vn":  "hôm qua"
+    },
+    {
+        "zh":  "上午",
+        "py":  "shàngwǔ",
+        "cat":  "Thời gian",
+        "vn":  "buổi sáng"
+    },
+    {
+        "zh":  "中午",
+        "py":  "zhōngwǔ",
+        "cat":  "Thời gian",
+        "vn":  "buổi trưa"
+    },
+    {
+        "zh":  "下午",
+        "py":  "xiàwǔ",
+        "cat":  "Thời gian",
+        "vn":  "buổi chiều"
+    },
+    {
+        "zh":  "年",
+        "py":  "nián",
+        "cat":  "Thời gian",
+        "vn":  "năm"
+    },
+    {
+        "zh":  "月",
+        "py":  "yuè",
+        "cat":  "Thời gian",
+        "vn":  "tháng"
+    },
+    {
+        "zh":  "日 / 号",
+        "py":  "rì / hào",
+        "cat":  "Thời gian",
+        "vn":  "ngày"
+    },
+    {
+        "zh":  "星期",
+        "py":  "xīngqī",
+        "cat":  "Thời gian",
+        "vn":  "tuần, thứ"
+    },
+    {
+        "zh":  "点",
+        "py":  "diǎn",
+        "cat":  "Thời gian",
+        "vn":  "giờ"
+    },
+    {
+        "zh":  "分钟",
+        "py":  "fēnzhōng",
+        "cat":  "Thời gian",
+        "vn":  "phút"
+    },
+    {
+        "zh":  "现在",
+        "py":  "xiànzài",
+        "cat":  "Thời gian",
+        "vn":  "bây giờ, hiện tại"
+    },
+    {
+        "zh":  "时候",
+        "py":  "shíhou",
+        "cat":  "Thời gian",
+        "vn":  "lúc, khi"
+    },
+    {
+        "zh":  "中国",
+        "py":  "Zhōngguó",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "Trung Quốc"
+    },
+    {
+        "zh":  "北京",
+        "py":  "Běijīng",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "Bắc Kinh"
+    },
+    {
+        "zh":  "学校",
+        "py":  "xuéxiào",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "trường học"
+    },
+    {
+        "zh":  "医院",
+        "py":  "yīyuàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "bệnh viện"
+    },
+    {
+        "zh":  "商店",
+        "py":  "shāngdiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "cửa hàng"
+    },
+    {
+        "zh":  "饭店",
+        "py":  "fàndiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "nhà hàng, khách sạn"
+    },
+    {
+        "zh":  "火车站",
+        "py":  "huǒchēzhàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "ga tàu hỏa"
+    },
+    {
+        "zh":  "家",
+        "py":  "jiā",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "nhà, gia đình"
+    },
+    {
+        "zh":  "前面",
+        "py":  "qiánmiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "phía trước"
+    },
+    {
+        "zh":  "后面",
+        "py":  "hòumiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "phía sau"
+    },
+    {
+        "zh":  "上面",
+        "py":  "shàngmiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "phía trên"
+    },
+    {
+        "zh":  "下面 (里)",
+        "py":  "xiàmiàn (lǐ)",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "phía dưới (bên trong)"
+    },
+    {
+        "zh":  "水",
+        "py":  "shuǐ",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "nước"
+    },
+    {
+        "zh":  "茶",
+        "py":  "chá",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "trà, chè"
+    },
+    {
+        "zh":  "杯子",
+        "py":  "bēizi",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "cái cốc, tách"
+    },
+    {
+        "zh":  "菜",
+        "py":  "cài",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "món ăn, rau"
+    },
+    {
+        "zh":  "米饭",
+        "py":  "mǐfàn",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "cơm"
+    },
+    {
+        "zh":  "水果",
+        "py":  "shuǐguǒ",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "trái cây, hoa quả"
+    },
+    {
+        "zh":  "苹果",
+        "py":  "píngguǒ",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "quả táo"
+    },
+    {
+        "zh":  "钱",
+        "py":  "qián",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "tiền"
+    },
+    {
+        "zh":  "飞机",
+        "py":  "fēijī",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "máy bay"
+    },
+    {
+        "zh":  "出租车",
+        "py":  "chūzūchē",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "xe taxi"
+    },
+    {
+        "zh":  "电视",
+        "py":  "diànshì",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "tivi, truyền hình"
+    },
+    {
+        "zh":  "电脑",
+        "py":  "diànnǎo",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "máy tính"
+    },
+    {
+        "zh":  "电影",
+        "py":  "diànyǐng",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "phim điện ảnh"
+    },
+    {
+        "zh":  "天气",
+        "py":  "tiānqì",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "thời tiết"
+    },
+    {
+        "zh":  "猫",
+        "py":  "māo",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "con mèo"
+    },
+    {
+        "zh":  "狗",
+        "py":  "gǒu",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "con chó"
+    },
+    {
+        "zh":  "东西",
+        "py":  "dōngxi",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "đồ vật, đồ đạc"
+    },
+    {
+        "zh":  "书",
+        "py":  "shū",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "sách"
+    },
+    {
+        "zh":  "桌子",
+        "py":  "zhuōzi",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "cái bàn"
+    },
+    {
+        "zh":  "椅子",
+        "py":  "yǐzi",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "cái ghế"
+    },
+    {
+        "zh":  "是",
+        "py":  "shì",
+        "cat":  "Động từ",
+        "vn":  "là, phải"
+    },
+    {
+        "zh":  "有",
+        "py":  "yǒu",
+        "cat":  "Động từ",
+        "vn":  "có"
+    },
+    {
+        "zh":  "看",
+        "py":  "kàn",
+        "cat":  "Động từ",
+        "vn":  "nhìn, xem, đọc"
+    },
+    {
+        "zh":  "听",
+        "py":  "tīng",
+        "cat":  "Động từ",
+        "vn":  "nghe"
+    },
+    {
+        "zh":  "说话",
+        "py":  "shuōhuà",
+        "cat":  "Động từ",
+        "vn":  "nói chuyện"
+    },
+    {
+        "zh":  "读",
+        "py":  "dú",
+        "cat":  "Động từ",
+        "vn":  "đọc"
+    },
+    {
+        "zh":  "写",
+        "py":  "xiě",
+        "cat":  "Động từ",
+        "vn":  "viết"
+    },
+    {
+        "zh":  "看见",
+        "py":  "kànjiàn",
+        "cat":  "Động từ",
+        "vn":  "nhìn thấy"
+    },
+    {
+        "zh":  "叫",
+        "py":  "jiào",
+        "cat":  "Động từ",
+        "vn":  "gọi, tên là"
+    },
+    {
+        "zh":  "来",
+        "py":  "lái",
+        "cat":  "Động từ",
+        "vn":  "đến, tới"
+    },
+    {
+        "zh":  "回",
+        "py":  "huí",
+        "cat":  "Động từ",
+        "vn":  "về, quay lại"
+    },
+    {
+        "zh":  "去",
+        "py":  "qù",
+        "cat":  "Động từ",
+        "vn":  "đi"
+    },
+    {
+        "zh":  "吃",
+        "py":  "chī",
+        "cat":  "Động từ",
+        "vn":  "ăn"
+    },
+    {
+        "zh":  "喝",
+        "py":  "hē",
+        "cat":  "Động từ",
+        "vn":  "uống"
+    },
+    {
+        "zh":  "睡觉",
+        "py":  "shuìjiào",
+        "cat":  "Động từ",
+        "vn":  "đi ngủ"
+    },
+    {
+        "zh":  "打电话",
+        "py":  "dǎ diànhuà",
+        "cat":  "Động từ",
+        "vn":  "gọi điện thoại"
+    },
+    {
+        "zh":  "做",
+        "py":  "zuò",
+        "cat":  "Động từ",
+        "vn":  "làm, nấu"
+    },
+    {
+        "zh":  "买",
+        "py":  "mǎi",
+        "cat":  "Động từ",
+        "vn":  "mua"
+    },
+    {
+        "zh":  "开",
+        "py":  "kāi",
+        "cat":  "Động từ",
+        "vn":  "mở, lái (xe)"
+    },
+    {
+        "zh":  "坐",
+        "py":  "zuò",
+        "cat":  "Động từ",
+        "vn":  "ngồi, đi (xe)"
+    },
+    {
+        "zh":  "住",
+        "py":  "zhù",
+        "cat":  "Động từ",
+        "vn":  "ở, sinh sống"
+    },
+    {
+        "zh":  "学习",
+        "py":  "xuéxí",
+        "cat":  "Động từ",
+        "vn":  "học tập"
+    },
+    {
+        "zh":  "工作",
+        "py":  "gōngzuò",
+        "cat":  "Động từ",
+        "vn":  "làm việc, công tác"
+    },
+    {
+        "zh":  "下雨",
+        "py":  "xià yǔ",
+        "cat":  "Động từ",
+        "vn":  "trời mưa"
+    },
+    {
+        "zh":  "想",
+        "py":  "xiǎng",
+        "cat":  "Động từ",
+        "vn":  "muốn, nhớ, nghĩ"
+    },
+    {
+        "zh":  "会",
+        "py":  "huì",
+        "cat":  "Động từ",
+        "vn":  "biết (do học), sẽ"
+    },
+    {
+        "zh":  "能",
+        "py":  "néng",
+        "cat":  "Động từ",
+        "vn":  "có thể"
+    },
+    {
+        "zh":  "爱",
+        "py":  "ài",
+        "cat":  "Động từ",
+        "vn":  "yêu, thích"
+    },
+    {
+        "zh":  "喜欢",
+        "py":  "xǐhuan",
+        "cat":  "Động từ",
+        "vn":  "thích"
+    },
+    {
+        "zh":  "认识",
+        "py":  "rènshi",
+        "cat":  "Động từ",
+        "vn":  "quen biết"
+    },
+    {
+        "zh":  "好",
+        "py":  "hǎo",
+        "cat":  "Tính từ",
+        "vn":  "tốt, đẹp, khỏe"
+    },
+    {
+        "zh":  "大",
+        "py":  "dà",
+        "cat":  "Tính từ",
+        "vn":  "to, lớn"
+    },
+    {
+        "zh":  "小",
+        "py":  "xiǎo",
+        "cat":  "Tính từ",
+        "vn":  "nhỏ, bé"
+    },
+    {
+        "zh":  "多",
+        "py":  "duō",
+        "cat":  "Tính từ",
+        "vn":  "nhiều"
+    },
+    {
+        "zh":  "少",
+        "py":  "shǎo",
+        "cat":  "Tính từ",
+        "vn":  "ít"
+    },
+    {
+        "zh":  "冷",
+        "py":  "lěng",
+        "cat":  "Tính từ",
+        "vn":  "lạnh"
+    },
+    {
+        "zh":  "热",
+        "py":  "rè",
+        "cat":  "Tính từ",
+        "vn":  "nóng"
+    },
+    {
+        "zh":  "高兴",
+        "py":  "gāoxìng",
+        "cat":  "Tính từ",
+        "vn":  "vui vẻ, mừng rỡ"
+    },
+    {
+        "zh":  "漂亮",
+        "py":  "piàoliang",
+        "cat":  "Tính từ",
+        "vn":  "xinh đẹp"
+    },
+    {
+        "zh":  "贵",
+        "py":  "guì",
+        "cat":  "Tính từ",
+        "vn":  "đắt (quý)"
+    },
+    {
+        "zh":  "不",
+        "py":  "bù",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "không"
+    },
+    {
+        "zh":  "没 (没有)",
+        "py":  "méi (méiyǒu)",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "không, chưa có"
+    },
+    {
+        "zh":  "很",
+        "py":  "hěn",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "rất"
+    },
+    {
+        "zh":  "太",
+        "py":  "tài",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "quá, lắm"
+    },
+    {
+        "zh":  "都",
+        "py":  "dōu",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "đều"
+    },
+    {
+        "zh":  "和",
+        "py":  "hé",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "và, với"
+    },
+    {
+        "zh":  "在",
+        "py":  "zài",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "ở, tại, đang"
+    },
+    {
+        "zh":  "的",
+        "py":  "de",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "của (trợ từ kết cấu)"
+    },
+    {
+        "zh":  "了",
+        "py":  "le",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "rồi (trợ từ ngữ khí)"
+    },
+    {
+        "zh":  "吗",
+        "py":  "ma",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "phải không, à (trợ từ nghi vấn)"
+    },
+    {
+        "zh":  "呢",
+        "py":  "ne",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "thế, nhỉ, còn... thì sao"
+    },
+    {
+        "zh":  "给",
+        "py":  "gěi",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "cho, tặng"
+    },
+    {
+        "zh":  "也",
+        "py":  "yě",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "cũng"
+    },
+    {
+        "zh":  "一起",
+        "py":  "yìqǐ",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "cùng nhau"
+    },
+    {
+        "zh":  "个",
+        "py":  "gè",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "cái, con, người (lượng từ chung)"
+    },
+    {
+        "zh":  "本",
+        "py":  "běn",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "quyển, cuốn (sách)"
+    },
+    {
+        "zh":  "岁",
+        "py":  "suì",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "tuổi"
+    },
+    {
+        "zh":  "块",
+        "py":  "kuài",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "đồng (tiền tệ)"
+    },
+    {
+        "zh":  "些 (一些)",
+        "py":  "xiē (yìxiē)",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "một số, một ít"
+    },
+    {
+        "zh":  "一",
+        "py":  "yī",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 1"
+    },
+    {
+        "zh":  "二 / 两",
+        "py":  "èr / liǎng",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 2 / hai (lượng)"
+    },
+    {
+        "zh":  "三",
+        "py":  "sān",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 3"
+    },
+    {
+        "zh":  "四",
+        "py":  "sì",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 4"
+    },
+    {
+        "zh":  "五",
+        "py":  "wǔ",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 5"
+    },
+    {
+        "zh":  "六",
+        "py":  "liù",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 6"
+    },
+    {
+        "zh":  "七",
+        "py":  "qī",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 7"
+    },
+    {
+        "zh":  "八",
+        "py":  "bā",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 8"
+    },
+    {
+        "zh":  "九",
+        "py":  "jiǔ",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 9"
+    },
+    {
+        "zh":  "十",
+        "py":  "shí",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 10"
+    },
+    {
+        "zh":  "谢谢",
+        "py":  "xièxie",
+        "cat":  "Giao tiếp",
+        "vn":  "cảm ơn"
+    },
+    {
+        "zh":  "不客气",
+        "py":  "bú kèqi",
+        "cat":  "Giao tiếp",
+        "vn":  "đừng khách sáo"
+    },
+    {
+        "zh":  "再见",
+        "py":  "zàijiàn",
+        "cat":  "Giao tiếp",
+        "vn":  "tạm biệt"
+    },
+    {
+        "zh":  "请",
+        "py":  "qǐng",
+        "cat":  "Giao tiếp",
+        "vn":  "mời, xin"
+    },
+    {
+        "zh":  "对不起",
+        "py":  "duìbuqǐ",
+        "cat":  "Giao tiếp",
+        "vn":  "xin lỗi"
+    },
+    {
+        "zh":  "没关系",
+        "py":  "méi guānxi",
+        "cat":  "Giao tiếp",
+        "vn":  "không sao, không có gì"
+    },
+    {
+        "zh":  "喂",
+        "py":  "wèi",
+        "cat":  "Giao tiếp",
+        "vn":  "a-lô (nghe điện thoại)"
+    },
+    {
+        "zh":  "零",
+        "py":  "líng",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 0"
+    },
+    {
+        "zh":  "字",
+        "py":  "zì",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "chữ, chữ Hán"
+    },
+    {
+        "zh":  "汉语",
+        "py":  "Hànyǔ",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "tiếng Hán, tiếng Trung"
+    }
+]

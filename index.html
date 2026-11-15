@@ -1,0 +1,3671 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ôn Thi HSK 1 - Flashcard Dịch Câu, Từ Vựng & Miêu Tả Tranh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --secondary: #0d9488;
+      --accent: #f59e0b;
+      --success: #10b981;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.06);
+      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.08);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-full: 9999px;
+      --font-zh: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 10px 16px;
+    }
+
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+    }
+
+    .brand-text p {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-tool {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-tool:hover {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border-color: #bfdbfe;
+    }
+
+    /* TOP TABS NAVIGATION */
+    .nav-tabs-wrap {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      padding: 8px 16px;
+    }
+
+    .nav-tabs-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-tabs-inner::-webkit-scrollbar { display: none; }
+
+    .tab-btn {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      color: #475569;
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      background: #e2e8f0;
+      color: #1e293b;
+    }
+
+    .tab-btn.active {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
+
+    /* MAIN CONTAINER */
+    main {
+      flex: 1;
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 16px 14px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .tab-content {
+      display: none;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+    }
+
+    .tab-content.active {
+      display: flex;
+    }
+
+    /* FILTER BAR */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: var(--surface);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      flex-wrap: wrap;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-select {
+      padding: 7px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: #ffffff;
+      color: #0f172a;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .badge-counter {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* 3D FLASHCARD CONTAINER */
+    .fc-wrap {
+      position: relative;
+      width: 100%;
+    }
+
+    .fc-stage {
+      perspective: 1200px;
+      width: 100%;
+      height: 380px;
+      position: relative;
+    }
+
+    @media (max-width: 600px) {
+      .fc-stage {
+        height: 420px;
+      }
+    }
+
+    .fc-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+      border-radius: var(--radius-lg);
+    }
+
+    .fc-stage.flipped .fc-inner {
+      transform: rotateY(180deg);
+    }
+
+    .fc-face {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-xl);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      overflow-y: auto;
+    }
+
+    .fc-back {
+      transform: rotateY(180deg);
+      background: #fafcff;
+      border-color: #bfdbfe;
+    }
+
+    /* FLANK BUTTONS */
+    .btn-flank {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid var(--border);
+      color: #1e293b;
+      font-size: 1.25rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      z-index: 10;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .btn-flank:hover {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+      transform: translateY(-50%) scale(1.08);
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+    }
+
+    .btn-flank.flank-prev { left: -20px; }
+    .btn-flank.flank-next { right: -20px; }
+
+    @media (max-width: 768px) {
+      .btn-flank.flank-prev { left: 4px; }
+      .btn-flank.flank-next { right: 4px; }
+    }
+
+    /* CARD CONTENT STYLING */
+    .fc-top-tag {
+      position: absolute;
+      top: 16px;
+      left: 20px;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    .fc-hint-tag {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .fc-main-text {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.5;
+      margin: 12px 0;
+      max-width: 90%;
+    }
+
+    .fc-sub-hint {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    .fc-zh {
+      font-family: var(--font-zh);
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      line-height: 1.45;
+      letter-spacing: 0.02em;
+      margin-bottom: 6px;
+      max-width: 92%;
+    }
+
+    .fc-py {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 12px;
+    }
+
+    .hide-pinyin .fc-py, .hide-pinyin .py-text {
+      display: none !important;
+    }
+
+    .fc-meaning {
+      font-size: 0.95rem;
+      color: #334155;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+      max-width: 92%;
+    }
+
+    .fc-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    /* CARD BOTTOM NAV */
+    .bottom-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: var(--surface);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-nav {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 9px 16px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-nav:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+
+    .btn-nav.primary {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+
+    .btn-nav.primary:hover {
+      background: #1d4ed8;
+    }
+
+    .shortcut-tip {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: -6px;
+    }
+
+    /* TAB 3: PICTURE LIST CARDS */
+    .pic-list-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .pic-item-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 20px;
+      transition: border-color 0.2s;
+    }
+
+    .pic-item-card:hover {
+      border-color: #93c5fd;
+    }
+
+    @media (max-width: 768px) {
+      .pic-item-card {
+        grid-template-columns: 1fr;
+        padding: 16px;
+      }
+    }
+
+    .pic-img-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .pic-img-box {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-in;
+      position: relative;
+    }
+
+    .pic-img-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: transform 0.2s;
+    }
+
+    .pic-img-box:hover img {
+      transform: scale(1.03);
+    }
+
+    .pic-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .metric-badge {
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      padding: 3px 9px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 800;
+    }
+
+    .kw-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 8px 0 12px;
+    }
+
+    .kw-pill {
+      background: #f1f5f9;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      color: #334155;
+    }
+    .kw-pill b {
+      font-family: var(--font-zh);
+      color: #2563eb;
+    }
+
+    /* 3 SENTENCE STEP BOXES */
+    .steps-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .step-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 9px 12px;
+      position: relative;
+    }
+
+    .step-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #2563eb;
+      background: #eff6ff;
+      padding: 1px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+
+    .step-zh {
+      font-family: var(--font-zh);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.4;
+      margin-bottom: 2px;
+    }
+
+    .step-py {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #0284c7;
+      margin-bottom: 2px;
+    }
+
+    .step-vn {
+      font-size: 0.78rem;
+      color: #475569;
+    }
+
+    .btn-step-speak {
+      position: absolute;
+      right: 10px;
+      bottom: 8px;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #64748b;
+    }
+    .btn-step-speak:hover { color: #2563eb; }
+
+    /* FULL TEXT BOX */
+    .full-p-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+
+    .full-zh {
+      font-family: var(--font-zh);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      line-height: 1.6;
+      margin-bottom: 4px;
+    }
+
+    .full-py {
+      font-size: 0.82rem;
+      color: #0369a1;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .full-vn {
+      font-size: 0.8rem;
+      color: #334155;
+      border-top: 1px dashed #bfdbfe;
+      padding-top: 4px;
+    }
+
+    .grammar-note {
+      font-size: 0.75rem;
+      color: #065f46;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 6px;
+      padding: 6px 10px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    /* LIGHTBOX */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.85);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      backdrop-filter: blur(5px);
+    }
+
+    .lightbox-modal.active { display: flex; }
+
+    .lightbox-img {
+      max-width: 92vw;
+      max-height: 85vh;
+      border-radius: 12px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: white;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    /* TOAST */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      color: white;
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 200;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+    }
+
+    .toast.show { opacity: 1; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">🇨🇳</div>
+        <div class="brand-text">
+          <h1>HSK 1 MASTER • ÔN TẬP TOÀN DIỆN</h1>
+          <p>Flashcard Dịch 110 Câu • Flashcard 150 Từ Vựng • 11 Tranh Miêu Tả</p>
+        </div>
+      </div>
+      <div class="header-tools">
+        <button class="btn-tool" onclick="togglePinyin()">
+          <span>🔤</span> <span id="pinyin-label">Pinyin: Bật</span>
+        </button>
+        <select id="audio-speed-select" class="btn-tool" style="cursor:pointer;" onchange="changeSpeed(this.value)">
+          <option value="1.0">Tốc độ: 1.0x</option>
+          <option value="0.8">Tốc độ: 0.8x (Chậm)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION TABS -->
+  <div class="nav-tabs-wrap">
+    <div class="nav-tabs-inner">
+      <button class="tab-btn active" id="tab-btn-sentences" onclick="switchTab('tab-sentences')">
+        <span>🃏</span> Flashcard 110 Câu Dịch
+      </button>
+      <button class="tab-btn" id="tab-btn-vocab" onclick="switchTab('tab-vocab')">
+        <span>🗂️</span> Flashcard 150 Từ Vựng
+      </button>
+      <button class="tab-btn" id="tab-btn-pics" onclick="switchTab('tab-pics')">
+        <span>🖼️</span> 11 Tranh Miêu Tả (3 Câu ~40 Chữ)
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- ================= TAB 1: FLASHCARD 110 CÂU DỊCH ================= -->
+    <section id="tab-sentences" class="tab-content active">
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label style="font-size:0.8rem; font-weight:700; color:#475569;">Chọn bài:</label>
+          <select id="sentence-lesson-filter" class="filter-select" onchange="filterSentences(this.value)">
+            <option value="ALL">Tất cả 110 câu</option>
+            <option value="Bài 3">Bài 3 (4 câu)</option>
+            <option value="Bài 4">Bài 4 (8 câu)</option>
+            <option value="Bài 5">Bài 5 (9 câu)</option>
+            <option value="Bài 6">Bài 6 (9 câu)</option>
+            <option value="Bài 7">Bài 7 (7 câu)</option>
+            <option value="Bài 8">Bài 8 (8 câu)</option>
+            <option value="Bài 9">Bài 9 (8 câu)</option>
+            <option value="Bài 10">Bài 10 (10 câu)</option>
+            <option value="Bài 11">Bài 11 (12 câu)</option>
+            <option value="Bài 12+13">Bài 12+13 (17 câu)</option>
+            <option value="Bài 14+15">Bài 14+15 (18 câu)</option>
+          </select>
+          <button class="btn-tool" onclick="shuffleSentences()">🔀 Xáo trộn</button>
+        </div>
+        <span class="badge-counter" id="sentence-counter">Câu 1 / 110</span>
+      </div>
+
+      <!-- SENTENCE FLASHCARD -->
+      <div class="fc-wrap">
+        <button class="btn-flank flank-prev" onclick="prevSentence()" title="Câu trước">❮</button>
+        <button class="btn-flank flank-next" onclick="nextSentence()" title="Câu tiếp">❯</button>
+
+        <div class="fc-stage" id="sentence-fc-stage" onclick="flipSentenceCard()">
+          <div class="fc-inner">
+            <!-- FRONT: VIETNAMESE -->
+            <div class="fc-face fc-front">
+              <span class="fc-top-tag" id="s-front-tag">Bài 3 • Câu 1</span>
+              <span class="fc-hint-tag">Mặt trước: Tiếng Việt</span>
+              <div class="fc-main-text" id="s-front-vn">Bạn là người Mỹ phải không?</div>
+              <div class="fc-sub-hint">💡 Chạm vào thẻ hoặc bấm phím Cách để lật xem Chữ Hán & Phiên âm</div>
+              <div style="margin-top:14px;">
+                <button class="btn-nav primary" style="pointer-events:none;">🔄 Lật xem Đáp án</button>
+              </div>
+            </div>
+
+            <!-- BACK: CHINESE & PINYIN -->
+            <div class="fc-face fc-back">
+              <span class="fc-top-tag" id="s-back-tag">Bài 3 • Đáp án chuẩn</span>
+              <span class="fc-hint-tag">Mặt sau: Chữ Hán & Pinyin</span>
+              <div class="fc-zh" id="s-back-zh">你是美国人吗？</div>
+              <div class="fc-py" id="s-back-py">Nǐ shì Měiguó rén ma?</div>
+              <div class="fc-meaning" id="s-back-vn">Bạn là người Mỹ phải không?</div>
+              <div class="fc-actions" onclick="event.stopPropagation()">
+                <button class="btn-tool" onclick="playChinese(currentSentence.zh)">🔊 Nghe phát âm</button>
+                <button class="btn-tool" onclick="copyText(currentSentence.zh)">📋 Sao chép</button>
+                <button class="btn-tool" onclick="flipSentenceCard()">🔄 Lật lại</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SENTENCE BOTTOM NAV -->
+      <div class="bottom-nav">
+        <button class="btn-nav" onclick="prevSentence()">⬅️ Câu trước</button>
+        <select id="sentence-jump-select" class="filter-select" style="max-width:280px;" onchange="jumpToSentence(parseInt(this.value))">
+          <!-- Populated via JS -->
+        </select>
+        <button class="btn-nav primary" onclick="nextSentence()">Câu tiếp ➡️</button>
+      </div>
+      <div class="shortcut-tip">💡 Mẹo: Bấm phím <b>Cách (Space)</b> để lật thẻ | Mũi tên <b>Trái / Phải</b> để chuyển câu | Phím <b>M</b> để nghe đọc</div>
+    </section>
+
+    <!-- ================= TAB 2: FLASHCARD 150 TỪ VỰNG HSK 1 ================= -->
+    <section id="tab-vocab" class="tab-content">
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label style="font-size:0.8rem; font-weight:700; color:#475569;">Nhóm từ:</label>
+          <select id="vocab-cat-filter" class="filter-select" onchange="filterVocab(this.value)">
+            <option value="ALL">Tất cả 150 từ vựng</option>
+            <option value="Đại từ">Đại từ (14)</option>
+            <option value="Người & Gia đình">Người & Gia đình (11)</option>
+            <option value="Thời gian">Thời gian (14)</option>
+            <option value="Địa điểm & Vị trí">Địa điểm & Vị trí (12)</option>
+            <option value="Đồ vật & Đời sống">Đồ vật & Đời sống (22)</option>
+            <option value="Động từ">Động từ (30)</option>
+            <option value="Tính từ">Tính từ (10)</option>
+            <option value="Phó từ & Trợ từ">Phó từ & Trợ từ (14)</option>
+            <option value="Số & Lượng từ">Số & Lượng từ (16)</option>
+            <option value="Giao tiếp">Giao tiếp (7)</option>
+          </select>
+          <button class="btn-tool" onclick="shuffleVocab()">🔀 Xáo trộn</button>
+        </div>
+        <span class="badge-counter" id="vocab-counter">Từ 1 / 150</span>
+      </div>
+
+      <!-- VOCAB FLASHCARD -->
+      <div class="fc-wrap">
+        <button class="btn-flank flank-prev" onclick="prevVocab()" title="Từ trước">❮</button>
+        <button class="btn-flank flank-next" onclick="nextVocab()" title="Từ tiếp">❯</button>
+
+        <div class="fc-stage" id="vocab-fc-stage" onclick="flipVocabCard()">
+          <div class="fc-inner">
+            <!-- FRONT: VIETNAMESE -->
+            <div class="fc-face fc-front">
+              <span class="fc-top-tag" id="v-front-tag">Nhóm: Đại từ</span>
+              <span class="fc-hint-tag">Mặt trước: Tiếng Việt</span>
+              <div class="fc-main-text" id="v-front-vn" style="font-size:1.9rem; color:#1d4ed8;">tôi, mình</div>
+              <div class="fc-sub-hint">Bạn có nhớ cách đọc Pinyin và viết Chữ Hán không?</div>
+              <div style="margin-top:16px;">
+                <button class="btn-nav primary" style="pointer-events:none;">🔄 Lật xem Chữ Hán & Pinyin</button>
+              </div>
+            </div>
+
+            <!-- BACK: PINYIN & HANZI -->
+            <div class="fc-face fc-back">
+              <span class="fc-top-tag" id="v-back-tag">HSK 1 Chuẩn</span>
+              <span class="fc-hint-tag">Mặt sau: Phiên âm & Chữ Hán</span>
+              <div class="fc-py" id="v-back-py" style="font-size:1.45rem; color:#0284c7; margin-bottom:4px;">wǒ</div>
+              <div class="fc-zh" id="v-back-zh" style="font-size:3rem; margin-bottom:8px;">我</div>
+              <div class="fc-meaning" id="v-back-vn">Nghĩa: tôi, mình</div>
+              <div class="fc-actions" onclick="event.stopPropagation()">
+                <button class="btn-tool" onclick="playChinese(currentVocab.zh)">🔊 Nghe phát âm</button>
+                <button class="btn-tool" onclick="copyText(currentVocab.zh)">📋 Sao chép</button>
+                <button class="btn-tool" onclick="flipVocabCard()">🔄 Lật lại</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VOCAB BOTTOM NAV -->
+      <div class="bottom-nav">
+        <button class="btn-nav" onclick="prevVocab()">⬅️ Từ trước</button>
+        <select id="vocab-jump-select" class="filter-select" style="max-width:280px;" onchange="jumpToVocab(parseInt(this.value))">
+          <!-- Populated via JS -->
+        </select>
+        <button class="btn-nav primary" onclick="nextVocab()">Từ tiếp ➡️</button>
+      </div>
+      <div class="shortcut-tip">💡 Mẹo: Bấm phím <b>Cách (Space)</b> để lật thẻ | Mũi tên <b>Trái / Phải</b> để chuyển từ | Phím <b>M</b> để nghe đọc</div>
+    </section>
+
+    <!-- ================= TAB 3: DANH SÁCH 11 BỨC TRANH MIÊU TẢ ================= -->
+    <section id="tab-pics" class="tab-content">
+      <div class="filter-bar">
+        <div>
+          <span style="font-weight:800; font-size:0.95rem; color:#0f172a;">🖼️ 11 BỨC TRANH THI NÓI HSK 1</span>
+          <p style="font-size:0.75rem; color:#64748b;">Mỗi bức tranh được chuẩn hóa đúng <b>3 câu • tầm 40 chữ Hán</b> theo cấu trúc thi nói chuẩn</p>
+        </div>
+        <span class="metric-badge">Đủ 11 Tranh Đề Thi</span>
+      </div>
+
+      <div class="pic-list-container" id="pic-list-container">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Phóng to tranh">
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">Thông báo</div>
+
+  <!-- EMBEDDED DATA & SCRIPT -->
+  <script>
+    const SENTENCES_DATA = [
+    {
+        "bai":  "Bài 3",
+        "vn":  "Bạn là người Mỹ phải không?",
+        "zh":  "你是美国人吗？",
+        "py":  "Nǐ shì Měiguó rén ma?"
+    },
+    {
+        "bai":  "Bài 3",
+        "vn":  "Bạn là giáo viên phải không?",
+        "zh":  "你是老师吗？",
+        "py":  "Nǐ shì lǎoshī ma?"
+    },
+    {
+        "bai":  "Bài 3",
+        "vn":  "Cô Lý là người Trung Quốc, không phải là người Việt Nam.",
+        "zh":  "李老师是中国人，不是越南人。",
+        "py":  "Lǐ lǎoshī shì Zhōngguó rén, bú shì Yuènán rén."
+    },
+    {
+        "bai":  "Bài 3",
+        "vn":  "Tôi tên là ...., là người ..",
+        "zh":  "我叫……，是……人。",
+        "py":  "Wǒ jiào……, shì…… rén."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Đây là bạn học của bạn phải không?",
+        "zh":  "这是你的同学吗？",
+        "py":  "Zhè shì nǐ de tóngxué ma?"
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Cô ấy là bạn Trung Quốc của tôi. Cô ấy tên là Lý Nguyệt.",
+        "zh":  "她是我的中国朋友。她叫李月。",
+        "py":  "Tā shì wǒ de Zhōngguó péngyou. Tā jiào Lǐ Yuè."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Con gái anh ấy năm nay 7 tuổi rồi.",
+        "zh":  "他女儿今年七岁了。",
+        "py":  "Tā nǚ\u0027ér jīnnián qī suì le."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Nhà tôi có ... người.",
+        "zh":  "我家有……口人。",
+        "py":  "Wǒ jiā yǒu…… kǒu rén."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Tôi là học sinh FPT. Tôi học tiếng Hán.",
+        "zh":  "我是FPT的学生。我学习汉语。",
+        "py":  "Wǒ shì FPT de xuésheng. Wǒ xuéxí Hànyǔ."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Bạn bao nhiêu tuổi rồi? Tôi năm nay ... tuổi.",
+        "zh":  "你多大了？我今年……岁了。",
+        "py":  "Nǐ duō dà le? Wǒ jīnnián…… suì le."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Giáo viên tiếng Hán của bạn là ai? – Cô ấy tên là Lý Nguyệt.",
+        "zh":  "你的汉语老师是谁？她叫李月。",
+        "py":  "Nǐ de Hànyǔ lǎoshī shì shéi? Tā jiào Lǐ Yuè."
+    },
+    {
+        "bai":  "Bài 4",
+        "vn":  "Thầy Lý năm nay bao nhiêu tuổi rồi? Thầy ấy 47 tuổi rồi.",
+        "zh":  "李老师今年多大了？他四十七岁了。",
+        "py":  "Lǐ lǎoshī jīnnián duō dà le? Tā sìshíqī suì le."
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Nhà bạn có mấy người? Bố mẹ bạn bao nhiêu tuổi rồi?",
+        "zh":  "你家有几口人？你爸爸妈妈多大了？",
+        "py":  "Nǐ jiā yǒu jǐ kǒu rén? Nǐ bàba māma duō dà le?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Giáo viên tiếng Hán của bạn là người nước nào?",
+        "zh":  "你的汉语老师是哪国人？",
+        "py":  "Nǐ de Hànyǔ lǎoshī shì nǎ guó rén?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Đây là con gái của cô Lý phải không? Em ấy mấy tuổi rồi?",
+        "zh":  "这是李老师的女儿吗？她几岁了？",
+        "py":  "Zhè shì Lǐ lǎoshī de nǚ\u0027ér ma? Tā jǐ suì le?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Nhà bạn học Mỹ của bạn có mấy người?",
+        "zh":  "你的美国同学家有几口人？",
+        "py":  "Nǐ de Měiguó tóngxué jiā yǒu jǐ kǒu rén?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Anh ấy có phải là bạn học của bạn không? Anh ấy bao nhiêu tuổi rồi?",
+        "zh":  "他是你的同学吗？他多大了？",
+        "py":  "Tā shì nǐ de tóngxué ma? Tā duō dà le?"
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Thầy Lý là người Trung Quốc. Thầy ấy có một con gái tên là Lý Nguyệt.",
+        "zh":  "李老师是中国人。他有一个女儿叫李月。",
+        "py":  "Lǐ lǎoshī shì Zhōngguó rén. Tā yǒu yí ge nǚ\u0027ér jiào Lǐ Yuè."
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Đây là giáo viên của Lý Nguyệt. Thầy ấy là người Mỹ.",
+        "zh":  "这是李月的老师。他是美国人。",
+        "py":  "Zhè shì Lǐ Yuè de lǎoshī. Tā shì Měiguó rén."
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Lý Nguyệt là bạn Trung Quốc của tôi. Cô ấy 20 tuổi rồi.",
+        "zh":  "李月是我的中国朋友。她二十岁了。",
+        "py":  "Lǐ Yuè shì wǒ de Zhōngguó péngyou. Tā èrshí suì le."
+    },
+    {
+        "bai":  "Bài 5",
+        "vn":  "Tôi có rất nhiều bạn Việt Nam, không có bạn Mỹ.",
+        "zh":  "我有很多越南朋友，没有美国朋友。",
+        "py":  "Wǒ yǒu hěn duō Yuènán péngyou, méiyǒu Měiguó péngyou."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Bạn có biết nói tiếng Hán không?",
+        "zh":  "你会说汉语吗？",
+        "py":  "Nǐ huì shuō Hànyǔ ma?"
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Tôi biết đọc chữ này, không biết viết.",
+        "zh":  "我会读这个字，不会写。",
+        "py":  "Wǒ huì dú zhège zì, bú huì xiě."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Bạn biết đọc tên tiếng Hán của cô ấy không?",
+        "zh":  "你会读她的汉语名字吗？",
+        "py":  "Nǐ huì dú tā de Hànyǔ míngzi ma?"
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Tên tiếng Hán của bạn đọc thế nào?",
+        "zh":  "你的汉语名字怎么读？",
+        "py":  "Nǐ de Hànyǔ míngzi zěnme dú?"
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Tôi không biết nấu món ăn Trung Quốc.",
+        "zh":  "我不会做中国菜。",
+        "py":  "Wǒ bú huì zuò Zhōngguó cài."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Mẹ tôi nói đồ ăn Mỹ không ngon.",
+        "zh":  "我妈妈说美国菜不好吃。",
+        "py":  "Wǒ māma shuō Měiguó cài bù hǎochī."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Bạn có tên tiếng Hán không? Bạn biết viết tên tiếng Hán của bạn không?",
+        "zh":  "你有汉语名字吗？你会写你的汉语名字吗？",
+        "py":  "Nǐ yǒu Hànyǔ míngzi ma? Nǐ huì xiě nǐ de Hànyǔ míngzi ma?"
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Đồ ăn Việt Nam rất ngon. Mẹ tôi biết nấu, tôi không biết nấu.",
+        "zh":  "越南菜很好吃。我妈妈会做，我不会做。",
+        "py":  "Yuènán cài hěn hǎochī. Wǒ māma huì zuò, wǒ bú huì zuò."
+    },
+    {
+        "bai":  "Bài 6",
+        "vn":  "Lý Nguyệt biết nói tiếng Hán, cũng biết viết chữ Hán.",
+        "zh":  "李月会说汉语，也会写汉字。",
+        "py":  "Lǐ Yuè huì shuō Hànyǔ, yě huì xiě Hànzì."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Hôm qua thứ 2, tôi đến trường học viết chữ Hán.",
+        "zh":  "昨天星期一，我去学校学习写汉字。",
+        "py":  "Zuótiān xīngqī yī, wǒ qù xuéxiào xuéxí xiě Hànzì."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Xin hỏi, hôm nay ngày mấy tháng mấy?",
+        "zh":  "请问，今天几月几号？",
+        "py":  "Qǐngwèn, jīntiān jǐ yuè jǐ hào?"
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Thứ bảy bạn có đến trường không?",
+        "zh":  "星期六你去学校吗？",
+        "py":  "Xīngqīliù nǐ qù xuéxiào ma?"
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Hôm nay thứ 5, ngày 16 tháng 11.",
+        "zh":  "今天星期四，十一月十六号。",
+        "py":  "Jīntiān xīngqīsì, shíyī yuè shíliù hào."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Mai tôi đi Trung Quốc ăn đồ ăn Trung Quốc.",
+        "zh":  "明天我去中国吃中国菜。",
+        "py":  "Míngtiān wǒ qù Zhōngguó chī Zhōngguó cài."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Hôm qua chủ nhật, tôi không đến trường.",
+        "zh":  "昨天星期日，我没去学校。",
+        "py":  "Zuótiān xīngqīrì, wǒ méi qù xuéxiào."
+    },
+    {
+        "bai":  "Bài 7",
+        "vn":  "Mai thứ 3, tôi đến trường học nấu đồ ăn Trung.",
+        "zh":  "明天星期二，我去学校学做中国菜。",
+        "py":  "Míngtiān xīngqī\u0027èr, wǒ qù xuéxiào xué zuò Zhōngguó cài."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Hôm nay bạn muốn ăn gì? – Tôi ăn cơm.",
+        "zh":  "今天你想吃什么？我吃米饭。",
+        "py":  "Jīntiān nǐ xiǎng chī shénme? Wǒ chī mǐfàn."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Chiều hôm qua bạn đi đâu? – Tôi đến cửa hàng Trung Quốc.",
+        "zh":  "昨天下午你去哪儿？我去中国商店。",
+        "py":  "Zuótiān xiàwǔ nǐ qù nǎr? Wǒ qù Zhōngguó shāngdiàn."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Chiều mai bạn đến trường phải không?",
+        "zh":  "明天下午你去学校吗？",
+        "py":  "Míngtiān xiàwǔ nǐ qù xuéxiào ma?"
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Hôm nay tôi đến cửa hàng mua 1 cái cốc.",
+        "zh":  "今天我去商店买一个杯子。",
+        "py":  "Jīntiān wǒ qù shāngdiàn mǎi yí ge bēizi."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Cái cốc đó bao nhiêu tiền (1 cái)?",
+        "zh":  "那个杯子多少钱一个？",
+        "py":  "Nàge bēizi duōshao qián yí ge?"
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Hôm nay tôi không muốn uống trà. Tôi uống cà phê.",
+        "zh":  "今天我不想喝茶。我想喝咖啡。",
+        "py":  "Jīntiān wǒ bù xiǎng hē chá. Wǒ xiǎng hē kāfēi."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Hôm nay thứ 7, tôi không đến trường.",
+        "zh":  "今天星期六，我不去学校。",
+        "py":  "Jīntiān xīngqīliù, wǒ bú qù xuéxiào."
+    },
+    {
+        "bai":  "Bài 8",
+        "vn":  "Tôi muốn đến hiệu sách mua một quyển sách tiếng Trung.",
+        "zh":  "我想去书店买一本汉语书。",
+        "py":  "Wǒ xiǎng qù shūdiàn mǎi yì běn Hànyǔ shū."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Trên ghế có một con mèo nhỏ.",
+        "zh":  "椅子上有一只小猫。",
+        "py":  "Yǐzi shàng yǒu yì zhī xiǎo māo."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Con mèo của tôi ở dưới chiếc ghế kia.",
+        "zh":  "我的猫在那个椅子下面。",
+        "py":  "Wǒ de māo zài nàge yǐzi xiàmiàn."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Buổi chiều, tôi học tiếng Hán ở trường.",
+        "zh":  "下午，我在学校学习汉语。",
+        "py":  "Xiàwǔ, wǒ zài xuéxiào xuéxí Hànyǔ."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Anh ấy làm việc ở bệnh viện, anh ấy là bác sĩ.",
+        "zh":  "他在医院工作，他是医生。",
+        "py":  "Tā zài yīyuàn gōngzuò, tā shì yīshēng."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Con gái cô ấy làm việc ở cửa hàng Bắc Kinh.",
+        "zh":  "她女儿在北京的商店工作。",
+        "py":  "Tā nǚ\u0027ér zài Běijīng de shāngdiàn gōngzuò."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Bạn mua cái ghế này ở đâu thế?",
+        "zh":  "你在哪儿买这个椅子？",
+        "py":  "Nǐ zài nǎr mǎi zhège yǐzi?"
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Trên ghế có một quyển sách và 1 cái cốc.",
+        "zh":  "椅子上有一本书和一个杯子。",
+        "py":  "Yǐzi shàng yǒu yì běn shū hé yí ge bēizi."
+    },
+    {
+        "bai":  "Bài 9",
+        "vn":  "Bố tôi là giáo viên. Ông ấy làm việc ở nhà.",
+        "zh":  "我爸爸是老师。他在家工作。",
+        "py":  "Wǒ bàba shì lǎoshī. Tā zài jiā gōngzuò."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Trên bàn không có máy tính.",
+        "zh":  "桌子上没有电脑。",
+        "py":  "Zhuōzi shàng méiyǒu diànnǎo."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Trên bàn có rất nhiều sách tiếng Trung.",
+        "zh":  "桌子上有很多汉语书。",
+        "py":  "Zhuōzi shàng yǒu hěn duō Hànyǔ shū."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Trong ngăn bàn có 1 cái cốc và 1 quyển sách tiếng Trung.",
+        "zh":  "桌子里有一个杯子和一本汉语书。",
+        "py":  "Zhuōzi lǐ yǒu yí ge bēizi hé yì běn Hànyǔ shū."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Người ở phía trước kia tên là gì vậy?",
+        "zh":  "前面那个人叫什么名字？",
+        "py":  "Qiánmiàn nàge rén jiào shénme míngzi?"
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Người ở phía sau kia là bạn cùng học của tôi. Cô ấy tên là Vương Phương.",
+        "zh":  "后面那个人是我的同学。她叫王方。",
+        "py":  "Hòumiàn nàge rén shì wǒ de tóngxué. Tā jiào Wáng Fāng."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Tạ Bằng là bác sỹ. Anh ấy làm việc tại nhà.",
+        "zh":  "谢朋是医生。他在家工作。",
+        "py":  "Xiè Péng shì yīshēng. Tā zài jiā gōngzuò."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Chỗ này không có người, tôi có thể ngồi đây không?",
+        "zh":  "这儿没有人，我能坐这儿吗？",
+        "py":  "Zhèr méiyǒu rén, wǒ néng zuò zhèr ma?"
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Phía trước bệnh viện có một cái cửa hàng.",
+        "zh":  "医院前面有一个商店。",
+        "py":  "Yīyuàn qiánmiàn yǒu yí ge shāngdiàn."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Phía sau trường học là một cái bệnh viện.",
+        "zh":  "学校后面是一个医院。",
+        "py":  "Xuéxiào hòumiàn shì yí ge yīyuàn."
+    },
+    {
+        "bai":  "Bài 10",
+        "vn":  "Anh ấy làm việc ở bệnh viện. Bệnh viện ở phía sau trường học.",
+        "zh":  "他在医院工作。医院在学校后面。",
+        "py":  "Tā zài yīyuàn gōngzuò. Yīyuàn zài xuéxiào hòumiàn."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Bố và mẹ 5 giờ 15 chiều nay đi xem phim.",
+        "zh":  "今天下午五点一刻爸爸和妈妈去看电影。",
+        "py":  "Jīntiān xiàwǔ wǔ diǎn yí kè bàba hé māma qù kàn diànyǐng."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Bây giờ là 3h30 chiều.",
+        "zh":  "现在是下午三点半。",
+        "py":  "Xiànzài shì xiàwǔ sān diǎn bàn."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Buổi trưa tôi ăn cơm lúc 11h20.",
+        "zh":  "中午我十一点二十分吃饭。",
+        "py":  "Zhōngwǔ wǒ shíyī diǎn èrshí fēn chī fàn."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "David và tôi 9h15 sáng mai đi xem phim.",
+        "zh":  "明天上午九点一刻大卫和我去看电影。",
+        "py":  "Míngtiān shàngwǔ jiǔ diǎn yí kè Dàwèi hé wǒ qù kàn diànyǐng."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Tạ Bằng nói, anh ấy muốn ở Bắc Kinh 5 ngày.",
+        "zh":  "谢朋说，他想在北京住五天。",
+        "py":  "Xiè Péng shuō, tā xiǎng zài Běijīng zhù wǔ tiān."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Hôm nay mấy giờ cậu đến trường?",
+        "zh":  "今天你几点去学校？",
+        "py":  "Jīntiān nǐ jǐ diǎn qù xuéxiào?"
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Phim này không hay, tôi không muốn xem.",
+        "zh":  "这个电影不好看，我不想看。",
+        "py":  "Zhège diànyǐng bù hǎokàn, wǒ bù xiǎng kàn."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Hôm qua mấy giờ cậu học tiếng Trung?",
+        "zh":  "昨天你几点学习汉语？",
+        "py":  "Zuótiān nǐ jǐ diǎn xuéxí Hànyǔ?"
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Khi nào anh về nhà, trước thứ 6 có thể về không?",
+        "zh":  "你什么时候回家？星期五前能回来吗？",
+        "py":  "Nǐ shénme shíhou huí jiā? Xīngqīwǔ qián néng huílái ma?"
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Anh đi Bắc Kinh mấy ngày? Khi nào anh quay lại?",
+        "zh":  "你去北京几天？什么时候回来？",
+        "py":  "Nǐ qù Běijīng jǐ tiān? Shénme shíhou huílái?"
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Trước khi học tiếng Trung, tôi rất thích xem phim Trung Quốc.",
+        "zh":  "学习汉语前，我很喜欢看中国电影。",
+        "py":  "Xuéxí Hànyǔ qián, wǒ hěn xǐhuan kàn Zhōngguó diànyǐng."
+    },
+    {
+        "bai":  "Bài 11",
+        "vn":  "Bạn muốn bao giờ đi Mỹ học tiếng Anh?",
+        "zh":  "你想什么时候去美国学习英语？",
+        "py":  "Nǐ xiǎng shénme shíhou qù Měiguó xuéxí Yīngyǔ?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Hôm qua thời tiết không đẹp lắm, chiều có mưa.",
+        "zh":  "昨天天气不太好，下午下雨了。",
+        "py":  "Zuótiān tiānqì bú tài hǎo, xiàwǔ xià yǔ le."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bạn muốn mua gì cho Vương Phương?",
+        "zh":  "你想给王方买什么？",
+        "py":  "Nǐ xiǎng gěi Wáng Fāng mǎi shénme?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Hôm nay thời tiết rất đẹp, không nóng cũng không lạnh.",
+        "zh":  "今天天气很好，不热也不冷。",
+        "py":  "Jīntiān tiānqì hěn hǎo, bú rè yě bù lěng."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Chủ nhật thời tiết sẽ rất lạnh đấy.",
+        "zh":  "星期日天气会很冷。",
+        "py":  "Xīngqīrì tiānqì huì hěn lěng."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Hôm nay David sẽ không đến đâu.",
+        "zh":  "今天大卫不会来。",
+        "py":  "Jīntiān Dàwèi bú huì lái."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Trời nóng quá, tôi không muốn ăn cơm.",
+        "zh":  "太热了，我不想吃米饭。",
+        "py":  "Tài rè le, wǒ bù xiǎng chī mǐfàn."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bố anh ấy sức khoẻ không tốt lắm. Hiện giờ ông ấy đang ở viện.",
+        "zh":  "他爸爸身体不太好。现在他在医院。",
+        "py":  "Tā bàba shēntǐ bú tài hǎo. Xiànzài tā zài yīyuàn."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bạn ăn nhiều hoa quả, uống nhiều nước nhé.",
+        "zh":  "你多吃些水果，多喝水吧。",
+        "py":  "Nǐ duō chī xiē shuǐguǒ, duō hē shuǐ ba."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Trước khi ngủ, tôi thích xem phim.",
+        "zh":  "睡觉前，我喜欢看电影。",
+        "py":  "Shuìjiào qián, wǒ xǐhuan kàn diànyǐng."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Hôm nay lạnh quá. Sau khi ăn xong, tôi muốn uống một cốc cà phê nóng.",
+        "zh":  "今天太冷了。吃饭后，我想喝一杯热咖啡。",
+        "py":  "Jīntiān tài lěng le. Chī fàn hòu, wǒ xiǎng hē yì bēi rè kāfēi."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Số điện thoại của cô Lý là...",
+        "zh":  "李老师的电话是……",
+        "py":  "Lǐ lǎoshī de diànhuà shì……"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bạn đang làm gì vậy?",
+        "zh":  "你在做什么呢？",
+        "py":  "Nǐ zài zuò shénme ne?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Bạn đang gọi điện thoại cho ai thế?",
+        "zh":  "你在给谁打电话呢？",
+        "py":  "Nǐ zài gěi shéi dǎ diànhuà ne?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Mai mấy giờ cậu đến bệnh viện?",
+        "zh":  "明天你几点去医院？",
+        "py":  "Míngtiān nǐ jǐ diǎn qù yīyuàn?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Sau khi về nhà, tôi gọi điện thoại cho Ms Vương.",
+        "zh":  "回家后，我给王小姐打电话。",
+        "py":  "Huí jiā hòu, wǒ gěi Wáng xiǎojiě dǎ diànhuà."
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Alo, đây có phải là điện thoại của Lý Nguyệt không?",
+        "zh":  "喂，这是李月的电话吗？",
+        "py":  "Wèi, zhè shì Lǐ Yuè de diànhuà ma?"
+    },
+    {
+        "bai":  "Bài 12+13",
+        "vn":  "Anh ấy đang học nấu món ăn Trung Quốc.",
+        "zh":  "他在学做中国菜呢。",
+        "py":  "Tā zài xué zuò Zhōngguó cài ne."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bộ quần áo này đẹp quá, cậu mua nó ở đâu thế?",
+        "zh":  "这件衣服太漂亮了，你在哪儿买的？",
+        "py":  "Zhè jiàn yīfu tài piàoliang le, nǐ zài nǎr mǎi de?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Những quyển sách này là của Vương Phương phải không?",
+        "zh":  "这些书是王方的吗？",
+        "py":  "Zhèxiē shū shì Wáng Fāng de ma?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bạn có nhìn thấy máy tính của tôi ở đâu không ?",
+        "zh":  "你看见我的电脑在哪儿了吗？",
+        "py":  "Nǐ kànjiàn wǒ de diànnǎo zài nǎr le ma?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bạn có nhìn thấy thầy Lý không?",
+        "zh":  "你看见李老师了吗？",
+        "py":  "Nǐ kànjiàn Lǐ lǎoshī le ma?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi hôm nay chưa nhìn thấy thầy giáo Vương đâu cả.",
+        "zh":  "今天我没看见王老师。",
+        "py":  "Jīntiān wǒ méi kànjiàn Wáng lǎoshī."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi thích ăn cơm cùng người nhà.",
+        "zh":  "我喜欢和家人一起吃饭。",
+        "py":  "Wǒ xǐhuan hé jiārén yìqǐ chī fàn."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi và Tạ Bằng cùng đến đây học lái xe.",
+        "zh":  "我和谢朋一起来这儿学开车。",
+        "py":  "Wǒ hé Xiè Péng yìqǐ lái zhèr xué kāi chē."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi không nhìn thấy cái máy tính của tôi đâu, cậu có thấy không?",
+        "zh":  "我没看见我的电脑，你看见了吗？",
+        "py":  "Wǒ méi kànjiàn wǒ de diànnǎo, nǐ kànjiàn le ma?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Tôi muốn đi cửa hàng mua cho bố mẹ tôi một ít đồ.",
+        "zh":  "我想去商店给爸爸妈妈买一些东西。",
+        "py":  "Wǒ xiǎng qù shāngdiàn gěi bàba māma mǎi yìxiē dōngxi."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Cậu mua cho ai những chiếc cốc này ?",
+        "zh":  "你给谁买这些杯子？",
+        "py":  "Nǐ gěi shéi mǎi zhèxiē bēizi?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Mấy giờ bạn đi máy bay đến Bắc Kinh vậy?",
+        "zh":  "你几点坐飞机去北京？",
+        "py":  "Nǐ jǐ diǎn zuò fēijī qù Běijīng?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bố tôi rất thích uống trà Trung Quốc. Mai tôi đi cửa hàng mua cho ông ấy một ít.",
+        "zh":  "我爸爸很喜欢喝中国茶。明天我去商店给他买一些。",
+        "py":  "Wǒ bàba hěn xǐhuan hē Zhōngguó chá. Míngtiān wǒ qù shāngdiàn gěi tā mǎi yìxiē."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Bạn và anh ấy quen nhau từ bao giờ thế?",
+        "zh":  "你和他是什么时候认识的？",
+        "py":  "Nǐ hé tā shì shénme shíhou rènshi de?"
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Sáng nay mình mua bộ quần áo này ở cửa hàng đó.",
+        "zh":  "这件衣服是我今天上午在那个商店买的。",
+        "py":  "Zhè jiàn yīfu shì wǒ jīntiān shàngwǔ zài nàge shāngdiàn mǎi de."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Chiều nay tôi đã gọi điện thoại cho mẹ tôi rồi.",
+        "zh":  "今天下午我给妈妈打电话了。",
+        "py":  "Jīntiān xiàwǔ wǒ gěi māma dǎ diànhuà le."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Anh ấy nói anh ấy đến bệnh viện, 20 phút nữa sẽ quay lại.",
+        "zh":  "他说他去医院，二十分钟后回来。",
+        "py":  "Tā shuō tā qù yīyuàn, èrshí fēnzhōng hòu huílái."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "2 ngày trước tôi đi máy bay tới Bắc Kinh chứ không phải đi taxi.",
+        "zh":  "两天前我是坐飞机去北京的，不是坐出租车。",
+        "py":  "Liǎng tiān qián wǒ shì zuò fēijī qù Běijīng de, bú shì zuò chūzūchē."
+    },
+    {
+        "bai":  "Bài 14+15",
+        "vn":  "Thầy Vương có một con gái tên là Vương Phương, cô ấy rất xinh.",
+        "zh":  "王老师有一个女儿叫王方，她很漂亮。",
+        "py":  "Wáng lǎoshī yǒu yí ge nǚ\u0027ér jiào Wáng Fāng, tā hěn piàoliang."
+    }
+]
+;
+    const VOCAB_DATA = [
+    {
+        "zh":  "我",
+        "py":  "wǒ",
+        "cat":  "Đại từ",
+        "vn":  "tôi, mình"
+    },
+    {
+        "zh":  "你",
+        "py":  "nǐ",
+        "cat":  "Đại từ",
+        "vn":  "bạn, anh, chị"
+    },
+    {
+        "zh":  "他",
+        "py":  "tā",
+        "cat":  "Đại từ",
+        "vn":  "anh ấy, ông ấy"
+    },
+    {
+        "zh":  "她",
+        "py":  "tā",
+        "cat":  "Đại từ",
+        "vn":  "cô ấy, bà ấy"
+    },
+    {
+        "zh":  "我们",
+        "py":  "wǒmen",
+        "cat":  "Đại từ",
+        "vn":  "chúng tôi, chúng ta"
+    },
+    {
+        "zh":  "这 (这儿)",
+        "py":  "zhè (zhèr)",
+        "cat":  "Đại từ",
+        "vn":  "đây, này (ở đây)"
+    },
+    {
+        "zh":  "那 (那儿)",
+        "py":  "nà (nàr)",
+        "cat":  "Đại từ",
+        "vn":  "kia, đó (ở kia, ở đó)"
+    },
+    {
+        "zh":  "哪 (哪儿)",
+        "py":  "nǎ (nǎr)",
+        "cat":  "Đại từ",
+        "vn":  "nào (ở đâu)"
+    },
+    {
+        "zh":  "谁",
+        "py":  "shéi",
+        "cat":  "Đại từ",
+        "vn":  "ai"
+    },
+    {
+        "zh":  "什么",
+        "py":  "shénme",
+        "cat":  "Đại từ",
+        "vn":  "cái gì"
+    },
+    {
+        "zh":  "多少",
+        "py":  "duōshao",
+        "cat":  "Đại từ",
+        "vn":  "bao nhiêu"
+    },
+    {
+        "zh":  "几",
+        "py":  "jǐ",
+        "cat":  "Đại từ",
+        "vn":  "mấy"
+    },
+    {
+        "zh":  "怎么",
+        "py":  "zěnme",
+        "cat":  "Đại từ",
+        "vn":  "làm sao, thế nào"
+    },
+    {
+        "zh":  "怎么样",
+        "py":  "zěnmeyàng",
+        "cat":  "Đại từ",
+        "vn":  "như thế nào, ra sao"
+    },
+    {
+        "zh":  "爸爸",
+        "py":  "bàba",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "bố, ba"
+    },
+    {
+        "zh":  "妈妈",
+        "py":  "māma",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "mẹ, má"
+    },
+    {
+        "zh":  "儿子",
+        "py":  "érzi",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "con trai"
+    },
+    {
+        "zh":  "女儿",
+        "py":  "nǚ\u0027ér",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "con gái"
+    },
+    {
+        "zh":  "老师",
+        "py":  "lǎoshī",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "thầy giáo, cô giáo"
+    },
+    {
+        "zh":  "学生",
+        "py":  "xuésheng",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "học sinh, sinh viên"
+    },
+    {
+        "zh":  "同学",
+        "py":  "tóngxué",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "bạn học"
+    },
+    {
+        "zh":  "朋友",
+        "py":  "péngyou",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "bạn bè"
+    },
+    {
+        "zh":  "医生",
+        "py":  "yīshēng",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "bác sĩ"
+    },
+    {
+        "zh":  "先生",
+        "py":  "xiānsheng",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "ngài, ông, thầy, chồng"
+    },
+    {
+        "zh":  "小姐",
+        "py":  "xiǎojiě",
+        "cat":  "Người \u0026 Gia đình",
+        "vn":  "cô, tiểu thư"
+    },
+    {
+        "zh":  "今天",
+        "py":  "jīntiān",
+        "cat":  "Thời gian",
+        "vn":  "hôm nay"
+    },
+    {
+        "zh":  "明天",
+        "py":  "míngtiān",
+        "cat":  "Thời gian",
+        "vn":  "ngày mai"
+    },
+    {
+        "zh":  "昨天",
+        "py":  "zuótiān",
+        "cat":  "Thời gian",
+        "vn":  "hôm qua"
+    },
+    {
+        "zh":  "上午",
+        "py":  "shàngwǔ",
+        "cat":  "Thời gian",
+        "vn":  "buổi sáng"
+    },
+    {
+        "zh":  "中午",
+        "py":  "zhōngwǔ",
+        "cat":  "Thời gian",
+        "vn":  "buổi trưa"
+    },
+    {
+        "zh":  "下午",
+        "py":  "xiàwǔ",
+        "cat":  "Thời gian",
+        "vn":  "buổi chiều"
+    },
+    {
+        "zh":  "年",
+        "py":  "nián",
+        "cat":  "Thời gian",
+        "vn":  "năm"
+    },
+    {
+        "zh":  "月",
+        "py":  "yuè",
+        "cat":  "Thời gian",
+        "vn":  "tháng"
+    },
+    {
+        "zh":  "日 / 号",
+        "py":  "rì / hào",
+        "cat":  "Thời gian",
+        "vn":  "ngày"
+    },
+    {
+        "zh":  "星期",
+        "py":  "xīngqī",
+        "cat":  "Thời gian",
+        "vn":  "tuần, thứ"
+    },
+    {
+        "zh":  "点",
+        "py":  "diǎn",
+        "cat":  "Thời gian",
+        "vn":  "giờ"
+    },
+    {
+        "zh":  "分钟",
+        "py":  "fēnzhōng",
+        "cat":  "Thời gian",
+        "vn":  "phút"
+    },
+    {
+        "zh":  "现在",
+        "py":  "xiànzài",
+        "cat":  "Thời gian",
+        "vn":  "bây giờ, hiện tại"
+    },
+    {
+        "zh":  "时候",
+        "py":  "shíhou",
+        "cat":  "Thời gian",
+        "vn":  "lúc, khi"
+    },
+    {
+        "zh":  "中国",
+        "py":  "Zhōngguó",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "Trung Quốc"
+    },
+    {
+        "zh":  "北京",
+        "py":  "Běijīng",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "Bắc Kinh"
+    },
+    {
+        "zh":  "学校",
+        "py":  "xuéxiào",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "trường học"
+    },
+    {
+        "zh":  "医院",
+        "py":  "yīyuàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "bệnh viện"
+    },
+    {
+        "zh":  "商店",
+        "py":  "shāngdiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "cửa hàng"
+    },
+    {
+        "zh":  "饭店",
+        "py":  "fàndiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "nhà hàng, khách sạn"
+    },
+    {
+        "zh":  "火车站",
+        "py":  "huǒchēzhàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "ga tàu hỏa"
+    },
+    {
+        "zh":  "家",
+        "py":  "jiā",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "nhà, gia đình"
+    },
+    {
+        "zh":  "前面",
+        "py":  "qiánmiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "phía trước"
+    },
+    {
+        "zh":  "后面",
+        "py":  "hòumiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "phía sau"
+    },
+    {
+        "zh":  "上面",
+        "py":  "shàngmiàn",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "phía trên"
+    },
+    {
+        "zh":  "下面 (里)",
+        "py":  "xiàmiàn (lǐ)",
+        "cat":  "Địa điểm \u0026 Vị trí",
+        "vn":  "phía dưới (bên trong)"
+    },
+    {
+        "zh":  "水",
+        "py":  "shuǐ",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "nước"
+    },
+    {
+        "zh":  "茶",
+        "py":  "chá",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "trà, chè"
+    },
+    {
+        "zh":  "杯子",
+        "py":  "bēizi",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "cái cốc, tách"
+    },
+    {
+        "zh":  "菜",
+        "py":  "cài",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "món ăn, rau"
+    },
+    {
+        "zh":  "米饭",
+        "py":  "mǐfàn",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "cơm"
+    },
+    {
+        "zh":  "水果",
+        "py":  "shuǐguǒ",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "trái cây, hoa quả"
+    },
+    {
+        "zh":  "苹果",
+        "py":  "píngguǒ",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "quả táo"
+    },
+    {
+        "zh":  "钱",
+        "py":  "qián",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "tiền"
+    },
+    {
+        "zh":  "飞机",
+        "py":  "fēijī",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "máy bay"
+    },
+    {
+        "zh":  "出租车",
+        "py":  "chūzūchē",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "xe taxi"
+    },
+    {
+        "zh":  "电视",
+        "py":  "diànshì",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "tivi, truyền hình"
+    },
+    {
+        "zh":  "电脑",
+        "py":  "diànnǎo",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "máy tính"
+    },
+    {
+        "zh":  "电影",
+        "py":  "diànyǐng",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "phim điện ảnh"
+    },
+    {
+        "zh":  "天气",
+        "py":  "tiānqì",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "thời tiết"
+    },
+    {
+        "zh":  "猫",
+        "py":  "māo",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "con mèo"
+    },
+    {
+        "zh":  "狗",
+        "py":  "gǒu",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "con chó"
+    },
+    {
+        "zh":  "东西",
+        "py":  "dōngxi",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "đồ vật, đồ đạc"
+    },
+    {
+        "zh":  "书",
+        "py":  "shū",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "sách"
+    },
+    {
+        "zh":  "桌子",
+        "py":  "zhuōzi",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "cái bàn"
+    },
+    {
+        "zh":  "椅子",
+        "py":  "yǐzi",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "cái ghế"
+    },
+    {
+        "zh":  "是",
+        "py":  "shì",
+        "cat":  "Động từ",
+        "vn":  "là, phải"
+    },
+    {
+        "zh":  "有",
+        "py":  "yǒu",
+        "cat":  "Động từ",
+        "vn":  "có"
+    },
+    {
+        "zh":  "看",
+        "py":  "kàn",
+        "cat":  "Động từ",
+        "vn":  "nhìn, xem, đọc"
+    },
+    {
+        "zh":  "听",
+        "py":  "tīng",
+        "cat":  "Động từ",
+        "vn":  "nghe"
+    },
+    {
+        "zh":  "说话",
+        "py":  "shuōhuà",
+        "cat":  "Động từ",
+        "vn":  "nói chuyện"
+    },
+    {
+        "zh":  "读",
+        "py":  "dú",
+        "cat":  "Động từ",
+        "vn":  "đọc"
+    },
+    {
+        "zh":  "写",
+        "py":  "xiě",
+        "cat":  "Động từ",
+        "vn":  "viết"
+    },
+    {
+        "zh":  "看见",
+        "py":  "kànjiàn",
+        "cat":  "Động từ",
+        "vn":  "nhìn thấy"
+    },
+    {
+        "zh":  "叫",
+        "py":  "jiào",
+        "cat":  "Động từ",
+        "vn":  "gọi, tên là"
+    },
+    {
+        "zh":  "来",
+        "py":  "lái",
+        "cat":  "Động từ",
+        "vn":  "đến, tới"
+    },
+    {
+        "zh":  "回",
+        "py":  "huí",
+        "cat":  "Động từ",
+        "vn":  "về, quay lại"
+    },
+    {
+        "zh":  "去",
+        "py":  "qù",
+        "cat":  "Động từ",
+        "vn":  "đi"
+    },
+    {
+        "zh":  "吃",
+        "py":  "chī",
+        "cat":  "Động từ",
+        "vn":  "ăn"
+    },
+    {
+        "zh":  "喝",
+        "py":  "hē",
+        "cat":  "Động từ",
+        "vn":  "uống"
+    },
+    {
+        "zh":  "睡觉",
+        "py":  "shuìjiào",
+        "cat":  "Động từ",
+        "vn":  "đi ngủ"
+    },
+    {
+        "zh":  "打电话",
+        "py":  "dǎ diànhuà",
+        "cat":  "Động từ",
+        "vn":  "gọi điện thoại"
+    },
+    {
+        "zh":  "做",
+        "py":  "zuò",
+        "cat":  "Động từ",
+        "vn":  "làm, nấu"
+    },
+    {
+        "zh":  "买",
+        "py":  "mǎi",
+        "cat":  "Động từ",
+        "vn":  "mua"
+    },
+    {
+        "zh":  "开",
+        "py":  "kāi",
+        "cat":  "Động từ",
+        "vn":  "mở, lái (xe)"
+    },
+    {
+        "zh":  "坐",
+        "py":  "zuò",
+        "cat":  "Động từ",
+        "vn":  "ngồi, đi (xe)"
+    },
+    {
+        "zh":  "住",
+        "py":  "zhù",
+        "cat":  "Động từ",
+        "vn":  "ở, sinh sống"
+    },
+    {
+        "zh":  "学习",
+        "py":  "xuéxí",
+        "cat":  "Động từ",
+        "vn":  "học tập"
+    },
+    {
+        "zh":  "工作",
+        "py":  "gōngzuò",
+        "cat":  "Động từ",
+        "vn":  "làm việc, công tác"
+    },
+    {
+        "zh":  "下雨",
+        "py":  "xià yǔ",
+        "cat":  "Động từ",
+        "vn":  "trời mưa"
+    },
+    {
+        "zh":  "想",
+        "py":  "xiǎng",
+        "cat":  "Động từ",
+        "vn":  "muốn, nhớ, nghĩ"
+    },
+    {
+        "zh":  "会",
+        "py":  "huì",
+        "cat":  "Động từ",
+        "vn":  "biết (do học), sẽ"
+    },
+    {
+        "zh":  "能",
+        "py":  "néng",
+        "cat":  "Động từ",
+        "vn":  "có thể"
+    },
+    {
+        "zh":  "爱",
+        "py":  "ài",
+        "cat":  "Động từ",
+        "vn":  "yêu, thích"
+    },
+    {
+        "zh":  "喜欢",
+        "py":  "xǐhuan",
+        "cat":  "Động từ",
+        "vn":  "thích"
+    },
+    {
+        "zh":  "认识",
+        "py":  "rènshi",
+        "cat":  "Động từ",
+        "vn":  "quen biết"
+    },
+    {
+        "zh":  "好",
+        "py":  "hǎo",
+        "cat":  "Tính từ",
+        "vn":  "tốt, đẹp, khỏe"
+    },
+    {
+        "zh":  "大",
+        "py":  "dà",
+        "cat":  "Tính từ",
+        "vn":  "to, lớn"
+    },
+    {
+        "zh":  "小",
+        "py":  "xiǎo",
+        "cat":  "Tính từ",
+        "vn":  "nhỏ, bé"
+    },
+    {
+        "zh":  "多",
+        "py":  "duō",
+        "cat":  "Tính từ",
+        "vn":  "nhiều"
+    },
+    {
+        "zh":  "少",
+        "py":  "shǎo",
+        "cat":  "Tính từ",
+        "vn":  "ít"
+    },
+    {
+        "zh":  "冷",
+        "py":  "lěng",
+        "cat":  "Tính từ",
+        "vn":  "lạnh"
+    },
+    {
+        "zh":  "热",
+        "py":  "rè",
+        "cat":  "Tính từ",
+        "vn":  "nóng"
+    },
+    {
+        "zh":  "高兴",
+        "py":  "gāoxìng",
+        "cat":  "Tính từ",
+        "vn":  "vui vẻ, mừng rỡ"
+    },
+    {
+        "zh":  "漂亮",
+        "py":  "piàoliang",
+        "cat":  "Tính từ",
+        "vn":  "xinh đẹp"
+    },
+    {
+        "zh":  "贵",
+        "py":  "guì",
+        "cat":  "Tính từ",
+        "vn":  "đắt (quý)"
+    },
+    {
+        "zh":  "不",
+        "py":  "bù",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "không"
+    },
+    {
+        "zh":  "没 (没有)",
+        "py":  "méi (méiyǒu)",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "không, chưa có"
+    },
+    {
+        "zh":  "很",
+        "py":  "hěn",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "rất"
+    },
+    {
+        "zh":  "太",
+        "py":  "tài",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "quá, lắm"
+    },
+    {
+        "zh":  "都",
+        "py":  "dōu",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "đều"
+    },
+    {
+        "zh":  "和",
+        "py":  "hé",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "và, với"
+    },
+    {
+        "zh":  "在",
+        "py":  "zài",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "ở, tại, đang"
+    },
+    {
+        "zh":  "的",
+        "py":  "de",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "của (trợ từ kết cấu)"
+    },
+    {
+        "zh":  "了",
+        "py":  "le",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "rồi (trợ từ ngữ khí)"
+    },
+    {
+        "zh":  "吗",
+        "py":  "ma",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "phải không, à (trợ từ nghi vấn)"
+    },
+    {
+        "zh":  "呢",
+        "py":  "ne",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "thế, nhỉ, còn... thì sao"
+    },
+    {
+        "zh":  "给",
+        "py":  "gěi",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "cho, tặng"
+    },
+    {
+        "zh":  "也",
+        "py":  "yě",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "cũng"
+    },
+    {
+        "zh":  "一起",
+        "py":  "yìqǐ",
+        "cat":  "Phó từ \u0026 Trợ từ",
+        "vn":  "cùng nhau"
+    },
+    {
+        "zh":  "个",
+        "py":  "gè",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "cái, con, người (lượng từ chung)"
+    },
+    {
+        "zh":  "本",
+        "py":  "běn",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "quyển, cuốn (sách)"
+    },
+    {
+        "zh":  "岁",
+        "py":  "suì",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "tuổi"
+    },
+    {
+        "zh":  "块",
+        "py":  "kuài",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "đồng (tiền tệ)"
+    },
+    {
+        "zh":  "些 (一些)",
+        "py":  "xiē (yìxiē)",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "một số, một ít"
+    },
+    {
+        "zh":  "一",
+        "py":  "yī",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 1"
+    },
+    {
+        "zh":  "二 / 两",
+        "py":  "èr / liǎng",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 2 / hai (lượng)"
+    },
+    {
+        "zh":  "三",
+        "py":  "sān",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 3"
+    },
+    {
+        "zh":  "四",
+        "py":  "sì",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 4"
+    },
+    {
+        "zh":  "五",
+        "py":  "wǔ",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 5"
+    },
+    {
+        "zh":  "六",
+        "py":  "liù",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 6"
+    },
+    {
+        "zh":  "七",
+        "py":  "qī",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 7"
+    },
+    {
+        "zh":  "八",
+        "py":  "bā",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 8"
+    },
+    {
+        "zh":  "九",
+        "py":  "jiǔ",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 9"
+    },
+    {
+        "zh":  "十",
+        "py":  "shí",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 10"
+    },
+    {
+        "zh":  "谢谢",
+        "py":  "xièxie",
+        "cat":  "Giao tiếp",
+        "vn":  "cảm ơn"
+    },
+    {
+        "zh":  "不客气",
+        "py":  "bú kèqi",
+        "cat":  "Giao tiếp",
+        "vn":  "đừng khách sáo"
+    },
+    {
+        "zh":  "再见",
+        "py":  "zàijiàn",
+        "cat":  "Giao tiếp",
+        "vn":  "tạm biệt"
+    },
+    {
+        "zh":  "请",
+        "py":  "qǐng",
+        "cat":  "Giao tiếp",
+        "vn":  "mời, xin"
+    },
+    {
+        "zh":  "对不起",
+        "py":  "duìbuqǐ",
+        "cat":  "Giao tiếp",
+        "vn":  "xin lỗi"
+    },
+    {
+        "zh":  "没关系",
+        "py":  "méi guānxi",
+        "cat":  "Giao tiếp",
+        "vn":  "không sao, không có gì"
+    },
+    {
+        "zh":  "喂",
+        "py":  "wèi",
+        "cat":  "Giao tiếp",
+        "vn":  "a-lô (nghe điện thoại)"
+    },
+    {
+        "zh":  "零",
+        "py":  "líng",
+        "cat":  "Số \u0026 Lượng từ",
+        "vn":  "số 0"
+    },
+    {
+        "zh":  "字",
+        "py":  "zì",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "chữ, chữ Hán"
+    },
+    {
+        "zh":  "汉语",
+        "py":  "Hànyǔ",
+        "cat":  "Đồ vật \u0026 Đời sống",
+        "vn":  "tiếng Hán, tiếng Trung"
+    }
+]
+;
+    const PICS_DATA = [
+    {
+        "topic":  "Thời tiết \u0026 Nước uống",
+        "id":  1,
+        "prompt_hints":  [
+                             "1. Thời tiết hôm nay thế nào? Ai đang ở đâu?",
+                             "2. Cô ấy cảm thấy thế nào? Muốn uống gì?",
+                             "3. Uống nước xong cô ấy cảm thấy ra sao?"
+                         ],
+        "grammar_notes":  "Cấu trúc \u0027太...了\u0027 (quá... rồi), \u0027在 + địa điểm\u0027 (ở đâu), \u0027想 + Động từ\u0027 (muốn làm gì).",
+        "num":  "01",
+        "title":  "Uống nước dưới trời nóng 35°C",
+        "keywords":  [
+                         {
+                             "zh":  "今天",
+                             "py":  "jīntiān",
+                             "vn":  "hôm nay"
+                         },
+                         {
+                             "zh":  "天气",
+                             "py":  "tiānqì",
+                             "vn":  "thời tiết"
+                         },
+                         {
+                             "zh":  "太热了",
+                             "py":  "tài rè le",
+                             "vn":  "quá nóng rồi"
+                         },
+                         {
+                             "zh":  "在外面",
+                             "py":  "zài wàimiàn",
+                             "vn":  "ở bên ngoài"
+                         },
+                         {
+                             "zh":  "想喝水",
+                             "py":  "xiǎng hē shuǐ",
+                             "vn":  "muốn uống nước"
+                         },
+                         {
+                             "zh":  "高兴",
+                             "py":  "gāoxìng",
+                             "vn":  "vui vẻ"
+                         }
+                     ],
+        "full_zh":  "今天天气太热了，李小姐在外面。她现在很热，很想喝一杯大杯的水。喝了水，她很高兴，也觉得很好。",
+        "char_count":  39,
+        "full_vn":  "Hôm nay thời tiết nóng quá rồi, cô Lý đang ở bên ngoài. Bây giờ cô ấy rất nóng, rất muốn uống một ly nước lớn. Uống nước xong, cô ấy rất vui vẻ và cảm thấy dễ chịu.",
+        "sentences":  [
+                          {
+                              "chars":  14,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Jīntiān tiānqì tài rè le, Lǐ xiǎojiě zài wàimiàn.",
+                              "vn":  "Hôm nay thời tiết nóng quá rồi, cô Lý đang ở bên ngoài.",
+                              "zh":  "今天天气太热了，李小姐在外面。"
+                          },
+                          {
+                              "chars":  14,
+                              "step":  "Câu 2: Hành động",
+                              "py":  "Tā xiànzài hěn rè, hěn xiǎng hē yì bēi dà bēi de shuǐ.",
+                              "vn":  "Bây giờ cô ấy rất nóng, rất muốn uống một ly nước lớn.",
+                              "zh":  "她现在很热，很想喝一杯大杯的水。"
+                          },
+                          {
+                              "chars":  11,
+                              "step":  "Câu 3: Cảm xúc",
+                              "py":  "Hē le shuǐ, tā hěn gāoxìng, yě juéde hěn hǎo.",
+                              "vn":  "Uống nước xong, cô ấy rất vui vẻ và cảm thấy dễ chịu.",
+                              "zh":  "喝了水，她很高兴，也觉得很好。"
+                          }
+                      ],
+        "pic":  "images/pic1.jpg",
+        "full_py":  "Jīntiān tiānqì tài rè le, Lǐ xiǎojiě zài wàimiàn. Tā xiànzài hěn rè, hěn xiǎng hē yì bēi dà bēi de shuǐ. Hē le shuǐ, tā hěn gāoxìng, yě juéde hěn hǎo.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Mua sắm \u0026 Trái cây",
+        "id":  2,
+        "prompt_hints":  [
+                             "1. Lúc nào cô ấy đi đâu mua gì?",
+                             "2. Táo ở đây trông như thế nào? Cô ấy muốn mua mấy quả?",
+                             "3. Mua xong cô ấy tặng cho ai?"
+                         ],
+        "grammar_notes":  "Câu chữ \u0027去 + địa điểm + Động từ\u0027, số từ + lượng từ (六个, 六个大苹果), giới từ \u0027给\u0027 (cho/tặng ai).",
+        "num":  "02",
+        "title":  "Mua táo ở cửa hàng hoa quả",
+        "keywords":  [
+                         {
+                             "zh":  "下午",
+                             "py":  "xiàwǔ",
+                             "vn":  "buổi chiều"
+                         },
+                         {
+                             "zh":  "商店",
+                             "py":  "shāngdiàn",
+                             "vn":  "cửa hàng"
+                         },
+                         {
+                             "zh":  "买水果",
+                             "py":  "mǎi shuǐguǒ",
+                             "vn":  "mua hoa quả"
+                         },
+                         {
+                             "zh":  "很大",
+                             "py":  "hěn dà",
+                             "vn":  "rất to"
+                         },
+                         {
+                             "zh":  "苹果",
+                             "py":  "píngguǒ",
+                             "vn":  "quả táo"
+                         },
+                         {
+                             "zh":  "朋友",
+                             "py":  "péngyou",
+                             "vn":  "bạn bè"
+                         }
+                     ],
+        "full_zh":  "今天下午李小姐去商店买水果。这里的苹果很大，她想买六个。她买了六个大苹果给她的好朋友。",
+        "char_count":  40,
+        "full_vn":  "Chiều hôm nay cô Lý đi cửa hàng mua hoa quả. Táo ở đây rất to, cô ấy muốn mua sáu quả. Cô ấy đã mua sáu quả táo to tặng cho người bạn tốt của mình.",
+        "sentences":  [
+                          {
+                              "chars":  14,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Jīntiān xiàwǔ Lǐ xiǎojiě qù shāngdiàn mǎi shuǐguǒ.",
+                              "vn":  "Chiều hôm nay cô Lý đi cửa hàng mua hoa quả.",
+                              "zh":  "今天下午李小姐去商店买水果。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 2: Hành động",
+                              "py":  "Zhèlǐ de píngguǒ hěn dà, tā xiǎng mǎi liù ge.",
+                              "vn":  "Táo ở đây rất to, cô ấy muốn mua sáu quả.",
+                              "zh":  "这里的苹果很大，她想买六个。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 3: Đánh giá \u0026 Cảm xúc",
+                              "py":  "Tā mǎi le liù ge dà píngguǒ gěi tā de hǎo péngyou.",
+                              "vn":  "Cô ấy đã mua sáu quả táo to tặng cho người bạn tốt của mình.",
+                              "zh":  "她买了六个大苹果给她的好朋友。"
+                          }
+                      ],
+        "pic":  "images/pic2.jpg",
+        "full_py":  "Jīntiān xiàwǔ Lǐ xiǎojiě qù shāngdiàn mǎi shuǐguǒ. Zhèlǐ de píngguǒ hěn dà, tā xiǎng mǎi liù ge. Tā mǎi le liù ge dà píngguǒ gěi tā de hǎo péngyou.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Nấu ăn \u0026 Tiếp đãi bạn bè",
+        "id":  3,
+        "prompt_hints":  [
+                             "1. Buổi trưa cô ấy đang ở đâu và làm gì?",
+                             "2. Trên bàn có những gì? Cô ấy có thích nấu ăn không?",
+                             "3. Cô ấy muốn mời ai đến nhà ăn cơm?"
+                         ],
+        "grammar_notes":  "Câu tồn hiện \u0027桌子上 + 有...\u0027, động từ năng nguyện \u0027想\u0027 (muốn), câu kiêm ngữ \u0027请 + Tân ngữ + Động từ\u0027.",
+        "num":  "03",
+        "title":  "Nấu ăn làm món trong bếp",
+        "keywords":  [
+                         {
+                             "zh":  "中午",
+                             "py":  "zhōngwǔ",
+                             "vn":  "buổi trưa"
+                         },
+                         {
+                             "zh":  "在家里",
+                             "py":  "zài jiālǐ",
+                             "vn":  "ở nhà"
+                         },
+                         {
+                             "zh":  "做菜",
+                             "py":  "zuò cài",
+                             "vn":  "làm món/nấu ăn"
+                         },
+                         {
+                             "zh":  "很多菜",
+                             "py":  "hěn duō cài",
+                             "vn":  "nhiều món ăn"
+                         },
+                         {
+                             "zh":  "喜欢做饭",
+                             "py":  "xǐhuan zuò fàn",
+                             "vn":  "thích nấu cơm"
+                         },
+                         {
+                             "zh":  "请朋友",
+                             "py":  "qǐng péngyou",
+                             "vn":  "mời bạn bè"
+                         }
+                     ],
+        "full_zh":  "今天中午李老师在家里做菜。桌子上有很多菜，她很喜欢做饭。她想请三个好朋友来家里吃饭。",
+        "char_count":  40,
+        "full_vn":  "Trưa hôm nay cô giáo Lý ở nhà nấu món ăn. Trên bàn có rất nhiều rau củ, cô ấy rất thích nấu ăn. Cô ấy muốn mời ba người bạn tốt đến nhà cùng ăn cơm.",
+        "sentences":  [
+                          {
+                              "chars":  13,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Jīntiān zhōngwǔ Lǐ lǎoshī zài jiālǐ zuò cài.",
+                              "vn":  "Trưa hôm nay cô giáo Lý ở nhà nấu món ăn.",
+                              "zh":  "今天中午李老师在家里做菜。"
+                          },
+                          {
+                              "chars":  14,
+                              "step":  "Câu 2: Hành động",
+                              "py":  "Zhuōzi shàng yǒu hěn duō cài, tā hěn xǐhuan zuò fàn.",
+                              "vn":  "Trên bàn có rất nhiều rau củ, cô ấy rất thích nấu ăn.",
+                              "zh":  "桌子上有很多菜，她很喜欢做饭。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 3: Dự định \u0026 Cảm xúc",
+                              "py":  "Tā xiǎng qǐng sān ge hǎo péngyou lái jiālǐ chī fàn.",
+                              "vn":  "Cô ấy muốn mời ba người bạn tốt đến nhà cùng ăn cơm.",
+                              "zh":  "她想请三个好朋友来家里吃饭。"
+                          }
+                      ],
+        "pic":  "images/pic3.jpg",
+        "full_py":  "Jīntiān zhōngwǔ Lǐ lǎoshī zài jiālǐ zuò cài. Zhuōzi shàng yǒu hěn duō cài, tā hěn xǐhuan zuò fàn. Tā xiǎng qǐng sān ge hǎo péngyou lái jiālǐ chī fàn.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Học tập \u0026 Đọc sách",
+        "id":  4,
+        "prompt_hints":  [
+                             "1. Hôm nay thứ mấy? Cô ấy đang ở đâu làm gì?",
+                             "2. Trên bàn có những gì? Cô ấy đang đọc sách gì?",
+                             "3. Cô ấy có thích học không? Là một học sinh thế nào?"
+                         ],
+        "grammar_notes":  "Phương vị từ \u0027桌子上\u0027, cấu trúc chữ 的 \u0027她的汉语书\u0027, câu chữ 是 \u0027是个好学生\u0027.",
+        "num":  "04",
+        "title":  "Đọc sách ở thư viện / trường học",
+        "keywords":  [
+                         {
+                             "zh":  "星期一",
+                             "py":  "xīngqīyī",
+                             "vn":  "thứ Hai"
+                         },
+                         {
+                             "zh":  "在学校",
+                             "py":  "zài xuéxiào",
+                             "vn":  "ở trường"
+                         },
+                         {
+                             "zh":  "看书",
+                             "py":  "kàn shū",
+                             "vn":  "đọc sách"
+                         },
+                         {
+                             "zh":  "桌子上",
+                             "py":  "zhuōzi shàng",
+                             "vn":  "trên bàn"
+                         },
+                         {
+                             "zh":  "汉语书",
+                             "py":  "Hànyǔ shū",
+                             "vn":  "sách tiếng Trung"
+                         },
+                         {
+                             "zh":  "好学生",
+                             "py":  "hǎo xuésheng",
+                             "vn":  "học sinh tốt"
+                         }
+                     ],
+        "full_zh":  "今天星期一，王小姐在学校看书。桌子上有很多书，这是她的汉语书。她很喜欢学习汉语，是个好学生。",
+        "char_count":  40,
+        "full_vn":  "Hôm nay là thứ Hai, cô Vương đang đọc sách ở trường. Trên bàn có rất nhiều sách, đây là cuốn sách tiếng Trung của cô ấy. Cô ấy rất thích học tiếng Trung, là một học sinh chăm ngoan.",
+        "sentences":  [
+                          {
+                              "chars":  15,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Jīntiān xīngqīyī, Wáng xiǎojiě zài xuéxiào kàn shū.",
+                              "vn":  "Hôm nay là thứ Hai, cô Vương đang đọc sách ở trường.",
+                              "zh":  "今天星期一，王小姐在学校看书。"
+                          },
+                          {
+                              "chars":  15,
+                              "step":  "Câu 2: Hành động",
+                              "py":  "Zhuōzi shàng yǒu hěn duō shū, zhè shì tā de Hànyǔ shū.",
+                              "vn":  "Trên bàn có rất nhiều sách, đây là cuốn sách tiếng Trung của cô ấy.",
+                              "zh":  "桌子上有很多书，这是她的汉语书。"
+                          },
+                          {
+                              "chars":  10,
+                              "step":  "Câu 3: Đánh giá",
+                              "py":  "Tā hěn xǐhuan xuéxí Hànyǔ, shì ge hǎo xuésheng.",
+                              "vn":  "Cô ấy rất thích học tiếng Trung, là một học sinh chăm ngoan.",
+                              "zh":  "她很喜欢学习汉语，是个好学生。"
+                          }
+                      ],
+        "pic":  "images/pic4.jpg",
+        "full_py":  "Jīntiān xīngqīyī, Wáng xiǎojiě zài xuéxiào kàn shū. Zhuōzi shàng yǒu hěn duō shū, zhè shì tā de Hànyǔ shū. Tā hěn xǐhuan xuéxí Hànyǔ, shì ge hǎo xuésheng.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Đi lại \u0026 Thời gian",
+        "id":  5,
+        "prompt_hints":  [
+                             "1. Bây giờ là mấy giờ? Thời tiết thế nào?",
+                             "2. Cô ấy đi đâu bằng phương tiện gì? Đi gặp ai?",
+                             "3. Ngồi trên xe tâm trạng cô ấy thế nào?"
+                         ],
+        "grammar_notes":  "Cách nói giờ \u0027上午七点\u0027, phương thức di chuyển \u0027坐出租车去...\u0027, kết cấu bổ ngữ nơi chốn \u0027坐在...里\u0027.",
+        "num":  "05",
+        "title":  "Đi taxi buổi sáng lúc 7:00",
+        "keywords":  [
+                         {
+                             "zh":  "上午七点",
+                             "py":  "shàngwǔ qī diǎn",
+                             "vn":  "7 giờ sáng"
+                         },
+                         {
+                             "zh":  "天气很好",
+                             "py":  "tiānqì hěn hǎo",
+                             "vn":  "thời tiết rất đẹp"
+                         },
+                         {
+                             "zh":  "坐出租车",
+                             "py":  "zuò chūzūchē",
+                             "vn":  "đi taxi"
+                         },
+                         {
+                             "zh":  "去学校",
+                             "py":  "qù xuéxiào",
+                             "vn":  "đến trường"
+                         },
+                         {
+                             "zh":  "看老师",
+                             "py":  "kàn lǎoshī",
+                             "vn":  "gặp thầy cô"
+                         },
+                         {
+                             "zh":  "很高兴",
+                             "py":  "hěn gāoxìng",
+                             "vn":  "rất vui vẻ"
+                         }
+                     ],
+        "full_zh":  "现在是上午七点，今天天气很好。王小姐坐出租车去学校看老师。她坐在出租车里，心里觉得很高兴。",
+        "char_count":  40,
+        "full_vn":  "Bây giờ là bảy giờ sáng, hôm nay thời tiết rất đẹp. Cô Vương đi xe taxi đến trường để gặp cô giáo. Cô ấy ngồi trong xe taxi, trong lòng cảm thấy rất vui vẻ.",
+        "sentences":  [
+                          {
+                              "chars":  14,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Xiànzài shì shàngwǔ qī diǎn, jīntiān tiānqì hěn hǎo.",
+                              "vn":  "Bây giờ là bảy giờ sáng, hôm nay thời tiết rất đẹp.",
+                              "zh":  "现在是上午七点，今天天气很好。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 2: Hành động",
+                              "py":  "Wáng xiǎojiě zuò chūzūchē qù xuéxiào kàn lǎoshī.",
+                              "vn":  "Cô Vương đi xe taxi đến trường để gặp cô giáo.",
+                              "zh":  "王小姐坐出租车去学校看老师。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 3: Cảm xúc",
+                              "py":  "Tā zuò zài chūzūchē lǐ, xīnlǐ juéde hěn gāoxìng.",
+                              "vn":  "Cô ấy ngồi trong xe taxi, trong lòng cảm thấy rất vui vẻ.",
+                              "zh":  "她坐在出租车里，心里觉得很高兴。"
+                          }
+                      ],
+        "pic":  "images/pic5.jpg",
+        "full_py":  "Xiànzài shì shàngwǔ qī diǎn, jīntiān tiānqì hěn hǎo. Wáng xiǎojiě zuò chūzūchē qù xuéxiào kàn lǎoshī. Tā zuò zài chūzūchē lǐ, xīnlǐ juéde hěn gāoxìng.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Lái xe \u0026 Bệnh viện",
+        "id":  6,
+        "prompt_hints":  [
+                             "1. Hôm nay là ngày tháng nào? Mấy giờ?",
+                             "2. Anh ấy biết lái xe không? Đang lái xe đi đâu?",
+                             "3. Anh ấy đến bệnh viện để làm gì?"
+                         ],
+        "grammar_notes":  "Trật tự thời gian (Tháng -\u003e Ngày -\u003e Buổi -\u003e Giờ), động từ năng nguyện \u0027会\u0027 (kỹ năng) và \u0027想\u0027 (dự định).",
+        "num":  "06",
+        "title":  "Lái xe ngày 26/10 lúc 14:30",
+        "keywords":  [
+                         {
+                             "zh":  "十月二十六号",
+                             "py":  "shí yuè èrshíliù hào",
+                             "vn":  "ngày 26/10"
+                         },
+                         {
+                             "zh":  "下午两点半",
+                             "py":  "xiàwǔ liǎng diǎn bàn",
+                             "vn":  "2h30 chiều"
+                         },
+                         {
+                             "zh":  "开车",
+                             "py":  "kāi chē",
+                             "vn":  "lái xe ô tô"
+                         },
+                         {
+                             "zh":  "去医院",
+                             "py":  "qù yīyuàn",
+                             "vn":  "đến bệnh viện"
+                         },
+                         {
+                             "zh":  "看朋友",
+                             "py":  "kàn péngyou",
+                             "vn":  "thăm bạn bè"
+                         }
+                     ],
+        "full_zh":  "今天是十月二十六号下午两点半。张先生会开车，他开车去医院。他想去医院看他的一个好朋友。",
+        "char_count":  41,
+        "full_vn":  "Hôm nay là ngày 26 tháng 10 lúc hai giờ rưỡi chiều. Ông Trương biết lái xe, ông ấy đang lái xe đến bệnh viện. Ông ấy muốn đến bệnh viện thăm một người bạn tốt.",
+        "sentences":  [
+                          {
+                              "chars":  15,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Jīntiān shì shí yuè èrshíliù hào xiàwǔ liǎng diǎn bàn.",
+                              "vn":  "Hôm nay là ngày 26 tháng 10 lúc hai giờ rưỡi chiều.",
+                              "zh":  "今天是十月二十六号下午两点半。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 2: Hành động",
+                              "py":  "Zhāng xiānsheng huì kāi chē, tā kāi chē qù yīyuàn.",
+                              "vn":  "Ông Trương biết lái xe, ông ấy đang lái xe đến bệnh viện.",
+                              "zh":  "张先生会开车，他开车去医院。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 3: Mục đích",
+                              "py":  "Tā xiǎng qù yīyuàn kàn tā de yí ge hǎo péngyou.",
+                              "vn":  "Ông ấy muốn đến bệnh viện thăm một người bạn tốt.",
+                              "zh":  "他想去医院看他的一个好朋友。"
+                          }
+                      ],
+        "pic":  "images/pic6.jpg",
+        "full_py":  "Jīntiān shì shí yuè èrshíliù hào xiàwǔ liǎng diǎn bàn. Zhāng xiānsheng huì kāi chē, tā kāi chē qù yīyuàn. Tā xiǎng qù yīyuàn kàn tā de yí ge hǎo péngyou.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Sinh hoạt \u0026 Giấc ngủ",
+        "id":  7,
+        "prompt_hints":  [
+                             "1. Bây giờ là mấy giờ? Cô ấy chuẩn bị làm gì ở đâu?",
+                             "2. Hôm nay cô ấy đã học tập và làm việc như thế nào?",
+                             "3. Ngày mai mấy giờ cô ấy phải đến trường?"
+                         ],
+        "grammar_notes":  "Trợ từ động thái \u0027了\u0027 biểu thị hành động hoàn thành (做了很多工作), phó từ \u0027还\u0027 (còn, vẫn).",
+        "num":  "07",
+        "title":  "Đi ngủ lúc 11:00 đêm",
+        "keywords":  [
+                         {
+                             "zh":  "晚上十一点",
+                             "py":  "wǎnshang shíyī diǎn",
+                             "vn":  "11 giờ đêm"
+                         },
+                         {
+                             "zh":  "在家里",
+                             "py":  "zài jiālǐ",
+                             "vn":  "ở nhà"
+                         },
+                         {
+                             "zh":  "睡觉",
+                             "py":  "shuìjiào",
+                             "vn":  "đi ngủ"
+                         },
+                         {
+                             "zh":  "做了工作",
+                             "py":  "zuò le gōngzuò",
+                             "vn":  "đã làm việc"
+                         },
+                         {
+                             "zh":  "明天上午",
+                             "py":  "míngtiān shàngwǔ",
+                             "vn":  "sáng mai"
+                         },
+                         {
+                             "zh":  "去学校",
+                             "py":  "qù xuéxiào",
+                             "vn":  "đến trường"
+                         }
+                     ],
+        "full_zh":  "现在是晚上十一点，她在家里睡觉。今天她在学校学习，做了很多工作。明天上午八点她还要去学校。",
+        "char_count":  41,
+        "full_vn":  "Bây giờ là mười một giờ đêm, cô ấy chuẩn bị đi ngủ ở nhà. Hôm nay cô ấy đã học ở trường và làm rất nhiều bài tập, công việc. Tám giờ sáng mai cô ấy còn phải tiếp tục đến trường.",
+        "sentences":  [
+                          {
+                              "chars":  15,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Xiànzài shì wǎnshang shíyī diǎn, tā zài jiālǐ shuìjiào.",
+                              "vn":  "Bây giờ là mười một giờ đêm, cô ấy chuẩn bị đi ngủ ở nhà.",
+                              "zh":  "现在是晚上十一点，她在家里睡觉。"
+                          },
+                          {
+                              "chars":  14,
+                              "step":  "Câu 2: Nguyên nhân",
+                              "py":  "Jīntiān tā zài xuéxiào xuéxí, zuò le hěn duō gōngzuò.",
+                              "vn":  "Hôm nay cô ấy đã học ở trường và làm rất nhiều bài tập, công việc.",
+                              "zh":  "今天她在学校学习，做了很多工作。"
+                          },
+                          {
+                              "chars":  12,
+                              "step":  "Câu 3: Dự định ngày mai",
+                              "py":  "Míngtiān shàngwǔ bā diǎn tā hái yào qù xuéxiào.",
+                              "vn":  "Tám giờ sáng mai cô ấy còn phải tiếp tục đến trường.",
+                              "zh":  "明天上午八点她还要去学校。"
+                          }
+                      ],
+        "pic":  "images/pic7.jpg",
+        "full_py":  "Xiànzài shì wǎnshang shíyī diǎn, tā zài jiālǐ shuìjiào. Jīntiān tā zài xuéxiào xuéxí, zuò le hěn duō gōngzuò. Míngtiān shàngwǔ bā diǎn tā hái yào qù xuéxiào.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Mua sắm \u0026 Quần áo",
+        "id":  8,
+        "prompt_hints":  [
+                             "1. Hôm qua cô ấy đi đâu mua sắm?",
+                             "2. Trong cửa hàng có những bộ quần áo như thế nào?",
+                             "3. Cô ấy muốn mua một bộ cho ai?"
+                         ],
+        "grammar_notes":  "Lượng từ cho quần áo \u0027件\u0027 (一件衣服), trợ từ kết cấu \u0027的\u0027 miêu tả định ngữ (漂亮的衣服).",
+        "num":  "08",
+        "title":  "Xem đồ ở cửa hàng quần áo",
+        "keywords":  [
+                         {
+                             "zh":  "昨天下午",
+                             "py":  "zuótiān xiàwǔ",
+                             "vn":  "chiều hôm qua"
+                         },
+                         {
+                             "zh":  "大商店",
+                             "py":  "dà shāngdiàn",
+                             "vn":  "cửa hàng to"
+                         },
+                         {
+                             "zh":  "买东西",
+                             "py":  "mǎi dōngxi",
+                             "vn":  "mua đồ"
+                         },
+                         {
+                             "zh":  "漂亮衣服",
+                             "py":  "piàoliang yīfu",
+                             "vn":  "quần áo đẹp"
+                         },
+                         {
+                             "zh":  "想买一件",
+                             "py":  "xiǎng mǎi yí jiàn",
+                             "vn":  "muốn mua một bộ"
+                         },
+                         {
+                             "zh":  "女儿",
+                             "py":  "nǚ\u0027ér",
+                             "vn":  "con gái"
+                         }
+                     ],
+        "full_zh":  "昨天下午李小姐去大商店买东西。商店里有很多漂亮的衣服。她想买一件漂亮的衣服给她的女儿。",
+        "char_count":  40,
+        "full_vn":  "Chiều hôm qua cô Lý đến một cửa hàng lớn để mua đồ. Bên trong cửa hàng có rất nhiều quần áo đẹp. Cô ấy muốn mua một bộ quần áo đẹp tặng cho con gái của mình.",
+        "sentences":  [
+                          {
+                              "chars":  14,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Zuótiān xiàwǔ Lǐ xiǎojiě qù dà shāngdiàn mǎi dōngxi.",
+                              "vn":  "Chiều hôm qua cô Lý đến một cửa hàng lớn để mua đồ.",
+                              "zh":  "昨天下午李小姐去大商店买东西。"
+                          },
+                          {
+                              "chars":  11,
+                              "step":  "Câu 2: Quan sát",
+                              "py":  "Shāngdiàn lǐ yǒu hěn duō piàoliang de yīfu.",
+                              "vn":  "Bên trong cửa hàng có rất nhiều quần áo đẹp.",
+                              "zh":  "商店里有很多漂亮的衣服。"
+                          },
+                          {
+                              "chars":  15,
+                              "step":  "Câu 3: Quyết định",
+                              "py":  "Tā xiǎng mǎi yí jiàn piàoliang de yīfu gěi tā de nǚ\u0027ér.",
+                              "vn":  "Cô ấy muốn mua một bộ quần áo đẹp tặng cho con gái của mình.",
+                              "zh":  "她想买一件漂亮的衣服给她的女儿。"
+                          }
+                      ],
+        "pic":  "images/pic14.jpg",
+        "full_py":  "Zuótiān xiàwǔ Lǐ xiǎojiě qù dà shāngdiàn mǎi dōngxi. Shāngdiàn lǐ yǒu hěn duō piàoliang de yīfu. Tā xiǎng mǎi yí jiàn piàoliang de yīfu gěi tā de nǚ\u0027ér.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Giá cả \u0026 Tiền bạc",
+        "id":  9,
+        "prompt_hints":  [
+                             "1. Đồ đạc trong cửa hàng này trông thế nào? Có đắt không?",
+                             "2. Chiếc áo này giá bao nhiêu đồng?",
+                             "3. Cô ấy đã mua nó và tâm trạng thế nào?"
+                         ],
+        "grammar_notes":  "Phó từ \u0027都\u0027 (đều), đơn vị tiền tệ \u0027块\u0027 (十块钱), trạng từ cảm xúc \u0027心里很高兴\u0027.",
+        "num":  "09",
+        "title":  "Chiếc áo đẹp giá 10 đồng",
+        "keywords":  [
+                         {
+                             "zh":  "商店",
+                             "py":  "shāngdiàn",
+                             "vn":  "cửa hàng"
+                         },
+                         {
+                             "zh":  "很漂亮",
+                             "py":  "hěn piàoliang",
+                             "vn":  "rất đẹp"
+                         },
+                         {
+                             "zh":  "不贵",
+                             "py":  "bú guì",
+                             "vn":  "không đắt"
+                         },
+                         {
+                             "zh":  "十块钱",
+                             "py":  "shí kuài qián",
+                             "vn":  "10 đồng"
+                         },
+                         {
+                             "zh":  "买了一件",
+                             "py":  "mǎi le yí jiàn",
+                             "vn":  "đã mua một chiếc"
+                         },
+                         {
+                             "zh":  "心里高兴",
+                             "py":  "xīnlǐ gāoxìng",
+                             "vn":  "trong lòng rất vui"
+                         }
+                     ],
+        "full_zh":  "商店里的东西都很漂亮，不贵。这件衣服太漂亮了，只要十块钱。王小姐买了一件，她心里很高兴。",
+        "char_count":  39,
+        "full_vn":  "Đồ dùng trong cửa hàng đều rất đẹp, không hề đắt. Chiếc áo này đẹp quá, giá chỉ có mười đồng thôi. Cô Vương đã mua một chiếc, trong lòng cảm thấy rất vui.",
+        "sentences":  [
+                          {
+                              "chars":  13,
+                              "step":  "Câu 1: Đánh giá",
+                              "py":  "Shāngdiàn lǐ de dōngxi dōu hěn piàoliang, bú guì.",
+                              "vn":  "Đồ dùng trong cửa hàng đều rất đẹp, không hề đắt.",
+                              "zh":  "商店里的东西都很漂亮，不贵。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 2: Chi tiết giá cả",
+                              "py":  "Zhè jiàn yīfu tài piàoliang le, zhǐ yào shí kuài qián.",
+                              "vn":  "Chiếc áo này đẹp quá, giá chỉ có mười đồng thôi.",
+                              "zh":  "这件衣服太漂亮了，只要十块钱。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 3: Hành động \u0026 Cảm xúc",
+                              "py":  "Wáng xiǎojiě mǎi le yí jiàn, tā xīnlǐ hěn gāoxìng.",
+                              "vn":  "Cô Vương đã mua một chiếc, trong lòng cảm thấy rất vui.",
+                              "zh":  "王小姐买了一件，她心里很高兴。"
+                          }
+                      ],
+        "pic":  "images/pic15.jpg",
+        "full_py":  "Shāngdiàn lǐ de dōngxi dōu hěn piàoliang, bú guì. Zhè jiàn yīfu tài piàoliang le, zhǐ yào shí kuài qián. Wáng xiǎojiě mǎi le yí jiàn, tā xīnlǐ hěn gāoxìng.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Học tập \u0026 Máy tính",
+        "id":  10,
+        "prompt_hints":  [
+                             "1. Buổi sáng cô ấy đang ở đâu và dùng gì để học?",
+                             "2. Trên bàn của cô ấy có những đồ vật gì?",
+                             "3. Cô ấy thích tiếng Hán không? Muốn đi đâu làm việc?"
+                         ],
+        "grammar_notes":  "Giới từ công cụ \u0027用电脑 + Động từ\u0027, liên từ \u0027和\u0027 (và), lượng từ \u0027本\u0027 cho sách và \u0027个\u0027 cho cốc.",
+        "num":  "10",
+        "title":  "Học tiếng Trung bằng máy tính tại nhà",
+        "keywords":  [
+                         {
+                             "zh":  "上午",
+                             "py":  "shàngwǔ",
+                             "vn":  "buổi sáng"
+                         },
+                         {
+                             "zh":  "在家里",
+                             "py":  "zài jiālǐ",
+                             "vn":  "ở nhà"
+                         },
+                         {
+                             "zh":  "用电脑",
+                             "py":  "yòng diànnǎo",
+                             "vn":  "dùng máy tính"
+                         },
+                         {
+                             "zh":  "学习汉语",
+                             "py":  "xuéxí Hànyǔ",
+                             "vn":  "học tiếng Hán"
+                         },
+                         {
+                             "zh":  "桌子上",
+                             "py":  "zhuōzi shàng",
+                             "vn":  "trên bàn"
+                         },
+                         {
+                             "zh":  "去北京",
+                             "py":  "qù Běijīng",
+                             "vn":  "đến Bắc Kinh"
+                         }
+                     ],
+        "full_zh":  "今天上午李小姐在家里用电脑学习。桌子上有一本书和一个大杯子。她很喜欢汉语，想去北京工作。",
+        "char_count":  41,
+        "full_vn":  "Sáng hôm nay cô Lý ở nhà sử dụng máy tính để học tập. Ở trên bàn có một cuốn sách và một chiếc cốc lớn. Cô ấy rất yêu thích tiếng Trung, mong muốn đến Bắc Kinh làm việc.",
+        "sentences":  [
+                          {
+                              "chars":  15,
+                              "step":  "Câu 1: Bối cảnh",
+                              "py":  "Jīntiān shàngwǔ Lǐ xiǎojiě zài jiālǐ yòng diànnǎo xuéxí.",
+                              "vn":  "Sáng hôm nay cô Lý ở nhà sử dụng máy tính để học tập.",
+                              "zh":  "今天上午李小姐在家里用电脑学习。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 2: Quan sát",
+                              "py":  "Zhuōzi shàng yǒu yì běn shū hé yí ge dà bēizi.",
+                              "vn":  "Ở trên bàn có một cuốn sách và một chiếc cốc lớn.",
+                              "zh":  "桌子上有一本书和一个大杯子。"
+                          },
+                          {
+                              "chars":  13,
+                              "step":  "Câu 3: Dự định tương lai",
+                              "py":  "Tā hěn xǐhuan Hànyǔ, xiǎng qù Běijīng gōngzuò.",
+                              "vn":  "Cô ấy rất yêu thích tiếng Trung, mong muốn đến Bắc Kinh làm việc.",
+                              "zh":  "她很喜欢汉语，想去北京工作。"
+                          }
+                      ],
+        "pic":  "images/pic16.jpg",
+        "full_py":  "Jīntiān shàngwǔ Lǐ xiǎojiě zài jiālǐ yòng diànnǎo xuéxí. Zhuōzi shàng yǒu yì běn shū hé yí ge dà bēizi. Tā hěn xǐhuan Hànyǔ, xiǎng qù Běijīng gōngzuò.",
+        "sentence_count":  3
+    },
+    {
+        "topic":  "Nghề nghiệp \u0026 Nơi làm việc",
+        "id":  11,
+        "prompt_hints":  [
+                             "1. Cô Lý làm nghề gì và làm việc ở đâu?",
+                             "2. Thầy Vương làm nghề gì và công tác ở đâu?",
+                             "3. Họ là người nước nào và có mối quan hệ gì với tôi?"
+                         ],
+        "grammar_notes":  "Câu vị ngữ danh từ với \u0027是\u0027, kết cấu vị trí \u0027在...工作\u0027, phó từ kết hợp \u0027也都是\u0027.",
+        "num":  "11",
+        "title":  "Bác sĩ và Thầy giáo đang làm việc",
+        "keywords":  [
+                         {
+                             "zh":  "好医生",
+                             "py":  "hǎo yīshēng",
+                             "vn":  "bác sĩ giỏi"
+                         },
+                         {
+                             "zh":  "在医院",
+                             "py":  "zài yīyuàn",
+                             "vn":  "ở bệnh viện"
+                         },
+                         {
+                             "zh":  "老师",
+                             "py":  "lǎoshī",
+                             "vn":  "thầy giáo"
+                         },
+                         {
+                             "zh":  "在学校",
+                             "py":  "zài xuéxiào",
+                             "vn":  "ở trường học"
+                         },
+                         {
+                             "zh":  "中国人",
+                             "py":  "Zhōngguó rén",
+                             "vn":  "người Trung Quốc"
+                         },
+                         {
+                             "zh":  "好朋友",
+                             "py":  "hǎo péngyou",
+                             "vn":  "bạn tốt"
+                         }
+                     ],
+        "full_zh":  "李小姐是好医生，她在医院里工作。王先生是老师，他在学校工作。他们是中国人，也都是我的好朋友。",
+        "char_count":  41,
+        "full_vn":  "Cô Lý là một bác sĩ giỏi, cô ấy làm việc ở trong bệnh viện. Thầy Vương là giáo viên, thầy ấy làm việc ở trường học. Họ là người Trung Quốc, và đều là những người bạn tốt của tôi.",
+        "sentences":  [
+                          {
+                              "chars":  15,
+                              "step":  "Câu 1: Nghề nghiệp 1",
+                              "py":  "Lǐ xiǎojiě shì hǎo yīshēng, tā zài yīyuàn lǐ gōngzuò.",
+                              "vn":  "Cô Lý là một bác sĩ giỏi, cô ấy làm việc ở trong bệnh viện.",
+                              "zh":  "李小姐是好医生，她在医院里工作。"
+                          },
+                          {
+                              "chars":  12,
+                              "step":  "Câu 2: Nghề nghiệp 2",
+                              "py":  "Wáng xiānsheng shì lǎoshī, tā zài xuéxiào gōngzuò.",
+                              "vn":  "Thầy Vương là giáo viên, thầy ấy làm việc ở trường học.",
+                              "zh":  "王先生是老师，他在学校工作。"
+                          },
+                          {
+                              "chars":  14,
+                              "step":  "Câu 3: Quan hệ \u0026 Đánh giá",
+                              "py":  "Tāmen shì Zhōngguó rén, yě dōu shì wǒ de hǎo péngyou.",
+                              "vn":  "Họ là người Trung Quốc, và đều là những người bạn tốt của tôi.",
+                              "zh":  "他们是中国人，也都是我的好朋友。"
+                          }
+                      ],
+        "pic":  "images/pic18.jpg",
+        "full_py":  "Lǐ xiǎojiě shì hǎo yīshēng, tā zài yīyuàn lǐ gōngzuò. Wáng xiānsheng shì lǎoshī, tā zài xuéxiào gōngzuò. Tāmen shì Zhōngguó rén, yě dōu shì wǒ de hǎo péngyou.",
+        "sentence_count":  3
+    }
+]
+;
+
+    let activeTab = 'tab-sentences';
+    let showPinyin = true;
+    let speechRate = 1.0;
+
+    // SENTENCES STATE
+    let currentSentences = [...SENTENCES_DATA];
+    let sentenceIndex = 0;
+    let isSentenceFlipped = false;
+    let currentSentence = currentSentences[0];
+
+    // VOCAB STATE
+    let currentVocabs = [...VOCAB_DATA];
+    let vocabIndex = 0;
+    let isVocabFlipped = false;
+    let currentVocab = currentVocabs[0];
+
+    // INIT
+    window.addEventListener('DOMContentLoaded', () => {
+      initSentences();
+      initVocab();
+      renderPicsList();
+      setupKeyboard();
+    });
+
+    // TAB SWITCHING
+    function switchTab(tabId) {
+      activeTab = tabId;
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+      if (tabId === 'tab-sentences') {
+        document.getElementById('tab-btn-sentences').classList.add('active');
+        document.getElementById('tab-sentences').classList.add('active');
+      } else if (tabId === 'tab-vocab') {
+        document.getElementById('tab-btn-vocab').classList.add('active');
+        document.getElementById('tab-vocab').classList.add('active');
+      } else if (tabId === 'tab-pics') {
+        document.getElementById('tab-btn-pics').classList.add('active');
+        document.getElementById('tab-pics').classList.add('active');
+      }
+    }
+
+    // ================= 1. SENTENCES MODULE =================
+    function initSentences() {
+      populateSentenceSelect();
+      renderSentence(0);
+    }
+
+    function populateSentenceSelect() {
+      const select = document.getElementById('sentence-jump-select');
+      select.innerHTML = '';
+      currentSentences.forEach((s, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = `${idx + 1}. [${s.bai}] ${s.vn.substring(0, 30)}...`;
+        select.appendChild(opt);
+      });
+    }
+
+    function renderSentence(idx) {
+      if (idx < 0 || idx >= currentSentences.length) return;
+      sentenceIndex = idx;
+      currentSentence = currentSentences[idx];
+
+      document.getElementById('sentence-fc-stage').classList.remove('flipped');
+      isSentenceFlipped = false;
+
+      document.getElementById('sentence-counter').textContent = `Câu ${idx + 1} / ${currentSentences.length}`;
+      document.getElementById('sentence-jump-select').value = idx;
+
+      document.getElementById('s-front-tag').textContent = `${currentSentence.bai} • Câu ${idx + 1}`;
+      document.getElementById('s-front-vn').textContent = currentSentence.vn;
+
+      document.getElementById('s-back-tag').textContent = `${currentSentence.bai} • Đáp án chuẩn`;
+      document.getElementById('s-back-zh').textContent = currentSentence.zh;
+      document.getElementById('s-back-py').textContent = currentSentence.py;
+      document.getElementById('s-back-vn').textContent = currentSentence.vn;
+    }
+
+    function flipSentenceCard() {
+      const stage = document.getElementById('sentence-fc-stage');
+      isSentenceFlipped = !isSentenceFlipped;
+      stage.classList.toggle('flipped', isSentenceFlipped);
+    }
+
+    function nextSentence() {
+      if (sentenceIndex < currentSentences.length - 1) {
+        renderSentence(sentenceIndex + 1);
+      } else {
+        renderSentence(0);
+      }
+    }
+
+    function prevSentence() {
+      if (sentenceIndex > 0) {
+        renderSentence(sentenceIndex - 1);
+      } else {
+        renderSentence(currentSentences.length - 1);
+      }
+    }
+
+    function jumpToSentence(idx) {
+      renderSentence(idx);
+    }
+
+    function filterSentences(val) {
+      if (val === 'ALL') {
+        currentSentences = [...SENTENCES_DATA];
+      } else {
+        currentSentences = SENTENCES_DATA.filter(s => s.bai === val);
+      }
+      populateSentenceSelect();
+      renderSentence(0);
+      showToast(`Đã lọc: ${currentSentences.length} câu`);
+    }
+
+    function shuffleSentences() {
+      currentSentences.sort(() => Math.random() - 0.5);
+      populateSentenceSelect();
+      renderSentence(0);
+      showToast('Đã xáo trộn ngẫu nhiên 110 câu');
+    }
+
+    // ================= 2. VOCAB MODULE =================
+    function initVocab() {
+      populateVocabSelect();
+      renderVocab(0);
+    }
+
+    function populateVocabSelect() {
+      const select = document.getElementById('vocab-jump-select');
+      select.innerHTML = '';
+      currentVocabs.forEach((v, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = `${idx + 1}. [${v.cat}] ${v.vn} (${v.py})`;
+        select.appendChild(opt);
+      });
+    }
+
+    function renderVocab(idx) {
+      if (idx < 0 || idx >= currentVocabs.length) return;
+      vocabIndex = idx;
+      currentVocab = currentVocabs[idx];
+
+      document.getElementById('vocab-fc-stage').classList.remove('flipped');
+      isVocabFlipped = false;
+
+      document.getElementById('vocab-counter').textContent = `Từ ${idx + 1} / ${currentVocabs.length}`;
+      document.getElementById('vocab-jump-select').value = idx;
+
+      document.getElementById('v-front-tag').textContent = `Nhóm: ${currentVocab.cat}`;
+      document.getElementById('v-front-vn').textContent = currentVocab.vn;
+
+      document.getElementById('v-back-tag').textContent = `HSK 1: ${currentVocab.cat}`;
+      document.getElementById('v-back-py').textContent = currentVocab.py;
+      document.getElementById('v-back-zh').textContent = currentVocab.zh;
+      document.getElementById('v-back-vn').textContent = `Nghĩa: ${currentVocab.vn}`;
+    }
+
+    function flipVocabCard() {
+      const stage = document.getElementById('vocab-fc-stage');
+      isVocabFlipped = !isVocabFlipped;
+      stage.classList.toggle('flipped', isVocabFlipped);
+    }
+
+    function nextVocab() {
+      if (vocabIndex < currentVocabs.length - 1) {
+        renderVocab(vocabIndex + 1);
+      } else {
+        renderVocab(0);
+      }
+    }
+
+    function prevVocab() {
+      if (vocabIndex > 0) {
+        renderVocab(vocabIndex - 1);
+      } else {
+        renderVocab(currentVocabs.length - 1);
+      }
+    }
+
+    function jumpToVocab(idx) {
+      renderVocab(idx);
+    }
+
+    function filterVocab(val) {
+      if (val === 'ALL') {
+        currentVocabs = [...VOCAB_DATA];
+      } else {
+        currentVocabs = VOCAB_DATA.filter(v => v.cat === val);
+      }
+      populateVocabSelect();
+      renderVocab(0);
+      showToast(`Đã lọc: ${currentVocabs.length} từ`);
+    }
+
+    function shuffleVocab() {
+      currentVocabs.sort(() => Math.random() - 0.5);
+      populateVocabSelect();
+      renderVocab(0);
+      showToast('Đã xáo trộn ngẫu nhiên từ vựng');
+    }
+
+    // ================= 3. PICTURE LIST MODULE =================
+    function renderPicsList() {
+      const container = document.getElementById('pic-list-container');
+      container.innerHTML = PICS_DATA.map((p, idx) => `
+        <article class="pic-item-card">
+          <div class="pic-img-col">
+            <div class="pic-img-box" onclick="openLightbox('${p.pic}')">
+              <img src="${p.pic}" alt="Tranh ${p.num}" loading="lazy">
+            </div>
+            <div style="font-size:0.75rem; color:#64748b; text-align:center;">🔍 Chạm để phóng to tranh</div>
+          </div>
+          <div>
+            <div class="pic-header-row">
+              <div style="font-size:1.1rem; font-weight:800; color:#0f172a;">${p.title}</div>
+              <span class="metric-badge">✨ ${p.sentence_count} CÂU • ${p.char_count} CHỮ HÁN</span>
+            </div>
+
+            <!-- KEYWORDS -->
+            <div class="kw-pills">
+              ${p.keywords.map(k => `<span class="kw-pill"><b>${k.zh}</b> (${k.py}: ${k.vn})</span>`).join('')}
+            </div>
+
+            <!-- 3 STEPS BREAKDOWN -->
+            <div class="steps-grid">
+              ${p.sentences.map(s => `
+                <div class="step-box">
+                  <span class="step-label">${s.step} • ${s.chars} chữ</span>
+                  <div class="step-zh">${s.zh}</div>
+                  <div class="step-py py-text">${s.py}</div>
+                  <div class="step-vn"><b>Dịch:</b> ${s.vn}</div>
+                  <button class="btn-step-speak" onclick="playChinese('${s.zh}')" title="Nghe câu này">🔊</button>
+                </div>
+              `).join('')}
+            </div>
+
+            <!-- FULL PARAGRAPH -->
+            <div class="full-p-box">
+              <div class="full-zh">${p.full_zh}</div>
+              <div class="full-py py-text">${p.full_py}</div>
+              <div class="full-vn"><b>Dịch toàn bài:</b> ${p.full_vn}</div>
+            </div>
+
+            <div class="grammar-note">${p.grammar_notes}</div>
+
+            <div style="display:flex; gap:8px;">
+              <button class="btn-tool" onclick="playChinese('${p.full_zh}')">🔊 Nghe toàn bài</button>
+              <button class="btn-tool" onclick="copyText('${p.title}\\n\\n${p.full_zh}\\n${p.full_py}\\n${p.full_vn}')">📋 Sao chép</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // ================= AUDIO SPEECH =================
+    function playChinese(text) {
+      if (!('speechSynthesis' in window)) {
+        showToast('Trình duyệt không hỗ trợ phát âm tự động');
+        return;
+      }
+      window.speechSynthesis.cancel();
+
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = 'zh-CN';
+      utter.rate = speechRate;
+
+      const voices = window.speechSynthesis.getVoices();
+      const zhVoice = voices.find(v => v.lang.startsWith('zh') || v.lang.includes('cmn'));
+      if (zhVoice) utter.voice = zhVoice;
+
+      window.speechSynthesis.speak(utter);
+      showToast('Đang phát âm...');
+    }
+
+    function changeSpeed(val) {
+      speechRate = parseFloat(val);
+      showToast(`Tốc độ phát âm: ${speechRate}x`);
+    }
+
+    // ================= PINYIN TOGGLE =================
+    function togglePinyin() {
+      showPinyin = !showPinyin;
+      document.body.classList.toggle('hide-pinyin', !showPinyin);
+      document.getElementById('pinyin-label').textContent = showPinyin ? 'Pinyin: Bật' : 'Pinyin: Tắt';
+      showToast(showPinyin ? 'Đã bật hiển thị Pinyin' : 'Đã ẩn Pinyin để tự luyện đọc');
+    }
+
+    // ================= KEYBOARD SHORTCUTS =================
+    function setupKeyboard() {
+      document.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+
+        if (activeTab === 'tab-sentences') {
+          if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'ArrowDown') {
+            e.preventDefault();
+            flipSentenceCard();
+          } else if (e.code === 'ArrowRight') {
+            e.preventDefault();
+            nextSentence();
+          } else if (e.code === 'ArrowLeft') {
+            e.preventDefault();
+            prevSentence();
+          } else if (e.key === 'm' || e.key === 'M') {
+            playChinese(currentSentence.zh);
+          }
+        } else if (activeTab === 'tab-vocab') {
+          if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'ArrowDown') {
+            e.preventDefault();
+            flipVocabCard();
+          } else if (e.code === 'ArrowRight') {
+            e.preventDefault();
+            nextVocab();
+          } else if (e.code === 'ArrowLeft') {
+            e.preventDefault();
+            prevVocab();
+          } else if (e.key === 'm' || e.key === 'M') {
+            playChinese(currentVocab.zh);
+          }
+        }
+      });
+    }
+
+    // ================= LIGHTBOX =================
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+
+    // ================= CLIPBOARD =================
+    function copyText(txt) {
+      navigator.clipboard.writeText(txt).then(() => {
+        showToast('Đã sao chép vào bộ nhớ tạm!');
+      }).catch(() => {
+        showToast('Không thể sao chép');
+      });
+    }
+
+    // ================= TOAST =================
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2000);
+    }
+  </script>
+</body>
+</html>

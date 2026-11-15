@@ -1,0 +1,217 @@
+;
+
+// STATE
+let currentLessonFilter = 'all';
+let checkedStates = {};
+let fcIndex = 0;
+let fcList = [...rawSentences];
+
+// SPEECH UTTERANCE
+function playSpeech(text) {
+  if (!window.speechSynthesis) {
+    alert("Trình duyệt không hỗ trợ Web Speech API.");
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'zh-CN';
+  utter.rate = 0.8;
+  window.speechSynthesis.speak(utter);
+}
+
+// TAB SWITCHING
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-section').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  event.currentTarget.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// PRACTICE MODE IN PIC CARDS
+function togglePracticeMode(id) {
+  const pracBox = document.getElementById(`prac-${id}`);
+  const zhBox = document.getElementById(`pzh-${id}`);
+  const pyBox = document.getElementById(`ppy-${id}`);
+  
+  if (pracBox.style.display === 'block') {
+    pracBox.style.display = 'none';
+    zhBox.style.filter = 'none';
+    pyBox.style.filter = 'none';
+  } else {
+    pracBox.style.display = 'block';
+    zhBox.style.filter = 'blur(6px)';
+    pyBox.style.filter = 'blur(5px)';
+  }
+}
+
+// RENDER TRANSLATIONS
+function cleanStr(s) {
+  return (s || '').replace(/[。？！，、；：""''（）\s\.\?\!\,\.\.\.…—\-]/g, '').toLowerCase().trim();
+}
+
+function renderTranslations() {
+  const container = document.getElementById('sentences-list-container');
+  const searchVal = cleanStr(document.getElementById('search-trans').value);
+  
+  let html = '';
+  let currentGroup = '';
+
+  rawSentences.forEach((item, index) => {
+    // Filter by lesson
+    if (currentLessonFilter !== 'all' && item.bai !== currentLessonFilter) return;
+
+    // Filter by search
+    if (searchVal) {
+      const matchVn = cleanStr(item.vn).includes(searchVal);
+      const matchZh = cleanStr(item.zh).includes(searchVal);
+      const matchPy = cleanStr(item.py).includes(searchVal);
+      if (!matchVn && !matchZh && !matchPy) return;
+    }
+
+    if (item.bai !== currentGroup) {
+      currentGroup = item.bai;
+      html += `<div class="lesson-divider"><span>📚 ${currentGroup}</span></div>`;
+    }
+
+    const state = checkedStates[index] || { checked: false, correct: false, val: '' };
+    const inputClass = state.checked ? (state.correct ? 'sentence-input correct' : 'sentence-input wrong') : 'sentence-input';
+    const showAns = state.checked ? 'show' : '';
+
+    html += `
+      <div class="sentence-item" id="s-item-${index}">
+        <div class="sentence-vn">
+          <span class="s-num">${index + 1}</span>
+          <span>${item.vn}</span>
+        </div>
+        <div class="sentence-input-wrap">
+          <input type="text" class="${inputClass}" id="sinp-${index}" 
+            value="${state.val || ''}" 
+            placeholder="Nhập câu tiếng Trung..." 
+            onkeydown="if(event.key==='Enter') checkSingle(${index})">
+          <button class="btn-check-s" onclick="checkSingle(${index})">Kiểm tra</button>
+        </div>
+        <div class="sentence-answer ${showAns}" id="sans-${index}">
+          <div class="sa-zh">
+            ${item.zh}
+            <button class="btn-action btn-speak" style="padding:2px 8px; font-size:0.75rem;" onclick="playSpeech('${item.zh.replace(/'/g, "\\'")}')">🔊 Nghe</button>
+          </div>
+          <div class="sa-py">${item.py}</div>
+        </div>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html || '<div style="text-align:center; padding:30px; color:#94a3b8;">Không tìm thấy câu phù hợp.</div>';
+}
+
+function checkSingle(index) {
+  const inp = document.getElementById(`sinp-${index}`);
+  const ansBox = document.getElementById(`sans-${index}`);
+  const item = rawSentences[index];
+  
+  const userVal = cleanStr(inp.value);
+  const correctVal = cleanStr(item.zh);
+  const isOk = userVal === correctVal;
+
+  checkedStates[index] = {
+    checked: true,
+    correct: isOk,
+    val: inp.value
+  };
+
+  inp.className = isOk ? 'sentence-input correct' : 'sentence-input wrong';
+  ansBox.classList.add('show');
+  updateScore();
+}
+
+function updateScore() {
+  let count = 0;
+  Object.values(checkedStates).forEach(s => {
+    if (s.correct) count++;
+  });
+  document.getElementById('trans-score').innerText = `${count} / ${rawSentences.length}`;
+  const pct = Math.round((count / rawSentences.length) * 100);
+  document.getElementById('trans-pfill').style.width = `${pct}%`;
+}
+
+function checkAllVisible() {
+  rawSentences.forEach((_, idx) => {
+    const inp = document.getElementById(`sinp-${idx}`);
+    if (inp) {
+      checkSingle(idx);
+    }
+  });
+}
+
+function toggleAllAnswers() {
+  rawSentences.forEach((item, idx) => {
+    const ansBox = document.getElementById(`sans-${idx}`);
+    if (ansBox) {
+      ansBox.classList.toggle('show');
+    }
+  });
+}
+
+function resetAllProgress() {
+  checkedStates = {};
+  renderTranslations();
+  updateScore();
+}
+
+function setLessonFilter(bai) {
+  currentLessonFilter = bai;
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  renderTranslations();
+}
+
+function filterSentences() {
+  renderTranslations();
+}
+
+// FLASHCARD LOGIC
+function updateFlashcardUI() {
+  const item = fcList[fcIndex];
+  document.getElementById('fc-tag').innerText = `${item.bai} • Câu ${fcIndex + 1}`;
+  document.getElementById('fc-vn').innerText = item.vn;
+  document.getElementById('fc-zh').innerText = item.zh;
+  document.getElementById('fc-py').innerText = item.py;
+  document.getElementById('fc-counter').innerText = `${fcIndex + 1} / ${fcList.length}`;
+  document.getElementById('main-fc').classList.remove('flipped');
+}
+
+function flipFlashcard() {
+  document.getElementById('main-fc').classList.toggle('flipped');
+}
+
+function nextFc() {
+  fcIndex = (fcIndex + 1) % fcList.length;
+  updateFlashcardUI();
+}
+
+function prevFc() {
+  fcIndex = (fcIndex - 1 + fcList.length) % fcList.length;
+  updateFlashcardUI();
+}
+
+function shuffleFc() {
+  fcList.sort(() => Math.random() - 0.5);
+  fcIndex = 0;
+  updateFlashcardUI();
+}
+
+function playCurrentFcAudio() {
+  const item = fcList[fcIndex];
+  playSpeech(item.zh);
+}
+
+// INITIALIZE
+window.addEventListener('DOMContentLoaded', () => {
+  renderTranslations();
+  updateFlashcardUI();
+  updateScore();
+});
+</script>
+</body>
+</html>

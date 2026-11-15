@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ôn Thi HSK 1 - Miêu Tả Tranh & Dịch Câu Chuẩn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #c21807;
+  --primary-dark: #8e0000;
+  --primary-light: #ff5131;
+  --gold: #d4af37;
+  --gold-light: #fff8e1;
+  --accent: #ff9800;
+  --bg: #f7f8fa;
+  --card-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --success: #16a34a;
+  --success-bg: #f0fdf4;
+  --danger: #dc2626;
+  --danger-bg: #fef2f2;
+  --chinese-font: 'Noto Serif SC', 'Microsoft YaHei', serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding-bottom: 80px;
+}
+
+/* TOP HERO HEADER */
+.hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #e53935 100%);
+  color: #fff;
+  padding: 24px 16px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(142, 0, 0, 0.25);
+}
+.hero h1 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.hero p {
+  font-size: 0.85rem;
+  opacity: 0.92;
+  margin-top: 4px;
+}
+
+/* NAVIGATION TABS */
+.nav-wrap {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 73px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  padding: 8px 12px;
+  gap: 8px;
+  overflow-x: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+.nav-btn {
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1.5px solid var(--border);
+  background: #fff;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+.nav-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.nav-btn.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 3px 10px rgba(194, 24, 7, 0.3);
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 18px auto 0;
+  padding: 0 16px;
+}
+
+/* SECTION VISIBILITY */
+.tab-section {
+  display: none;
+}
+.tab-section.active {
+  display: block;
+}
+
+/* CARDS */
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+/* SECTION 1: PICTURE CARDS */
+.pic-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.pic-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.pic-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.badge-title {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.pic-tag {
+  background: var(--gold-light);
+  color: #b45309;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+}
+.pic-img-wrap {
+  text-align: center;
+  background: #f1f5f9;
+  border-radius: 14px;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #e2e8f0;
+}
+.pic-img-wrap img {
+  max-width: 100%;
+  max-height: 440px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  object-fit: contain;
+}
+
+/* CONTENT BELOW PICTURE */
+.pic-text-container {
+  background: #fcfcfd;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 10px;
+  position: relative;
+}
+.pic-zh-box {
+  font-family: var(--chinese-font);
+  font-size: 1.35rem;
+  line-height: 1.85;
+  color: #111827;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.pic-py-box {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.pic-vn-box {
+  font-size: 0.95rem;
+  color: #1e40af;
+  background: #eff6ff;
+  border-left: 4px solid #3b82f6;
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.vocab-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+.vocab-pill {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  font-size: 0.78rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.action-bar {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.btn-action {
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+.btn-speak {
+  background: #fee2e2;
+  color: var(--primary-dark);
+}
+.btn-speak:hover {
+  background: #fecaca;
+}
+.btn-toggle {
+  background: #f1f5f9;
+  color: #475569;
+}
+.btn-toggle:hover {
+  background: #e2e8f0;
+}
+
+/* PRACTICE MODE IN PIC CARD */
+.pic-practice-input {
+  display: none;
+  margin-top: 12px;
+}
+.pic-practice-input textarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #cbd5e1;
+  font-family: var(--chinese-font);
+  font-size: 1.1rem;
+}
+
+/* SECTION 2: TRANSLATIONS */
+.filter-bar {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+.filter-btn {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.filter-btn.active {
+  background: var(--text-main);
+  color: #fff;
+  border-color: var(--text-main);
+}
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  outline: none;
+}
+.search-input:focus {
+  border-color: var(--primary);
+}
+
+.lesson-divider {
+  background: linear-gradient(90deg, #b91c1c, #ea580c);
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin: 22px 0 12px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sentence-item {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+.sentence-vn {
+  font-weight: 700;
+  color: #1e3a8a;
+  font-size: 0.98rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.s-num {
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.sentence-input-wrap {
+  display: flex;
+  gap: 8px;
+}
+.sentence-input {
+  flex: 1;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #cbd5e1;
+  font-family: var(--chinese-font);
+  font-size: 1.15rem;
+  outline: none;
+}
+.sentence-input:focus {
+  border-color: var(--primary);
+}
+.sentence-input.correct {
+  border-color: var(--success);
+  background-color: var(--success-bg);
+}
+.sentence-input.wrong {
+  border-color: var(--danger);
+  background-color: var(--danger-bg);
+}
+.btn-check-s {
+  padding: 0 16px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-check-s:hover {
+  background: var(--primary-dark);
+}
+.sentence-answer {
+  display: none;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+.sentence-answer.show {
+  display: block;
+}
+.sa-zh {
+  font-family: var(--chinese-font);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sa-py {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* PROGRESS BAR */
+.score-card {
+  position: sticky;
+  top: 120px;
+  z-index: 90;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.score-num {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+.p-bar {
+  width: 140px;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.p-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--primary), var(--gold));
+  transition: width 0.3s;
+}
+
+/* SECTION 3: FLASHCARDS */
+.flashcard-wrap {
+  perspective: 1000px;
+  max-width: 480px;
+  margin: 30px auto;
+}
+.fc-card {
+  width: 100%;
+  min-height: 240px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 2px solid #fed7aa;
+  box-shadow: 0 8px 24px rgba(251, 146, 60, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  user-select: none;
+}
+.fc-card:hover {
+  transform: translateY(-4px);
+}
+.fc-tag {
+  font-size: 0.8rem;
+  color: #ea580c;
+  background: #fff7ed;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.fc-content-front {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+.fc-content-back {
+  display: none;
+}
+.fc-card.flipped .fc-content-front {
+  display: none;
+}
+.fc-card.flipped .fc-content-back {
+  display: block;
+}
+.fc-zh {
+  font-family: var(--chinese-font);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+.fc-py {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+.fc-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* SECTION 4: EXAM INFO */
+.exam-table-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  margin-bottom: 18px;
+}
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+.tip-card {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+}
+.tip-card h4 {
+  color: var(--primary);
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+/* GLOBAL TOOLBAR */
+.sticky-toolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border);
+  padding: 10px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 100;
+}
+.toolbar-btn {
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.tb-primary {
+  background: var(--primary);
+  color: #fff;
+}
+.tb-secondary {
+  background: #f1f5f9;
+  color: var(--text-main);
+  border: 1px solid #cbd5e1;
+}
+
+@media (max-width: 640px) {
+  .hero h1 { font-size: 1.2rem; }
+  .nav-btn { font-size: 0.78rem; padding: 6px 12px; }
+  .pic-zh-box { font-size: 1.15rem; }
+  .pic-py-box { font-size: 0.85rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1><span>🇨🇳</span> ÔN TẬP HSK 1 - MIÊU TẢ TRANH & DỊCH CÂU</h1>
+  <p>100% Từ vựng HSK 1 • Hiển thị văn bản trực tiếp dưới mỗi tranh • Âm thanh chuẩn giọng Bắc Kinh</p>
+</header>
+
+<nav class="nav-wrap">
+  <button class="nav-btn active" onclick="switchTab('tab-pictures')">🖼️ 7 Bức Tranh Miêu Tả</button>
+  <button class="nav-btn" onclick="switchTab('tab-translations')">✍️ Dịch 110 Câu (B3-B15)</button>
+  <button class="nav-btn" onclick="switchTab('tab-flashcards')">🃏 Flashcards Ôn Nhanh</button>
+  <button class="nav-btn" onclick="switchTab('tab-exam')">📋 Cấu Trúc Đề & Mẹo Thi</button>
+</nav>
+
+<main class="container">
+
+  <!-- ================= TAB 1: 7 BỨC TRANH MIÊU TẢ ================= -->
+  <section id="tab-pictures" class="tab-section active">
+    
+    <div style="background:#fffbeb; border:1px solid #fef3c7; border-radius:12px; padding:12px 16px; margin-bottom:18px; color:#92400e; font-size:0.9rem;">
+      💡 <b>Quy tắc miêu tả tranh HSK 1:</b> Nói rõ <b>Ai?</b> (她/他) + <b>Khi nào?</b> (今天/现在七点/下午两点半) + <b>Ở đâu?</b> (在外面/在图书馆/在家里/在出租车里) + <b>Đang làm gì?</b> (喝水/买苹果/做饭/看书/开车/睡觉).
+    </div>
+
+    <!-- TRANH 1 -->
+    <article class="pic-card" id="card-pic1">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 1: Uống nước dưới trời nắng nóng (35°C)</span>
+        <span class="pic-tag">Chủ đề: Thời tiết & Đồ uống</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic1.jpg" alt="Tranh 1: Uống nước dưới trời nóng">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-1">
+          今天天气很热，现在是三十五度。她在外面。她觉得很热。她想喝水。你看，她正在喝水。她今天没有去学校。
+        </div>
+        <div class="pic-py-box" id="ppy-1">
+          Jīntiān tiānqì hěn rè, xiànzài shì sānshíwǔ dù. Tā zài wàimiàn. Tā juéde hěn rè. Tā xiǎng hē shuǐ. Nǐ kàn, tā zhèngzài hē shuǐ. Tā jīntiān méiyǒu qù xuéxiào.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Hôm nay thời tiết rất nóng, bây giờ là 35 độ. Cô ấy ở bên ngoài. Cô ấy cảm thấy rất nóng. Cô ấy muốn uống nước. Bạn xem, cô ấy đang uống nước. Hôm nay cô ấy không đi học.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">今天 (hôm nay)</span>
+          <span class="vocab-pill">天气 (thời tiết)</span>
+          <span class="vocab-pill">很热 (rất nóng)</span>
+          <span class="vocab-pill">喝水 (uống nước)</span>
+          <span class="vocab-pill">学校 (trường học)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('今天天气很热，现在是三十五度。她在外面。她觉得很热。她想喝水。你看，她正在喝水。她今天没有去学校。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(1)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-1">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH 2 -->
+    <article class="pic-card" id="card-pic2">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 2: Mua táo ở siêu thị / cửa hàng</span>
+        <span class="pic-tag">Chủ đề: Mua sắm & Hoa quả</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic2.jpg" alt="Tranh 2: Mua táo ở cửa hàng">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-2">
+          下午她去商店买东西。这儿有很多苹果。苹果很红，也很大。她很喜欢吃苹果。她想买几个苹果给她的妈妈。
+        </div>
+        <div class="pic-py-box" id="ppy-2">
+          Xiàwǔ tā qù shāngdiàn mǎi dōngxi. Zhèr yǒu hěn duō píngguǒ. Píngguǒ hěn hóng, yě hěn dà. Tā hěn xǐhuan chī píngguǒ. Tā xiǎng mǎi jǐ ge píngguǒ gěi tā de māma.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Buổi chiều cô ấy đi cửa hàng mua đồ. Ở đây có rất nhiều táo. Táo rất đỏ, cũng rất to. Cô ấy rất thích ăn táo. Cô ấy muốn mua vài quả táo cho mẹ cô ấy.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">下午 (buổi chiều)</span>
+          <span class="vocab-pill">商店 (cửa hàng)</span>
+          <span class="vocab-pill">买东西 (mua đồ)</span>
+          <span class="vocab-pill">苹果 (táo)</span>
+          <span class="vocab-pill">很红 (rất đỏ)</span>
+          <span class="vocab-pill">很大 (rất to)</span>
+          <span class="vocab-pill">妈妈 (mẹ)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('下午她去商店买东西。这儿有很多苹果。苹果很红，也很大。她很喜欢吃苹果。她想买几个苹果给她的妈妈。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(2)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-2">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH 3 -->
+    <article class="pic-card" id="card-pic3">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 3: Nấu ăn trong bếp</span>
+        <span class="pic-tag">Chủ đề: Nấu ăn & Bạn bè</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic3.jpg" alt="Tranh 3: Nấu ăn trong bếp">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-3">
+          她在家里做饭。她很喜欢做菜，她做的中国菜很好吃。前面有很多菜。今天她想请朋友来家里吃饭。
+        </div>
+        <div class="pic-py-box" id="ppy-3">
+          Tā zài jiālǐ zuò fàn. Tā hěn xǐhuan zuò cài, tā zuò de Zhōngguó cài hěn hǎochī. Qiánmiàn yǒu hěn duō cài. Jīntiān tā xiǎng qǐng péngyou lái jiālǐ chī fàn.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Cô ấy đang nấu ăn ở nhà. Cô ấy rất thích nấu ăn, món ăn Trung Quốc cô ấy làm rất ngon. Phía trước có rất nhiều rau củ. Hôm nay cô ấy muốn mời bạn bè đến nhà ăn cơm.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">家里 (trong nhà)</span>
+          <span class="vocab-pill">做饭 (nấu cơm)</span>
+          <span class="vocab-pill">中国菜 (món Trung Quốc)</span>
+          <span class="vocab-pill">好吃 (ngon)</span>
+          <span class="vocab-pill">朋友 (bạn bè)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('她在家里做饭。她很喜欢做菜，她做的中国菜很好吃。前面有很多菜。今天她想请朋友来家里吃饭。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(3)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-3">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH 4 (Hình 6) -->
+    <article class="pic-card" id="card-pic4">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 4 (Hình 6): Đọc sách trong thư viện</span>
+        <span class="pic-tag">Chủ đề: Học tập & Sách</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic4.jpg" alt="Tranh 4: Đọc sách thư viện">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-4">
+          今天星期一，她在图书馆看书。桌子上有很多书。她看的是一本汉语书。她学习汉语。她是一个好学生。
+        </div>
+        <div class="pic-py-box" id="ppy-4">
+          Jīntiān xīngqī yī, tā zài túshūguǎn kàn shū. Zhuōzi shàng yǒu hěn duō shū. Tā kàn de shì yì běn Hànyǔ shū. Tā xuéxí Hànyǔ. Tā shì yí ge hǎo xuésheng.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Hôm nay là thứ Hai, cô ấy đọc sách ở thư viện. Trên bàn có rất nhiều sách. Cuốn sách cô ấy đọc là một cuốn sách tiếng Trung. Cô ấy học tiếng Trung. Cô ấy là một học sinh giỏi.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">星期一 (thứ Hai)</span>
+          <span class="vocab-pill">看书 (đọc sách)</span>
+          <span class="vocab-pill">桌子上 (trên bàn)</span>
+          <span class="vocab-pill">汉语书 (sách tiếng Trung)</span>
+          <span class="vocab-pill">好学生 (học sinh tốt)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('今天星期一，她在图书馆看书。桌子上有很多书。她看的是一本汉语书。她学习汉语。她是一个好学生。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(4)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-4">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH 5 (Hình 7) -->
+    <article class="pic-card" id="card-pic5">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 5 (Hình 7): Ngồi taxi buổi sáng lúc 7:00</span>
+        <span class="pic-tag">Chủ đề: Đi lại & Thời gian</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic5.jpg" alt="Tranh 5: Đi taxi buổi sáng 7h">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-5">
+          现在是上午七点。她坐出租车去学校。今天天气很好。她在出租车里面。她很高兴。
+        </div>
+        <div class="pic-py-box" id="ppy-5">
+          Xiànzài shì shàngwǔ qī diǎn. Tā zuò chūzūchē qù xuéxiào. Jīntiān tiānqì hěn hǎo. Tā zài chūzūchē lǐmiàn. Tā hěn gāoxìng.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Bây giờ là 7 giờ sáng. Cô ấy đi xe taxi đến trường. Hôm nay thời tiết rất đẹp. Cô ấy đang ở trong xe taxi. Cô ấy rất vui.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">上午七点 (7 giờ sáng)</span>
+          <span class="vocab-pill">坐出租车 (đi taxi)</span>
+          <span class="vocab-pill">去学校 (đến trường)</span>
+          <span class="vocab-pill">天气很好 (thời tiết đẹp)</span>
+          <span class="vocab-pill">很高兴 (rất vui)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('现在是上午七点。她坐出租车去学校。今天天气很好。她在出租车里面。她很高兴。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(5)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-5">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH 6 (Hình 10) -->
+    <article class="pic-card" id="card-pic6">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 6 (Hình 10): Lái xe ngày 26 tháng 10 lúc 14:30</span>
+        <span class="pic-tag">Chủ đề: Lái xe, Ngày tháng, Bệnh viện</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic6.jpg" alt="Tranh 6: Lái xe 26/10 14:30">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-6">
+          今天是十月二十六号，下午两点半。他会开车。他现在在开车。他想去医院看一个好朋友。
+        </div>
+        <div class="pic-py-box" id="ppy-6">
+          Jīntiān shì shí yuè èrshíliù hào, xiàwǔ liǎng diǎn bàn. Tā huì kāi chē. Tā xiànzài zài kāi chē. Tā xiǎng qù yīyuàn kàn yí ge hǎo péngyou.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Hôm nay là ngày 26 tháng 10, 2 giờ 30 chiều. Anh ấy biết lái xe. Bây giờ anh ấy đang lái xe. Anh ấy muốn đi bệnh viện thăm một người bạn tốt.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">十月二十六号 (ngày 26/10)</span>
+          <span class="vocab-pill">下午两点半 (2:30 chiều)</span>
+          <span class="vocab-pill">开车 (lái xe)</span>
+          <span class="vocab-pill">医院 (bệnh viện)</span>
+          <span class="vocab-pill">好朋友 (bạn tốt)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('今天是十月二十六号，下午两点半。他会开车。他现在在开车。他想去医院看一个好朋友。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(6)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-6">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH 7 (Hình 12) -->
+    <article class="pic-card" id="card-pic7">
+      <div class="pic-header">
+        <span class="badge-title">📌 Tranh 7 (Hình 12): Đang ngủ lúc 11:00 đêm</span>
+        <span class="pic-tag">Chủ đề: Đi ngủ & Đồng hồ</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic7.jpg" alt="Tranh 7: Đi ngủ lúc 11h đêm">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box" id="pzh-7">
+          现在是晚上十一点了。她在睡觉。明天她要去学校，所以她十一点睡觉。晚安。
+        </div>
+        <div class="pic-py-box" id="ppy-7">
+          Xiànzài shì wǎnshang shíyī diǎn le. Tā zài shuìjiào. Míngtiān tā yào qù xuéxiào, suǒyǐ tā shíyī diǎn shuìjiào. Wǎn ān.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Bây giờ là 11 giờ tối rồi. Cô ấy đang ngủ. Ngày mai cô ấy phải đến trường, vì vậy cô ấy ngủ lúc 11 giờ. Ngủ ngon.
+        </div>
+        <div class="vocab-pills">
+          <span class="vocab-pill">晚上十一点 (11 giờ tối)</span>
+          <span class="vocab-pill">睡觉 (đi ngủ)</span>
+          <span class="vocab-pill">明天 (ngày mai)</span>
+          <span class="vocab-pill">晚安 (ngủ ngon)</span>
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('现在是晚上十一点了。她在睡觉。明天她要去学校，所以她十一点睡觉。晚安。')">🔊 Nghe đọc mẫu</button>
+          <button class="btn-action btn-toggle" onclick="togglePracticeMode(7)">🎯 Luyện nói (Ẩn/Hiện chữ)</button>
+        </div>
+        <div class="pic-practice-input" id="prac-7">
+          <textarea placeholder="Tập gõ lại bài miêu tả hoặc ghi chú của bạn..."></textarea>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH MỞ RỘNG (14, 15, 16, 18) -->
+    <div style="margin:30px 0 16px; font-weight:800; font-size:1.15rem; color:var(--primary); display:flex; align-items:center; gap:8px;">
+      ✨ Các Tranh Bổ Trợ (Hình 14, 15, 16, 18 trong slide)
+    </div>
+
+    <!-- TRANH 14 & 15 -->
+    <article class="pic-card">
+      <div class="pic-header">
+        <span class="badge-title">📌 Hình 14 & 15: Mua áo hồng giá 10 đồng</span>
+        <span class="pic-tag">Chủ đề: Mua sắm quần áo & Giá cả</span>
+      </div>
+      <div class="pic-img-wrap" style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+        <img src="images/pic14.jpg" alt="Hình 14" style="max-height:260px;">
+        <img src="images/pic15.jpg" alt="Hình 15" style="max-height:260px;">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box">
+          她在商店买衣服。这件衣服太漂亮了。这件衣服十块钱。
+        </div>
+        <div class="pic-py-box">
+          Tā zài shāngdiàn mǎi yīfu. Zhè jiàn yīfu tài piàoliang le. Zhè jiàn yīfu shí kuài qián.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Cô ấy đang mua quần áo ở cửa hàng. Chiếc áo này đẹp quá. Chiếc áo này có giá 10 đồng.
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('她在商店买衣服。这件衣服太漂亮了。这件衣服十块钱。')">🔊 Nghe đọc mẫu</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH 16 -->
+    <article class="pic-card">
+      <div class="pic-header">
+        <span class="badge-title">📌 Hình 16: Học bài bằng máy tính ở nhà</span>
+        <span class="pic-tag">Chủ đề: Máy tính & Học tập</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic16.jpg" alt="Hình 16" style="max-height:280px;">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box">
+          她在家里用电脑学习汉语。桌子上有一本书和一个杯子。
+        </div>
+        <div class="pic-py-box">
+          Tā zài jiālǐ yòng diànnǎo xuéxí Hànyǔ. Zhuōzi shàng yǒu yì běn shū hé yí ge bēizi.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Cô ấy ở nhà dùng máy tính học tiếng Trung. Trên bàn có một quyển sách và một chiếc cốc.
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('她在家里用电脑学习汉语。桌子上有一本书和一个杯子。')">🔊 Nghe đọc mẫu</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- TRANH 18 -->
+    <article class="pic-card">
+      <div class="pic-header">
+        <span class="badge-title">📌 Hình 18: Bác sĩ và Thầy giáo</span>
+        <span class="pic-tag">Chủ đề: Nghề nghiệp & Nơi làm việc</span>
+      </div>
+      <div class="pic-img-wrap">
+        <img src="images/pic18.jpg" alt="Hình 18">
+      </div>
+      <div class="pic-text-container">
+        <div class="pic-zh-box">
+          她是医生，她在医院工作。他是老师，他在学校教书。
+        </div>
+        <div class="pic-py-box">
+          Tā shì yīshēng, tā zài yīyuàn gōngzuò. Tā shì lǎoshī, tā zài xuéxiào jiāoshū.
+        </div>
+        <div class="pic-vn-box">
+          <b>Dịch nghĩa:</b> Cô ấy là bác sĩ, làm việc ở bệnh viện. Anh ấy là giáo viên, giảng dạy ở trường học.
+        </div>
+        <div class="action-bar">
+          <button class="btn-action btn-speak" onclick="playSpeech('她是医生，她在医院工作。他是老师，他在学校工作。')">🔊 Nghe đọc mẫu</button>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ================= TAB 2: DỊCH 110 CÂU VIỆT - TRUNG ================= -->
+  <section id="tab-translations" class="tab-section">
+    
+    <div class="score-card">
+      <div>
+        <div style="font-weight:700; font-size:0.9rem; color:var(--text-main);">Tiến độ ôn tập câu dịch</div>
+        <div class="p-bar"><div class="p-fill" id="trans-pfill"></div></div>
+      </div>
+      <div class="score-num" id="trans-score">0 / 110</div>
+    </div>
+
+    <!-- SEARCH & LESSON FILTER -->
+    <input type="text" class="search-input" id="search-trans" placeholder="🔍 Tìm kiếm câu tiếng Việt hoặc tiếng Trung..." oninput="filterSentences()">
+
+    <div class="filter-bar" id="lesson-filter-bar">
+      <button class="filter-btn active" onclick="setLessonFilter('all')">Tất cả (110)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 3')">Bài 3 (4)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 4')">Bài 4 (8)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 5')">Bài 5 (9)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 6')">Bài 6 (9)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 7')">Bài 7 (7)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 8')">Bài 8 (8)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 9')">Bài 9 (8)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 10')">Bài 10 (10)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 11')">Bài 11 (12)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 12+13')">Bài 12+13 (17)</button>
+      <button class="filter-btn" onclick="setLessonFilter('Bài 14+15')">Bài 14+15 (18)</button>
+    </div>
+
+    <div id="sentences-list-container">
+      <!-- Injected by JavaScript -->
+    </div>
+
+  </section>
+
+  <!-- ================= TAB 3: FLASHCARDS ================= -->
+  <section id="tab-flashcards" class="tab-section">
+    <div class="card" style="text-align:center;">
+      <h3 style="color:var(--primary); margin-bottom:6px;">🃏 Flashcard Luyện Phản Xạ Nói & Dịch</h3>
+      <p style="font-size:0.88rem; color:var(--text-muted);">Bấm vào thẻ để lật xem Chữ Hán, Phiên âm & Nghe phát âm</p>
+      
+      <div class="flashcard-wrap">
+        <div class="fc-card" id="main-fc" onclick="flipFlashcard()">
+          <span class="fc-tag" id="fc-tag">Bài 3 • Câu 1</span>
+          <div class="fc-content-front">
+            <div style="font-size:1.15rem; color:#1e3a8a; line-height:1.6;" id="fc-vn">Bạn là người Mỹ phải không?</div>
+            <div style="font-size:0.8rem; color:#94a3b8; margin-top:12px;">(Nhấn vào thẻ để lật đáp án)</div>
+          </div>
+          <div class="fc-content-back">
+            <div class="fc-zh" id="fc-zh">你是美国人吗？</div>
+            <div class="fc-py" id="fc-py">Nǐ shì Měiguó rén ma?</div>
+            <button class="btn-action btn-speak" style="margin-top:14px;" onclick="event.stopPropagation(); playCurrentFcAudio();">🔊 Nghe phát âm</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="fc-nav">
+        <button class="btn-action" style="background:#e2e8f0;" onclick="prevFc()">⬅️ Câu trước</button>
+        <span style="font-weight:700; font-size:0.95rem;" id="fc-counter">1 / 110</span>
+        <button class="btn-action tb-primary" onclick="nextFc()">Câu tiếp ➡️</button>
+      </div>
+
+      <div style="margin-top:16px;">
+        <button class="btn-action" style="background:#fff7ed; color:#c2410c; border:1px solid #fed7aa;" onclick="shuffleFc()">🔀 Xáo trộn ngẫu nhiên</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TAB 4: CẤU TRÚC ĐỀ & MẸO THI ================= -->
+  <section id="tab-exam" class="tab-section">
+    <div class="card">
+      <h3 style="color:var(--primary); margin-bottom:12px;">📋 Cấu Trúc Đề Thi HSK 1 Chuẩn (10 Điểm)</h3>
+      <img src="images/exam_table.jpg" alt="Bảng cấu trúc đề thi" class="exam-table-img">
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <h4>📖 Phần A: Đọc Hiểu (5.0 điểm)</h4>
+          <p>• <b>A1 (Câu 1-4, 2.0đ):</b> Nhìn hình, phán đoán Đúng/Sai. Hãy chú ý các chi tiết như thời tiết, hành động, đồ vật.</p>
+          <p>• <b>A2 (Câu 5-6, 1.0đ):</b> Đọc câu hỏi, chọn câu trả lời đúng (A-D).</p>
+          <p>• <b>A3 (Câu 7, 2.0đ):</b> Chọn bộ từ điền vào đoạn văn 4 chỗ trống.</p>
+        </div>
+
+        <div class="tip-card">
+          <h4>✍️ Phần B: Viết (5.0 điểm)</h4>
+          <p>• <b>B1 (Câu 8, 0.5đ):</b> Nhìn pinyin viết Hán tự (chú ý nét bút & thanh điệu).</p>
+          <p>• <b>B2 (Câu 9, 1.0đ):</b> Sắp xếp từ thành câu (S + Time + Place + V + O).</p>
+          <p>• <b>B3 (Câu 10-11, 1.5đ):</b> Dịch câu Việt → Trung (2 câu x 0.75đ).</p>
+          <p>• <b>B4 (Câu 12, 2.0đ):</b> Hoàn thành hội thoại (2 lượt trả lời x 1.0đ).</p>
+        </div>
+      </div>
+
+      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:12px; padding:14px; margin-top:16px; color:#166534; font-size:0.9rem;">
+        🌟 <b>Mẹo miêu tả tranh thi nói:</b>
+        <ol style="margin-left:20px; margin-top:6px; line-height:1.7;">
+          <li>Mở đầu luôn chào và giới thiệu thời gian/thời tiết: <i>今天天气很好 / 现在是上午七点...</i></li>
+          <li>Chỉ vào nhân vật: <i>你看，这是... / 她是学生...</i></li>
+          <li>Nói hành động đang diễn ra: <i>她正在喝水 / 她在看书 / 他在开车...</i></li>
+          <li>Cảm xúc hoặc dự định: <i>她很高兴 / 她想买苹果给妈妈...</i></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- STICKY ACTION TOOLBAR -->
+<div class="sticky-toolbar">
+  <button class="toolbar-btn tb-primary" onclick="checkAllVisible()">✅ Chấm tất cả câu</button>
+  <button class="toolbar-btn tb-secondary" onclick="toggleAllAnswers()">👁️ Hiện tất cả đáp án</button>
+  <button class="toolbar-btn tb-secondary" onclick="resetAllProgress()">🔄 Làm lại</button>
+</div>
+
+<script>
+// RAW SENTENCE DATA EMBEDDED
+const rawSentences = 
